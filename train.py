@@ -1,20 +1,23 @@
 import os
-import sys
-import wandb
 import torch
 import torch.nn.functional as F
 import numpy as np
+import time
+import random
 from tqdm import tqdm
 from timeit import default_timer as timer
 from sklearn.metrics import accuracy_score, roc_auc_score, recall_score, f1_score
 from sklearn.model_selection import KFold
+from sklearn.utils import shuffle
+from torch_geometric.loader import DataLoader
+from torch_geometric.data import Batch
 
 from my_dataset import MyDataset
-from my_parser import parsed_args
-from my_utils import write_log_file, calculate_metrics, AverageMeter, get_logger
+from my_utils import calculate_metrics, AverageMeter, get_logger, sample_mask
 from augment import augment
 from BrainUSL import unsupervisedGroupContrast, Model, sameLoss
-from model import MyModel, MLP_Decoder, GTCNet
+from model import MyModel, MLP_Decoder, MLP_Decoder5
+from info_nce import info_nce
 
 
 def setup_seed(seed):
@@ -30,45 +33,53 @@ class Trainer(object):
         super(Trainer, self).__init__()
         self.args = args
         setup_seed(self.args.seed)
+        self.timestamp = time.strftime('%m_%d_%H_%M_%S', time.localtime())
 
         # path
-        self.args.pre_model_save_path = os.path.join("point/", self.args.dataset + '_pre-model.pt')
-        self.args.model_save_path = os.path.join("point/", self.args.dataset + '_model.pt')
+        self.pre_model_save_path = os.path.join("point/", self.args.dataset +
+                                                '_pre_model_' + self.timestamp + '.pt')
+        self.decoder_save_path = os.path.join("point/", self.args.dataset + '_decoder_' + self.timestamp + '.pt')
 
         # dataset
         self.dataset = MyDataset(self.args)
-        self.args.in_features = self.dataset.training_graphs.num_features
-        self.args.n_max_nodes = self.dataset.n_max_nodes
-        self.args.num_classes = self.dataset.training_graphs.num_classes
+        self.args.in_features = self.dataset.train_graphs.num_features
+        if self.args.task == 'cls':
+            self.args.num_classes = self.dataset.train_graphs.num_classes
 
         # model
         self.model = MyModel(args).to(args.device)
         # use this to help compute loss
         self.BrainUSLModel = Model()
-        # downstream
-        self.Decoder = MLP_Decoder(self.args).to(self.args.device)
 
-    def pre_train(self):
+    def pre_train(self, pre_model_path):
         self.model.train()
-        self.logger = get_logger('logs/' + self.args.dataset + '_pre_train.txt')
+        self.logger = get_logger('logs/' + self.args.dataset + '_pre_train_' + self.timestamp + '.txt')
+        for k in self.args.__dict__:
+            self.logger.info(k + ": " + str(self.args.__dict__[k]))
 
         if self.args.load_pre_model:
-            print('load model ...')
-            self.model.load_state_dict(torch.load(self.args.premodel_save_path))
+            print('Loading pre-model ...')
+            self.model.load_state_dict(torch.load(pre_model_path))
 
         optimizer = torch.optim.AdamW(self.model.parameters(), lr=self.args.pre_lr)
-        scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min',
-                                                               factor=self.args.lr_reduce_factor,
-                                                               patience=self.args.lr_schedule_patience,
-                                                               min_lr=self.args.min_lr,
-                                                               verbose=True)
-
-        losses = AverageMeter()
+        # optimizer = torch.optim.SGD(
+        #     self.model.parameters(),
+        #     lr=self.args.pre_lr,
+        #     momentum=0.9,
+        #     weight_decay=0.0001,
+        #     nesterov=False
+        # )
+        # scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer,
+        #                                                        factor=0.1,
+        #                                                        patience=200,
+        #                                                        verbose=True)
+        min_loss = 10
         for epoch in range(1, self.args.pre_epochs + 1):
+            losses = AverageMeter()
             start = timer()
             tic = timer()
 
-            batches = self.dataset.create_batches(self.dataset.training_graphs)
+            batches = tqdm(self.dataset.create_batches(self.dataset.train_graphs))
             for index, data in enumerate(batches):
                 optimizer.zero_grad()
 
@@ -101,6 +112,9 @@ class Trainer(object):
 
                 # contrastive loss
                 # infoNCE loss
+                # same_Loss1 = info_nce(y_pred_11, y_pred_12)
+                # same_Loss2 = info_nce(y_pred_21, y_pred_22)
+                # 图核loss
                 same_Loss1 = sameLoss(y_pred_11, y_pred_12)
                 same_Loss2 = sameLoss(y_pred_21, y_pred_22)
                 # 利用先验相似度增加正样本数量 loss
@@ -124,34 +138,102 @@ class Trainer(object):
 
                 loss.backward()
                 optimizer.step()
-                scheduler.step(loss)
-                print(epoch, index)
+                # scheduler.step(loss)
+                batches.set_description('Epoch: {}, Iter: {}'.format(epoch, index))
+                batches.set_postfix(loss=float(loss))
 
             end = timer()
-            msg = 'Epoch: {}\t Average loss: {}\t Time: {}'.format(epoch, losses.avg, end-start)
+            msg = 'Epoch: {}\t Average loss: {:.4f}\t Time: {:.4f}'.format(epoch, losses.avg, end - start)
             self.logger.info(msg)
+            if losses.avg < min_loss:
+                min_loss = losses.avg
+                torch.save(self.model.state_dict(), self.pre_model_save_path)
+                self.logger.info('Model saved!')
 
+    def kfold_train(self, pre_model_path):
+        self.logger = get_logger('logs/' + self.args.dataset + '_downstream_' + self.timestamp + '.txt')
+        self.logger.info(pre_model_path)
         for k in self.args.__dict__:
             self.logger.info(k + ": " + str(self.args.__dict__[k]))
-        torch.save(self.model.state_dict(), self.args.premodel_save_path)
 
-    def train(self):
+        data = self.dataset.train_graphs
+        if self.args.task == 'cls':
+            test_data = self.dataset.test_graphs
+        elif self.args.task == 'gsl':
+            test_data = self.dataset.test_graphs
 
-        self.model.load_state_dict(torch.load(self.args.pre_model_save_path))
-        self.logger = get_logger('logs/' + self.args.dataset + '_downstream.txt')
+        best_acc = 0
+        accs = AverageMeter()  # 统计每个fold的最佳
+        best_mse = 100
+        mses = AverageMeter()  # 统计每个fold的最佳
 
-        if self.args.load_GTCmodel:
-            print('load GTC ...')
-            self.Decoder.load_state_dict(torch.load(self.args.model_save_path))
+        self.logger.info('{} fold training...'.format(self.args.num_folds))
+        kfold = KFold(n_splits=self.args.num_folds, shuffle=True)
 
-        Decoder_optimizer = torch.optim.AdamW(self.Decoder.parameters(), lr=self.args.lr,
+        for fold, (train_indices, val_indices) in enumerate(kfold.split(data)):
+            fold = fold + 1
+
+            # data and loader
+            train_data = data[train_indices.astype(np.int64)]
+            val_data = data[val_indices.astype(np.int64)]
+
+            # train and get indicators
+            if self.args.task == 'cls':
+                train_loader = DataLoader(train_data, batch_size=self.args.batch_size, shuffle=True)
+
+                # this decoder and acc is already the best in this fold
+                decoder, acc = self.ds_train(self.logger, pre_model_path, fold, train_loader, val_data)
+                accs.update(acc)
+                if acc > best_acc:
+                    best_acc = acc
+                    best_decoder = decoder
+                    self.logger.info('New decoder selected on fold {}'.format(fold))
+
+            elif self.args.task == 'gsl':
+                train_loader = self.dataset.create_batches(train_data)
+                decoder, mse = self.ds_train(self.logger, pre_model_path, fold, train_loader, val_data)
+                mses.update(mse)
+                if mse < best_mse:
+                    best_mse = mse
+                    best_decoder = decoder
+                    self.logger.info('New decoder selected on fold {}'.format(fold))
+
+        if self.args.task == 'cls':
+            self.logger.info('Training finished! Tht best accuracy on val is {:.4f}, '
+                             'the average acc is {:.4f}'.format(best_acc, accs.avg))
+        elif self.args.task == 'gsl':
+            self.logger.info('Training finished! Tht best mse on val is {:.4f}, '
+                             'the average mse is {:.4f}'.format(best_mse, mses.avg))
+
+        # the best model on val for test
+        if self.args.task == 'cls':
+            test_acc, test_loss = self.ds_test(best_decoder, test_data)
+            self.logger.info('The accuracy on test data is {:.6f}'.format(test_acc))
+        elif self.args.task == 'gsl':
+            _, test_mse = self.ds_test(best_decoder, test_data)
+            self.logger.info('The mse on test data is {:.6f}'.format(test_mse))
+
+        torch.save(best_decoder.state_dict(), self.decoder_save_path)
+        self.logger.info('Decoder saved!')
+
+    def ds_train(self, logger, pre_model_path, fold, train_loader, test_data):
+        """downstream train classification"""
+        if self.args.decoder == 'mlp4':
+            self.decoder = MLP_Decoder(self.args).to(self.args.device)
+        elif self.args.decoder == 'mlp5':
+            self.decoder = MLP_Decoder5(self.args).to(self.args.device)
+
+        self.model.load_state_dict(torch.load(pre_model_path))
+        self.logger = logger
+
+        Decoder_optimizer = torch.optim.AdamW(self.decoder.parameters(), lr=self.args.lr,
                                               weight_decay=self.args.weight_decay)
         Decoder_scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(Decoder_optimizer, mode='min',
                                                                        factor=self.args.lr_reduce_factor,
                                                                        patience=self.args.lr_schedule_patience,
                                                                        min_lr=self.args.min_lr,
                                                                        verbose=True)
-        optimizer = torch.optim.AdamW(self.model.parameters(), lr=self.args.lr * 0.001,
+        optimizer = torch.optim.AdamW(self.model.parameters(), lr=self.args.lr * 0.1,
                                       weight_decay=self.args.weight_decay)
         scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min',
                                                                factor=self.args.lr_reduce_factor,
@@ -159,8 +241,10 @@ class Trainer(object):
                                                                min_lr=self.args.min_lr,
                                                                verbose=True)
 
-        min_test_mse = 1e10
-        for epoch in range(self.args.epochs):
+        best_test_acc = 0
+        best_test_mse = 100
+        best_decoder = self.decoder
+        for epoch in range(1, self.args.epochs + 1):
             if self.args.fine_tuning:
                 self.model.train()
             else:
@@ -169,220 +253,129 @@ class Trainer(object):
             tic = timer()
             losses = AverageMeter()
             accs = AverageMeter()
-            loader = self.dataset.create_batch(self.dataset.training_graphs)
-            for index, batch in enumerate(loader):
-                Decoder_optimizer.zero_grad()
-                # optimizer.zero_grad()
-                data = self.dataset.transform_single(batch)
-                #
-                x1, x2 = self.model.get_embeddings(data, data)
-                trues = data['target']
-                prediction = self.Decoder(x1, x2)
+            train_loader = tqdm(train_loader)
+            for index, batch in enumerate(train_loader):
 
-                loss = F.cross_entropy(prediction, trues, reduction='mean')
+                Decoder_optimizer.zero_grad()
+                if self.args.fine_tuning:
+                    optimizer.zero_grad()
+
+                if self.args.task == 'cls':
+                    g = self.dataset.transform_single(batch)
+                    trues = g['target']
+                    input1, input2 = self.model.get_embeddings(g, g)
+                    output = self.decoder(input1, input2)
+                    loss = F.cross_entropy(output, trues, reduction='mean')
+                elif self.args.task == 'gsl':
+                    [g1, g2] = batch
+                    trues = self.dataset.train_graphs.norm_ged[g1.i, g2.i].to(self.args.device)
+                    g1 = self.dataset.transform_single(g1)
+                    g2 = self.dataset.transform_single(g2)
+                    input1, input2 = self.model.get_embeddings(g1, g2)
+                    output = self.decoder(input1, input2)
+                    loss = F.mse_loss(output.squeeze(), trues)
+
                 loss.backward()
+                losses.update(loss)
+
                 Decoder_optimizer.step()
                 Decoder_scheduler.step(loss)
                 if self.args.fine_tuning:
                     optimizer.step()
                     scheduler.step(loss)
-                losses.update(loss.item())
 
-                pred = torch.argmax(prediction.cpu().detach(), dim=1)
-                trues = trues.cpu().detach()
-                acc = accuracy_score(trues, pred)
-                accs.update(acc)
-
-            msg = 'Epoch: {}\t Avg loss: {:.4f}\t Avg accuracy: {:.4f}'.format(epoch, losses.avg, accs.avg)
-            self.logger.info(msg)
-
-            if (epoch + 1) % max(1, self.args.iterations // 6) == 0:
-                test_mse = self.test()
-                if min_test_mse > test_mse and epoch > 20:
-                    min_test_mse = test_mse
-                    print('save  model...')
-                    torch.save(self.Decoder.state_dict(), self.args.model_save_path)
-
-    def kfold_train(self):
-        self.model.load_state_dict(torch.load(self.args.premodel_save_path))
-        # 假设已经定义了模型 model 和损失函数 criterion，并加载了数据集 data
-        # 定义超参数和交叉验证的折数
-        num_folds = 10
-        num_epochs = self.args.iterations // num_folds
-        # patience = num_epochs // 10
-        patience = 50
-        min_test_loss = 1e8
-        # 定义优化器和其他训练相关的参数
-        Decoder_optimizer = torch.optim.AdamW(self.Decoder.parameters(), lr=self.args.lr,
-                                              weight_decay=self.args.weight_decay)
-        Decoder_scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(Decoder_optimizer, mode='min',
-                                                                       factor=self.args.lr_reduce_factor,
-                                                                       patience=self.args.lr_schedule_patience,
-                                                                       min_lr=self.args.min_lr,
-                                                                       verbose=True)
-        # 创建十折交叉验证的分割器
-        kfold = KFold(n_splits=num_folds, shuffle=True)
-
-        # 循环进行交叉验证
-        data = self.dataset.training_graphs
-        for fold, (train_indices, val_indices) in enumerate(kfold.split(data)):
-            best_val_loss = 1e8
-            counter = 0
-            # 根据分割得到的训练集和验证集索引，创建对应的数据加载器
-            train_data = self.dataset.training_graphs[train_indices.astype(np.int64)]
-            val_data = self.dataset.training_graphs[val_indices.astype(np.int64)]
-            batches = self.dataset.create_batch(train_data)
-            # 训练和验证模型
-            for epoch in range(num_epochs):
-                loss_sum = 0
-                main_index = 0
-                max_acc_list = []
-                max_auc_list = []
-                max_f1_list = []
-                # 在训练集上进行训练
-                self.Decoder.train()
-                if self.args.fine_tuning:
-                    self.model.train()
-                else:
-                    self.model.eval()
-                for index, batch_pair in enumerate(batches):
-                    Decoder_optimizer.zero_grad()
-
-                    data = self.dataset.transform_single(batch_pair)
-                    #
-                    if self.args.fine_tuning:
-                        x1, x2 = self.model.get_embeddings(data, data)
-                    else:
-                        with torch.no_grad():
-                            x1, x2 = self.model.get_embeddings(data, data)
-                    trues = data['target']
-                    prediction = self.Decoder(x1, x2)
-                    loss = F.cross_entropy(prediction, trues, reduction='mean')
-                    loss.backward()
-                    Decoder_optimizer.step()
-                    loss_sum = loss_sum + loss.item()
-                    main_index = main_index + batch_pair.num_graphs
-                    pred = torch.argmax(prediction.cpu().detach(), dim=1)
+                if self.args.task == 'cls':
+                    pred = torch.argmax(output.cpu().detach(), dim=1)
                     trues = trues.cpu().detach()
                     acc = accuracy_score(trues, pred)
-                    if self.args.num_classes > 2:
-                        aucs = roc_auc_score(trues, prediction.cpu().detach(), multi_class='ovo', average='macro')
-                        f1, precision, recall = calculate_metrics(pred, trues, self.args.num_classes)
-                    else:
-                        aucs = roc_auc_score(trues, pred)
-                        f1, precision, recall = calculate_metrics(prediction.cpu().detach(), trues,
-                                                                  self.args.num_classes)
-                    max_acc_list.append(acc)
-                    max_auc_list.append(aucs)
-                    max_f1_list.append(f1)
-                # 计算平均
-                loss = loss_sum / main_index
-                acc = np.mean(max_acc_list)
-                aucs = np.mean(max_auc_list)
-                f1 = np.mean(max_f1_list)
-                # 在验证集上评估性能
-                val_loss, val_acc = self.validate(val_data)
-                # 判断是否提前停止训练
+                    accs.update(acc)
+                    train_loader.set_postfix(loss=float(loss), acc=float(acc))
+                elif self.args.task == 'gsl':
+                    train_loader.set_postfix(mse_loss=float(loss))
 
-                if val_loss < best_val_loss:
-                    best_val_loss = val_loss
-                    counter = 0
-                else:
-                    counter += 1
-                    if counter >= patience:
-                        print("Early stopping!")
-                        break
-                # 打印训练和验证损失
-                # print(f'Fold {fold + 1} | Epoch {epoch + 1}: Train Loss: {loss:.6f} ACC : {acc:.4f} | Val Loss: {val_loss:.6f} Val acc :{val_acc:.4f}')
-                write_log_file(self.f,
-                               f'Fold {fold + 1} | Epoch {epoch + 1}: Train Loss: {loss:.6f} ACC : {acc:.4f} | Val Loss: {val_loss:.6f} Val acc :{val_acc:.4f}')
-            test_loss = self.test()
-            if min_test_loss > test_loss:
-                min_test_mse = test_loss
-                print('save  model...')
-                torch.save(self.Decoder.state_dict(), self.args.model_save_path)
+            if self.args.task == 'cls':
+                msg = 'Fold: {}\t Epoch: {}\t Avg loss: {:.4f}\t Avg accuracy: {:.4f}\t ' \
+                      'Time: {:.4f}'.format(fold, epoch, losses.avg, accs.avg, timer() - tic)
+            elif self.args.task == 'gsl':
+                msg = 'Fold: {}\t Epoch: {}\t Avg loss: {:.4f}\t ' \
+                      'Time: {:.4f}'.format(fold, epoch, losses.avg, timer() - tic)
+            self.logger.info(msg)
 
-    def validate(self, val_data):
+            if epoch % 2 == 0:
+                if self.args.task == 'cls':
+                    test_acc, test_loss = self.ds_test(self.decoder, test_data)
+                    self.logger.info('Test acc: {:.4f}\t loss: {:.4f}'.format(test_acc, test_loss))
+                    if best_test_acc < test_acc and epoch > 5:
+                        best_test_acc = test_acc
+                        best_decoder = self.decoder
+                        self.logger.info('New best decoder within a fold!')
+                elif self.args.task == 'gsl':
+                    _, test_mse = self.ds_test(self.decoder, test_data)
+                    self.logger.info('Test mse: {:.4f}'.format(test_mse))
+                    if best_test_mse > test_mse and epoch > 5:
+                        best_test_mse = test_mse
+                        best_decoder = self.decoder
+                        self.logger.info('New best decoder within a fold!')
+
+        if self.args.task == 'cls':
+            return best_decoder, best_test_acc
+        elif self.args.task == 'gsl':
+            return best_decoder, best_test_mse
+
+    def ds_test(self, decoder, test_data):
+        decoder.eval()
         self.model.eval()
-        self.Decoder.eval()
-        batches = self.dataset.create_batch(val_data)
-        main_index = 0
-        loss_sum = 0
-        acc_list = []
-        with torch.no_grad():
-            for index, batch_pair in enumerate(batches):
-                data = self.dataset.transform_single(batch_pair)
-                x1, x2 = self.model.get_embeddings(data, data)
-                trues = data['target']
-                prediction = self.Decoder(x1, x2)
+        test_loader = DataLoader(test_data, batch_size=self.args.batch_size)
 
-                loss = F.cross_entropy(prediction, trues, reduction='mean')
-
-                main_index = main_index + batch_pair.num_graphs
-                loss_sum = loss_sum + loss.item()
-
-                pred = torch.argmax(prediction.cpu().detach(), dim=1)
-                trues = trues.cpu().detach()
-
-                acc = accuracy_score(trues, pred)
-                acc_list.append(acc)
-            loss = loss_sum / main_index
-
-        return loss, np.mean(acc_list)
-
-    def test(self):
-        tic = timer()
-        print('\nModel evaluation.')
-        self.Decoder.eval()
-        self.model.eval()
-        batches = self.dataset.create_batch(self.dataset.testing_graphs)
-        loss_list = []
-        acc_list = []
-        auc_list = []
-        f1_list = []
-        precision_list = []
-        recall_list = []
-        with torch.no_grad():
-            for index, batch_pair in enumerate(batches):
-                data = self.dataset.transform_single(batch_pair)
-                x1, x2 = self.model.get_embeddings(data, data)
-                trues = data['target']
-                prediction = self.Decoder(x1, x2)
-                loss = F.cross_entropy(prediction, trues, reduction='mean')
-                pred = torch.argmax(prediction.cpu().detach(), dim=1).numpy()
+        accs = AverageMeter()
+        losses = AverageMeter()
+        p_bar = tqdm(test_loader, colour='green')
+        for g in p_bar:
+            if self.args.task == 'cls':
+                g = self.dataset.transform_single(g)
+                input1, input2 = self.model.get_embeddings(g, g)
+                output = decoder(input1, input2)
+                trues = g['target']
+                loss = F.cross_entropy(output, trues, reduction='mean')
+                pred = torch.argmax(output.cpu().detach(), dim=1).numpy()
                 trues = trues.cpu().detach()
                 acc = accuracy_score(trues, pred)
-                if self.args.num_classes > 2:
-                    aucs = roc_auc_score(trues, prediction.cpu().detach(), multi_class='ovo', average='macro')
-                    f1, precision, recall = calculate_metrics(pred, trues, self.args.num_classes)
-                else:
-                    aucs = roc_auc_score(trues, pred)
-                    f1, precision, recall = calculate_metrics(prediction.cpu().detach(), trues, self.args.num_classes)
 
-                acc_list.append(acc)
-                auc_list.append(aucs)
-                f1_list.append(f1)
-                precision_list.append(precision)
-                recall_list.append(recall)
-                loss_list.append(loss.item())
+                p_bar.set_postfix(acc=acc)
 
-            loss = np.mean(loss_list)
-            toc = timer()
-            test_results = {
-                'test_loss': loss,
-                'test_acc': np.mean(acc_list),
-                'test_auc': np.mean(auc_list),
-                'test_f1': np.mean(f1_list),
-                'test_precision': np.mean(precision_list),
-                'test_recall': np.mean(recall_list),
-                '@time': toc - tic
-            }
-            if self.args.wandb_activate:
-                wandb.log(test_results)
-            # write_log_file(self.f,"Test: CEloss = {}\nacc = {} \tauc = {}\tf1={} \tprecision = {}\trecall={} @ {}s\n" \
-            #                .format(loss, np.mean(acc_list), np.mean(auc_list), np.mean(f1_list),np.mean(precision_list),np.mean(recall_list),
-            #                        toc - tic))
-            for k, v in test_results.items():
-                write_log_file(self.f, '\t {} = {}'.format(k, v))
-            write_log_file(self.f, '\n')
-            return loss
+                # if self.args.num_classes > 2:
+                #     aucs = roc_auc_score(trues, prediction.cpu().detach(), multi_class='ovo', average='macro')
+                #     f1, precision, recall = calculate_metrics(pred, trues, self.args.num_classes)
+                # else:
+                #     aucs = roc_auc_score(trues, pred)
+                #     f1, precision, recall = calculate_metrics(prediction.cpu().detach(), trues, self.args.num_classes)
+
+                accs.update(acc)
+                losses.update(loss)
+            elif self.args.task == 'gsl':
+                g2 = g
+
+                # get g1 (batched) from train_graphs
+                # because norm_ged only support train-train or train-test
+                dataset_size = len(self.dataset.train_graphs)
+                # shuffle all the idx
+                shuffled_idx = shuffle(np.array(range(dataset_size)), random_state=0)
+                # slice the top batch_size idx
+                train_idx = shuffled_idx[:int(g.num_graphs)].tolist()
+                # get the dataset
+                g1 = self.dataset.train_graphs[sample_mask(train_idx, dataset_size)]
+                # create batch
+                g1 = Batch.from_data_list([g for g in g1])
+
+                trues = self.dataset.train_graphs.norm_ged[g1.i, g2.i].to(self.args.device)
+
+                input1 = self.dataset.transform_single(g1)
+                input2 = self.dataset.transform_single(g2)
+                x1, x2 = self.model.get_embeddings(input1, input2)
+                output = decoder(x1, x2)
+                loss = F.mse_loss(output.squeeze(), trues)
+
+                p_bar.set_postfix(mse=float(loss))
+                losses.update(loss)
+
+        return accs.avg, losses.avg

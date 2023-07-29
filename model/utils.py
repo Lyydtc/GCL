@@ -42,6 +42,7 @@ def combine_graph(v_graphs, v_unbatched_edge_index, e_graphs, batch_size):
         g = dgl.graph((v_origin_edge_index[0], v_origin_edge_index[1]))
         sg = dgl.node_subgraph(g, selected_node)
         new_edge_index = sg.edges()
+        new_edge_index = torch.tensor([new_edge_index[0].tolist(), new_edge_index[1].tolist()])
 
         combined_graph = {
             'x': new_x,

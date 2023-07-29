@@ -15,9 +15,9 @@ class CensSubEncoder(nn.Module):
 
         self.cens_block = CensGCN(args, args.in_features, args.embedding_size, args.nfeat_e, args.dropout)
 
-        self.select_sub1 = SelectSubAttention(self.args, self.args.embedding_size, self.args.topk_ratio)
-        self.select_sub2 = SelectSubAttention(self.args, self.args.embedding_size, self.args.topk_ratio)
-        self.select_sub3 = SelectSubAttention(self.args, self.args.embedding_size, self.args.topk_ratio)
+        self.select_sub1 = SelectSubAttention(self.args, self.args.embedding_size, self.args.n_topk_ratio)
+        self.select_sub2 = SelectSubAttention(self.args, self.args.embedding_size, self.args.n_topk_ratio)
+        self.select_sub3 = SelectSubAttention(self.args, self.args.embedding_size, self.args.n_topk_ratio)
 
         self.select_sub4 = SelectSubAttention(self.args, self.args.nfeat_e, self.args.e_topk_ratio)
         self.select_sub5 = SelectSubAttention(self.args, self.args.nfeat_e, self.args.e_topk_ratio)
@@ -58,8 +58,8 @@ class CensSubEncoder(nn.Module):
 
         # final subgraph
         v_unbatched_edge_index = unbatch_edge_index(v_edge_index, v_batch)
-        subgraphs1 = combine_graph(v_subgraphs1, v_unbatched_edge_index, e_subgraphs1, self.args.batch_size)
-        subgraphs2 = combine_graph(v_subgraphs2, v_unbatched_edge_index, e_subgraphs2, self.args.batch_size)
+        subgraphs1 = combine_graph(v_subgraphs1, v_unbatched_edge_index, e_subgraphs1, v_x.shape[0])
+        subgraphs2 = combine_graph(v_subgraphs2, v_unbatched_edge_index, e_subgraphs2, v_x.shape[0])
 
         return subgraphs1, subgraphs2
 
@@ -83,7 +83,7 @@ class SelectSubAttention(nn.Module):
         x_list = unbatch(encoder_result_sparse, batch)
         edge_index_list = unbatch_edge_index(edge_index, batch)
         subgraphs = []
-        for i in range(self.args.batch_size):
+        for i in range(len(x_list)):
             sub_x, sub_edge_index, _, _, perm, _ = self.topk_pool(x=x_list[i],
                                                                   edge_index=edge_index_list[i])
             sub_edge_index = sort_edge_index(sub_edge_index)

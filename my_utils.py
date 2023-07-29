@@ -65,17 +65,11 @@ def calculate_metrics(predicted_labels, true_labels, task_type=2):
     return f1, precision, recall
 
 
-def write_log_file(file_name_path, log_str, print_flag=True):
-    if print_flag:
-        print(log_str)
-    if log_str is None:
-        log_str = 'None'
-    if os.path.isfile(file_name_path):
-        with open(file_name_path, 'a+') as log_file:
-            log_file.write(log_str + '\n')
-    else:
-        with open(file_name_path, 'w+') as log_file:
-            log_file.write(log_str + '\n')
+def sample_mask(idx, l):
+    """Create mask"""
+    mask = torch.zeros(l)
+    mask[idx] = 1
+    return torch.as_tensor(mask, dtype=torch.bool)
 
 
 def sort_edge_index(edge_index):

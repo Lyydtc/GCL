@@ -1,0 +1,122 @@
+Epoch: 1	 Average loss: 2.0226	 Time: 53.9975
+Model saved!
+Epoch: 2	 Average loss: 1.4346	 Time: 52.5745
+Model saved!
+Epoch: 3	 Average loss: 1.2545	 Time: 54.1606
+Model saved!
+Epoch: 4	 Average loss: 1.2044	 Time: 53.0497
+Model saved!
+Epoch: 5	 Average loss: 1.1389	 Time: 52.6240
+Model saved!
+Epoch: 6	 Average loss: 1.1549	 Time: 55.6054
+Epoch: 7	 Average loss: 1.1151	 Time: 51.9878
+Model saved!
+Epoch: 8	 Average loss: 1.0748	 Time: 56.4081
+Model saved!
+Epoch: 9	 Average loss: 1.0511	 Time: 52.2891
+Model saved!
+Epoch: 10	 Average loss: 1.0501	 Time: 52.3355
+Model saved!
+Epoch: 11	 Average loss: 1.0525	 Time: 51.8474
+Epoch: 12	 Average loss: 1.0580	 Time: 50.8164
+Epoch: 13	 Average loss: 1.0598	 Time: 49.7753
+Epoch: 14	 Average loss: 1.0495	 Time: 50.3980
+Model saved!
+Epoch: 15	 Average loss: 1.0004	 Time: 50.5204
+Model saved!
+Epoch: 16	 Average loss: 0.9951	 Time: 49.5351
+Model saved!
+Epoch: 17	 Average loss: 1.0016	 Time: 49.6230
+Epoch: 18	 Average loss: 1.0002	 Time: 49.9320
+Epoch: 19	 Average loss: 0.9907	 Time: 49.7313
+Model saved!
+Epoch: 20	 Average loss: 0.9740	 Time: 49.0860
+Model saved!
+Epoch: 21	 Average loss: 0.9691	 Time: 50.2860
+Model saved!
+Epoch: 22	 Average loss: 0.9848	 Time: 49.3173
+Epoch: 23	 Average loss: 0.9647	 Time: 50.0092
+Model saved!
+Epoch: 24	 Average loss: 0.9747	 Time: 50.4859
+Epoch: 25	 Average loss: 0.9828	 Time: 55.1011
+Epoch: 26	 Average loss: 0.9852	 Time: 54.3860
+Epoch: 27	 Average loss: 0.9913	 Time: 54.4268
+Epoch: 28	 Average loss: 0.9895	 Time: 55.9063
+Epoch: 29	 Average loss: 0.9749	 Time: 55.0188
+Epoch: 30	 Average loss: 0.9844	 Time: 54.0157
+Epoch: 31	 Average loss: 0.9743	 Time: 54.1638
+Epoch: 32	 Average loss: 1.0174	 Time: 54.1497
+Epoch: 33	 Average loss: 0.9800	 Time: 54.7019
+Epoch: 34	 Average loss: 0.9841	 Time: 54.1322
+Epoch: 35	 Average loss: 0.9703	 Time: 54.1565
+Epoch: 36	 Average loss: 0.9539	 Time: 53.3623
+Model saved!
+Epoch: 37	 Average loss: 0.9707	 Time: 54.3439
+Epoch: 38	 Average loss: 0.9537	 Time: 52.2686
+Model saved!
+Epoch: 39	 Average loss: 0.9518	 Time: 53.6032
+Model saved!
+Epoch: 40	 Average loss: 0.9465	 Time: 55.1523
+Model saved!
+Epoch: 41	 Average loss: 0.9730	 Time: 54.2922
+Epoch: 42	 Average loss: 0.9575	 Time: 56.1982
+Epoch: 43	 Average loss: 0.9300	 Time: 54.6192
+Model saved!
+Epoch: 44	 Average loss: 0.9463	 Time: 53.0510
+Epoch: 45	 Average loss: 0.9479	 Time: 57.6377
+Epoch: 46	 Average loss: 0.9369	 Time: 54.5639
+Epoch: 47	 Average loss: 0.9422	 Time: 54.1899
+Epoch: 48	 Average loss: 0.9673	 Time: 53.3811
+Epoch: 49	 Average loss: 0.9751	 Time: 54.3911
+Epoch: 50	 Average loss: 0.9575	 Time: 53.6226
+Epoch: 51	 Average loss: 0.9411	 Time: 53.3568
+Epoch: 52	 Average loss: 0.9663	 Time: 57.0899
+Epoch: 53	 Average loss: 0.9217	 Time: 57.5960
+Model saved!
+Epoch: 54	 Average loss: 0.9245	 Time: 57.3794
+Epoch: 55	 Average loss: 0.9561	 Time: 57.7542
+Epoch: 56	 Average loss: 0.9374	 Time: 57.8711
+Epoch: 57	 Average loss: 0.9283	 Time: 57.4076
+Epoch: 58	 Average loss: 0.9745	 Time: 57.3358
+Epoch: 59	 Average loss: 0.9596	 Time: 57.0495
+Epoch: 60	 Average loss: 0.9392	 Time: 57.1892
+Epoch: 61	 Average loss: 0.9421	 Time: 57.8883
+Epoch: 62	 Average loss: 0.9189	 Time: 57.7784
+Model saved!
+Epoch: 63	 Average loss: 0.9521	 Time: 57.2322
+Epoch: 64	 Average loss: 0.9494	 Time: 58.0613
+Epoch: 65	 Average loss: 0.9298	 Time: 57.2553
+Epoch: 66	 Average loss: 0.9359	 Time: 57.3806
+Epoch: 67	 Average loss: 0.9374	 Time: 58.0352
+Epoch: 68	 Average loss: 0.9439	 Time: 57.4216
+Epoch: 69	 Average loss: 0.9331	 Time: 57.0651
+Epoch: 70	 Average loss: 0.9308	 Time: 52.7354
+Epoch: 71	 Average loss: 0.9079	 Time: 51.5484
+Model saved!
+Epoch: 72	 Average loss: 0.9345	 Time: 52.8410
+Epoch: 73	 Average loss: 0.9256	 Time: 51.3850
+Epoch: 74	 Average loss: 0.9218	 Time: 51.0405
+Epoch: 75	 Average loss: 0.9165	 Time: 50.4823
+Epoch: 76	 Average loss: 0.9572	 Time: 51.2924
+Epoch: 77	 Average loss: 0.9379	 Time: 51.5219
+Epoch: 78	 Average loss: 0.9292	 Time: 51.0249
+Epoch: 79	 Average loss: 0.9314	 Time: 52.3367
+Epoch: 80	 Average loss: 0.9279	 Time: 51.4080
+Epoch: 81	 Average loss: 0.9214	 Time: 50.9569
+Epoch: 82	 Average loss: 0.9349	 Time: 50.4294
+Epoch: 83	 Average loss: 0.9179	 Time: 49.9806
+Epoch: 84	 Average loss: 0.9065	 Time: 50.0003
+Model saved!
+Epoch: 85	 Average loss: 0.9170	 Time: 50.5459
+Epoch: 86	 Average loss: 0.9275	 Time: 50.2834
+Epoch: 87	 Average loss: 0.9305	 Time: 50.0905
+Epoch: 88	 Average loss: 0.9285	 Time: 50.6521
+Epoch: 89	 Average loss: 0.9270	 Time: 52.2533
+Epoch: 90	 Average loss: 0.9358	 Time: 51.3836
+Epoch: 91	 Average loss: 0.9259	 Time: 53.0041
+Epoch: 92	 Average loss: 0.9122	 Time: 51.3814
+Epoch: 93	 Average loss: 0.9153	 Time: 51.2912
+Epoch: 94	 Average loss: 0.9391	 Time: 51.5324
+Epoch: 95	 Average loss: 0.9509	 Time: 53.2958
+Epoch: 96	 Average loss: 0.9447	 Time: 51.5096
+Epoch: 97	 Average loss: 0.9280	 Time: 51.3375

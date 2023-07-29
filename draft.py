@@ -9,11 +9,6 @@ from dgl import DropNode
 import torch
 from dgl import DropEdge
 from model import MultiHeadCrossAttentionLayer
-from model import MyModel, MLP_Decoder, GTCNet
 
 
-args = parsed_args
-model = GTCNet(args)
-
-input = torch.randn((64, 128))
 

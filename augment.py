@@ -11,9 +11,9 @@ def augment(data, args):
     for i in range(args.batch_size):
         dice = random.randint(1, 3)
         if dice == 1:
-            new_graph = drop_path(data[i], args.p_path, args.path_length)
+            new_graph = drop_node(data[i], args.p_node)
         elif dice == 2:
-            new_graph = drop_path(data[i], args.p_path, args.path_length)
+            new_graph = drop_edge(data[i], args.p_edge)
         else:
             new_graph = drop_path(data[i], args.p_path, args.path_length)
 

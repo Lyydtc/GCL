@@ -123,7 +123,7 @@ def distMatrix(bag, method="gaussian", gamma=1):
     return distMat
 
 
-def graph_simliarty(bag,method="gaussian", gamma=1):
+def graph_simliarty(bag, method="gaussian", gamma=1):
     n = bag.shape[0]
     graph_kernel = torch.zeros(size=(n, n))
     w = torch.zeros_like(bag)

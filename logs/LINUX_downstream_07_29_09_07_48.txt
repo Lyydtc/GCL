@@ -1,0 +1,3704 @@
+point/LINUX_pre_model_07_28_19_53_34.pt
+device: cuda:0
+seed: 2023
+task: gsl
+data_dir: datasets_new/
+dataset: LINUX
+split: 0.8
+init_node_encoding: OneHot
+rwpe_size: 20
+p_node: 0.2
+p_edge: 0.2
+p_path: 0.1
+path_length: 3
+embedding_size: 128
+dropout: 0.2
+msa_bias: True
+encoder_ffn_size: 128
+topk_ratio: 1
+switch: False
+nfeat_e: 8
+n_topk_ratio: 0.8
+e_topk_ratio: 0.1
+align: False
+align_size: 12
+n_heads: 4
+load_pre_model: 0
+pre_epochs: 200
+pre_lr: 0.0001
+T: 0.5
+y: 0.4
+decoder: mlp5
+ds_dropout: 0.3
+fine_tuning: 0
+num_folds: 10
+epochs: 200
+patience: 100
+batch_size: 32
+lr: 0.0001
+lr_reduce_factor: 0.5
+lr_schedule_patience: 600
+min_lr: 1e-07
+weight_decay: 0
+in_features: 8
+10 fold training...
+Fold: 1	 Epoch: 1	 Avg loss: 0.3267	 Time: 2.3446
+Fold: 1	 Epoch: 2	 Avg loss: 0.1599	 Time: 0.9279
+Test mse: 0.1324
+Fold: 1	 Epoch: 3	 Avg loss: 0.1131	 Time: 0.9643
+Fold: 1	 Epoch: 4	 Avg loss: 0.1097	 Time: 0.9237
+Test mse: 0.1119
+Fold: 1	 Epoch: 5	 Avg loss: 0.1081	 Time: 0.9287
+Fold: 1	 Epoch: 6	 Avg loss: 0.1070	 Time: 0.9301
+Test mse: 0.1093
+New best decoder within a fold!
+Fold: 1	 Epoch: 7	 Avg loss: 0.1058	 Time: 0.9428
+Fold: 1	 Epoch: 8	 Avg loss: 0.1045	 Time: 0.9718
+Test mse: 0.1058
+New best decoder within a fold!
+Fold: 1	 Epoch: 9	 Avg loss: 0.1030	 Time: 0.9395
+Fold: 1	 Epoch: 10	 Avg loss: 0.1014	 Time: 0.9080
+Test mse: 0.1006
+New best decoder within a fold!
+Fold: 1	 Epoch: 11	 Avg loss: 0.0997	 Time: 0.9309
+Fold: 1	 Epoch: 12	 Avg loss: 0.0979	 Time: 0.9321
+Test mse: 0.0948
+New best decoder within a fold!
+Fold: 1	 Epoch: 13	 Avg loss: 0.0961	 Time: 0.9270
+Fold: 1	 Epoch: 14	 Avg loss: 0.0943	 Time: 0.9151
+Test mse: 0.0891
+New best decoder within a fold!
+Fold: 1	 Epoch: 15	 Avg loss: 0.0923	 Time: 0.9650
+Fold: 1	 Epoch: 16	 Avg loss: 0.0905	 Time: 0.9248
+Test mse: 0.0835
+New best decoder within a fold!
+Fold: 1	 Epoch: 17	 Avg loss: 0.0886	 Time: 0.9407
+Fold: 1	 Epoch: 18	 Avg loss: 0.0867	 Time: 0.9147
+Test mse: 0.0779
+New best decoder within a fold!
+Fold: 1	 Epoch: 19	 Avg loss: 0.0848	 Time: 0.9270
+Fold: 1	 Epoch: 20	 Avg loss: 0.0831	 Time: 0.9279
+Test mse: 0.0719
+New best decoder within a fold!
+Fold: 1	 Epoch: 21	 Avg loss: 0.0812	 Time: 0.9153
+Fold: 1	 Epoch: 22	 Avg loss: 0.0794	 Time: 0.9182
+Test mse: 0.0671
+New best decoder within a fold!
+Fold: 1	 Epoch: 23	 Avg loss: 0.0778	 Time: 0.9390
+Fold: 1	 Epoch: 24	 Avg loss: 0.0763	 Time: 0.9148
+Test mse: 0.0638
+New best decoder within a fold!
+Fold: 1	 Epoch: 25	 Avg loss: 0.0750	 Time: 0.9207
+Fold: 1	 Epoch: 26	 Avg loss: 0.0739	 Time: 0.9187
+Test mse: 0.0623
+New best decoder within a fold!
+Fold: 1	 Epoch: 27	 Avg loss: 0.0729	 Time: 0.9300
+Fold: 1	 Epoch: 28	 Avg loss: 0.0720	 Time: 0.9150
+Test mse: 0.0627
+Fold: 1	 Epoch: 29	 Avg loss: 0.0710	 Time: 0.9170
+Fold: 1	 Epoch: 30	 Avg loss: 0.0700	 Time: 0.9240
+Test mse: 0.0621
+New best decoder within a fold!
+Fold: 1	 Epoch: 31	 Avg loss: 0.0688	 Time: 0.9492
+Fold: 1	 Epoch: 32	 Avg loss: 0.0679	 Time: 0.9077
+Test mse: 0.0603
+New best decoder within a fold!
+Fold: 1	 Epoch: 33	 Avg loss: 0.0670	 Time: 0.9315
+Fold: 1	 Epoch: 34	 Avg loss: 0.0661	 Time: 0.9120
+Test mse: 0.0595
+New best decoder within a fold!
+Fold: 1	 Epoch: 35	 Avg loss: 0.0652	 Time: 0.9400
+Fold: 1	 Epoch: 36	 Avg loss: 0.0645	 Time: 0.9358
+Test mse: 0.0581
+New best decoder within a fold!
+Fold: 1	 Epoch: 37	 Avg loss: 0.0638	 Time: 0.9145
+Fold: 1	 Epoch: 38	 Avg loss: 0.0629	 Time: 0.9246
+Test mse: 0.0569
+New best decoder within a fold!
+Fold: 1	 Epoch: 39	 Avg loss: 0.0621	 Time: 0.9664
+Fold: 1	 Epoch: 40	 Avg loss: 0.0614	 Time: 0.9250
+Test mse: 0.0560
+New best decoder within a fold!
+Fold: 1	 Epoch: 41	 Avg loss: 0.0605	 Time: 0.9207
+Fold: 1	 Epoch: 42	 Avg loss: 0.0598	 Time: 0.9210
+Test mse: 0.0544
+New best decoder within a fold!
+Fold: 1	 Epoch: 43	 Avg loss: 0.0591	 Time: 0.9125
+Fold: 1	 Epoch: 44	 Avg loss: 0.0585	 Time: 0.9093
+Test mse: 0.0543
+New best decoder within a fold!
+Fold: 1	 Epoch: 45	 Avg loss: 0.0577	 Time: 0.9136
+Fold: 1	 Epoch: 46	 Avg loss: 0.0570	 Time: 0.9311
+Test mse: 0.0529
+New best decoder within a fold!
+Fold: 1	 Epoch: 47	 Avg loss: 0.0564	 Time: 0.9105
+Fold: 1	 Epoch: 48	 Avg loss: 0.0555	 Time: 0.9168
+Test mse: 0.0518
+New best decoder within a fold!
+Fold: 1	 Epoch: 49	 Avg loss: 0.0548	 Time: 0.9226
+Fold: 1	 Epoch: 50	 Avg loss: 0.0541	 Time: 0.9122
+Test mse: 0.0512
+New best decoder within a fold!
+Fold: 1	 Epoch: 51	 Avg loss: 0.0534	 Time: 0.9250
+Fold: 1	 Epoch: 52	 Avg loss: 0.0527	 Time: 0.9282
+Test mse: 0.0504
+New best decoder within a fold!
+Fold: 1	 Epoch: 53	 Avg loss: 0.0522	 Time: 0.9293
+Fold: 1	 Epoch: 54	 Avg loss: 0.0515	 Time: 0.9752
+Test mse: 0.0501
+New best decoder within a fold!
+Fold: 1	 Epoch: 55	 Avg loss: 0.0506	 Time: 0.9295
+Fold: 1	 Epoch: 56	 Avg loss: 0.0499	 Time: 0.9386
+Test mse: 0.0495
+New best decoder within a fold!
+Fold: 1	 Epoch: 57	 Avg loss: 0.0493	 Time: 0.9320
+Fold: 1	 Epoch: 58	 Avg loss: 0.0486	 Time: 0.9186
+Test mse: 0.0491
+New best decoder within a fold!
+Fold: 1	 Epoch: 59	 Avg loss: 0.0479	 Time: 0.9628
+Fold: 1	 Epoch: 60	 Avg loss: 0.0471	 Time: 0.9592
+Test mse: 0.0481
+New best decoder within a fold!
+Fold: 1	 Epoch: 61	 Avg loss: 0.0464	 Time: 0.9721
+Fold: 1	 Epoch: 62	 Avg loss: 0.0458	 Time: 0.9938
+Test mse: 0.0476
+New best decoder within a fold!
+Fold: 1	 Epoch: 63	 Avg loss: 0.0454	 Time: 0.9238
+Fold: 1	 Epoch: 64	 Avg loss: 0.0448	 Time: 0.9124
+Test mse: 0.0469
+New best decoder within a fold!
+Fold: 1	 Epoch: 65	 Avg loss: 0.0441	 Time: 0.9631
+Fold: 1	 Epoch: 66	 Avg loss: 0.0433	 Time: 0.9568
+Test mse: 0.0464
+New best decoder within a fold!
+Fold: 1	 Epoch: 67	 Avg loss: 0.0427	 Time: 0.9261
+Fold: 1	 Epoch: 68	 Avg loss: 0.0419	 Time: 0.9248
+Test mse: 0.0450
+New best decoder within a fold!
+Fold: 1	 Epoch: 69	 Avg loss: 0.0411	 Time: 0.9701
+Fold: 1	 Epoch: 70	 Avg loss: 0.0404	 Time: 0.9289
+Test mse: 0.0441
+New best decoder within a fold!
+Fold: 1	 Epoch: 71	 Avg loss: 0.0396	 Time: 0.9385
+Fold: 1	 Epoch: 72	 Avg loss: 0.0390	 Time: 0.9132
+Test mse: 0.0432
+New best decoder within a fold!
+Fold: 1	 Epoch: 73	 Avg loss: 0.0383	 Time: 0.9342
+Fold: 1	 Epoch: 74	 Avg loss: 0.0377	 Time: 0.9316
+Test mse: 0.0424
+New best decoder within a fold!
+Fold: 1	 Epoch: 75	 Avg loss: 0.0371	 Time: 1.0029
+Fold: 1	 Epoch: 76	 Avg loss: 0.0363	 Time: 0.9175
+Test mse: 0.0411
+New best decoder within a fold!
+Fold: 1	 Epoch: 77	 Avg loss: 0.0356	 Time: 0.9479
+Fold: 1	 Epoch: 78	 Avg loss: 0.0348	 Time: 0.9560
+Test mse: 0.0403
+New best decoder within a fold!
+Fold: 1	 Epoch: 79	 Avg loss: 0.0343	 Time: 0.9147
+Fold: 1	 Epoch: 80	 Avg loss: 0.0336	 Time: 0.9144
+Test mse: 0.0396
+New best decoder within a fold!
+Fold: 1	 Epoch: 81	 Avg loss: 0.0330	 Time: 0.9741
+Fold: 1	 Epoch: 82	 Avg loss: 0.0323	 Time: 0.9391
+Test mse: 0.0390
+New best decoder within a fold!
+Fold: 1	 Epoch: 83	 Avg loss: 0.0316	 Time: 0.9134
+Fold: 1	 Epoch: 84	 Avg loss: 0.0311	 Time: 0.9257
+Test mse: 0.0383
+New best decoder within a fold!
+Fold: 1	 Epoch: 85	 Avg loss: 0.0304	 Time: 0.9488
+Fold: 1	 Epoch: 86	 Avg loss: 0.0296	 Time: 0.9209
+Test mse: 0.0372
+New best decoder within a fold!
+Fold: 1	 Epoch: 87	 Avg loss: 0.0289	 Time: 0.9283
+Fold: 1	 Epoch: 88	 Avg loss: 0.0284	 Time: 0.9620
+Test mse: 0.0362
+New best decoder within a fold!
+Fold: 1	 Epoch: 89	 Avg loss: 0.0276	 Time: 0.9275
+Fold: 1	 Epoch: 90	 Avg loss: 0.0272	 Time: 0.9158
+Test mse: 0.0357
+New best decoder within a fold!
+Fold: 1	 Epoch: 91	 Avg loss: 0.0265	 Time: 0.9232
+Fold: 1	 Epoch: 92	 Avg loss: 0.0260	 Time: 0.9468
+Test mse: 0.0345
+New best decoder within a fold!
+Fold: 1	 Epoch: 93	 Avg loss: 0.0252	 Time: 0.9204
+Fold: 1	 Epoch: 94	 Avg loss: 0.0248	 Time: 0.9104
+Test mse: 0.0344
+New best decoder within a fold!
+Fold: 1	 Epoch: 95	 Avg loss: 0.0242	 Time: 0.9188
+Fold: 1	 Epoch: 96	 Avg loss: 0.0236	 Time: 0.9197
+Test mse: 0.0336
+New best decoder within a fold!
+Fold: 1	 Epoch: 97	 Avg loss: 0.0230	 Time: 0.9458
+Fold: 1	 Epoch: 98	 Avg loss: 0.0225	 Time: 0.9553
+Test mse: 0.0327
+New best decoder within a fold!
+Fold: 1	 Epoch: 99	 Avg loss: 0.0219	 Time: 0.9175
+Fold: 1	 Epoch: 100	 Avg loss: 0.0215	 Time: 0.9465
+Test mse: 0.0320
+New best decoder within a fold!
+Fold: 1	 Epoch: 101	 Avg loss: 0.0210	 Time: 0.9272
+Fold: 1	 Epoch: 102	 Avg loss: 0.0206	 Time: 0.9183
+Test mse: 0.0315
+New best decoder within a fold!
+Fold: 1	 Epoch: 103	 Avg loss: 0.0203	 Time: 0.9239
+Fold: 1	 Epoch: 104	 Avg loss: 0.0199	 Time: 0.9251
+Test mse: 0.0302
+New best decoder within a fold!
+Fold: 1	 Epoch: 105	 Avg loss: 0.0196	 Time: 0.9229
+Fold: 1	 Epoch: 106	 Avg loss: 0.0191	 Time: 0.9135
+Test mse: 0.0297
+New best decoder within a fold!
+Fold: 1	 Epoch: 107	 Avg loss: 0.0186	 Time: 0.9337
+Fold: 1	 Epoch: 108	 Avg loss: 0.0182	 Time: 0.9516
+Test mse: 0.0289
+New best decoder within a fold!
+Fold: 1	 Epoch: 109	 Avg loss: 0.0177	 Time: 0.9173
+Fold: 1	 Epoch: 110	 Avg loss: 0.0176	 Time: 0.9312
+Test mse: 0.0279
+New best decoder within a fold!
+Fold: 1	 Epoch: 111	 Avg loss: 0.0173	 Time: 0.9255
+Fold: 1	 Epoch: 112	 Avg loss: 0.0170	 Time: 0.9154
+Test mse: 0.0273
+New best decoder within a fold!
+Fold: 1	 Epoch: 113	 Avg loss: 0.0166	 Time: 0.9246
+Fold: 1	 Epoch: 114	 Avg loss: 0.0161	 Time: 0.9306
+Test mse: 0.0263
+New best decoder within a fold!
+Fold: 1	 Epoch: 115	 Avg loss: 0.0162	 Time: 0.9423
+Fold: 1	 Epoch: 116	 Avg loss: 0.0158	 Time: 0.9242
+Test mse: 0.0255
+New best decoder within a fold!
+Fold: 1	 Epoch: 117	 Avg loss: 0.0157	 Time: 0.9292
+Fold: 1	 Epoch: 118	 Avg loss: 0.0153	 Time: 0.9193
+Test mse: 0.0254
+New best decoder within a fold!
+Fold: 1	 Epoch: 119	 Avg loss: 0.0150	 Time: 0.9172
+Fold: 1	 Epoch: 120	 Avg loss: 0.0147	 Time: 0.9210
+Test mse: 0.0244
+New best decoder within a fold!
+Fold: 1	 Epoch: 121	 Avg loss: 0.0145	 Time: 0.9485
+Fold: 1	 Epoch: 122	 Avg loss: 0.0141	 Time: 0.9370
+Test mse: 0.0241
+New best decoder within a fold!
+Fold: 1	 Epoch: 123	 Avg loss: 0.0140	 Time: 1.0297
+Fold: 1	 Epoch: 124	 Avg loss: 0.0140	 Time: 0.9222
+Test mse: 0.0243
+Fold: 1	 Epoch: 125	 Avg loss: 0.0141	 Time: 0.9305
+Fold: 1	 Epoch: 126	 Avg loss: 0.0142	 Time: 0.9374
+Test mse: 0.0249
+Fold: 1	 Epoch: 127	 Avg loss: 0.0144	 Time: 0.9354
+Fold: 1	 Epoch: 128	 Avg loss: 0.0151	 Time: 0.9223
+Test mse: 0.0247
+Fold: 1	 Epoch: 129	 Avg loss: 0.0152	 Time: 0.9273
+Fold: 1	 Epoch: 130	 Avg loss: 0.0150	 Time: 0.9188
+Test mse: 0.0277
+Fold: 1	 Epoch: 131	 Avg loss: 0.0144	 Time: 0.9692
+Fold: 1	 Epoch: 132	 Avg loss: 0.0138	 Time: 0.9374
+Test mse: 0.0277
+Fold: 1	 Epoch: 133	 Avg loss: 0.0129	 Time: 0.9508
+Fold: 1	 Epoch: 134	 Avg loss: 0.0120	 Time: 0.9359
+Test mse: 0.0244
+Fold: 1	 Epoch: 135	 Avg loss: 0.0112	 Time: 0.9113
+Fold: 1	 Epoch: 136	 Avg loss: 0.0111	 Time: 0.9077
+Test mse: 0.0229
+New best decoder within a fold!
+Fold: 1	 Epoch: 137	 Avg loss: 0.0108	 Time: 0.9124
+Fold: 1	 Epoch: 138	 Avg loss: 0.0108	 Time: 0.9069
+Test mse: 0.0228
+New best decoder within a fold!
+Fold: 1	 Epoch: 139	 Avg loss: 0.0107	 Time: 0.9122
+Fold: 1	 Epoch: 140	 Avg loss: 0.0108	 Time: 0.9065
+Test mse: 0.0232
+Fold: 1	 Epoch: 141	 Avg loss: 0.0107	 Time: 0.9334
+Fold: 1	 Epoch: 142	 Avg loss: 0.0107	 Time: 0.9198
+Test mse: 0.0231
+Fold: 1	 Epoch: 143	 Avg loss: 0.0104	 Time: 0.9294
+Fold: 1	 Epoch: 144	 Avg loss: 0.0103	 Time: 0.9862
+Test mse: 0.0247
+Fold: 1	 Epoch: 145	 Avg loss: 0.0100	 Time: 0.9575
+Fold: 1	 Epoch: 146	 Avg loss: 0.0098	 Time: 1.0120
+Test mse: 0.0244
+Fold: 1	 Epoch: 147	 Avg loss: 0.0096	 Time: 0.9483
+Fold: 1	 Epoch: 148	 Avg loss: 0.0093	 Time: 1.0159
+Test mse: 0.0226
+New best decoder within a fold!
+Fold: 1	 Epoch: 149	 Avg loss: 0.0087	 Time: 0.9129
+Fold: 1	 Epoch: 150	 Avg loss: 0.0083	 Time: 1.1364
+Test mse: 0.0212
+New best decoder within a fold!
+Fold: 1	 Epoch: 151	 Avg loss: 0.0081	 Time: 0.9808
+Fold: 1	 Epoch: 152	 Avg loss: 0.0079	 Time: 0.9969
+Test mse: 0.0214
+Fold: 1	 Epoch: 153	 Avg loss: 0.0080	 Time: 1.0280
+Fold: 1	 Epoch: 154	 Avg loss: 0.0080	 Time: 0.9341
+Test mse: 0.0219
+Fold: 1	 Epoch: 155	 Avg loss: 0.0080	 Time: 0.9301
+Fold: 1	 Epoch: 156	 Avg loss: 0.0081	 Time: 0.9211
+Test mse: 0.0218
+Fold: 1	 Epoch: 157	 Avg loss: 0.0082	 Time: 0.9392
+Fold: 1	 Epoch: 158	 Avg loss: 0.0084	 Time: 0.9260
+Test mse: 0.0210
+New best decoder within a fold!
+Fold: 1	 Epoch: 159	 Avg loss: 0.0086	 Time: 0.9113
+Fold: 1	 Epoch: 160	 Avg loss: 0.0087	 Time: 0.9364
+Test mse: 0.0212
+Fold: 1	 Epoch: 161	 Avg loss: 0.0091	 Time: 0.9280
+Fold: 1	 Epoch: 162	 Avg loss: 0.0088	 Time: 0.9244
+Test mse: 0.0227
+Fold: 1	 Epoch: 163	 Avg loss: 0.0083	 Time: 0.9118
+Fold: 1	 Epoch: 164	 Avg loss: 0.0076	 Time: 0.9269
+Test mse: 0.0204
+New best decoder within a fold!
+Fold: 1	 Epoch: 165	 Avg loss: 0.0072	 Time: 0.9005
+Fold: 1	 Epoch: 166	 Avg loss: 0.0070	 Time: 0.9149
+Test mse: 0.0202
+New best decoder within a fold!
+Fold: 1	 Epoch: 167	 Avg loss: 0.0072	 Time: 0.9276
+Fold: 1	 Epoch: 168	 Avg loss: 0.0069	 Time: 0.9065
+Test mse: 0.0199
+New best decoder within a fold!
+Fold: 1	 Epoch: 169	 Avg loss: 0.0070	 Time: 0.9334
+Fold: 1	 Epoch: 170	 Avg loss: 0.0069	 Time: 0.9262
+Test mse: 0.0201
+Fold: 1	 Epoch: 171	 Avg loss: 0.0071	 Time: 0.9306
+Fold: 1	 Epoch: 172	 Avg loss: 0.0071	 Time: 0.9173
+Test mse: 0.0211
+Fold: 1	 Epoch: 173	 Avg loss: 0.0070	 Time: 0.9241
+Fold: 1	 Epoch: 174	 Avg loss: 0.0068	 Time: 0.8994
+Test mse: 0.0214
+Fold: 1	 Epoch: 175	 Avg loss: 0.0064	 Time: 0.9163
+Fold: 1	 Epoch: 176	 Avg loss: 0.0060	 Time: 0.9071
+Test mse: 0.0212
+Fold: 1	 Epoch: 177	 Avg loss: 0.0055	 Time: 0.9054
+Fold: 1	 Epoch: 178	 Avg loss: 0.0053	 Time: 0.9560
+Test mse: 0.0208
+Fold: 1	 Epoch: 179	 Avg loss: 0.0051	 Time: 0.9300
+Fold: 1	 Epoch: 180	 Avg loss: 0.0050	 Time: 0.9182
+Test mse: 0.0209
+Fold: 1	 Epoch: 181	 Avg loss: 0.0049	 Time: 0.9114
+Fold: 1	 Epoch: 182	 Avg loss: 0.0047	 Time: 0.9361
+Test mse: 0.0204
+Fold: 1	 Epoch: 183	 Avg loss: 0.0047	 Time: 0.9353
+Fold: 1	 Epoch: 184	 Avg loss: 0.0046	 Time: 1.0091
+Test mse: 0.0219
+Fold: 1	 Epoch: 185	 Avg loss: 0.0047	 Time: 0.9295
+Fold: 1	 Epoch: 186	 Avg loss: 0.0046	 Time: 0.9165
+Test mse: 0.0218
+Fold: 1	 Epoch: 187	 Avg loss: 0.0045	 Time: 0.9143
+Fold: 1	 Epoch: 188	 Avg loss: 0.0046	 Time: 0.9363
+Test mse: 0.0209
+Fold: 1	 Epoch: 189	 Avg loss: 0.0048	 Time: 0.9232
+Fold: 1	 Epoch: 190	 Avg loss: 0.0054	 Time: 0.9594
+Test mse: 0.0219
+Fold: 1	 Epoch: 191	 Avg loss: 0.0061	 Time: 0.9318
+Fold: 1	 Epoch: 192	 Avg loss: 0.0071	 Time: 0.9429
+Test mse: 0.0254
+Fold: 1	 Epoch: 193	 Avg loss: 0.0080	 Time: 0.9255
+Fold: 1	 Epoch: 194	 Avg loss: 0.0069	 Time: 0.9356
+Test mse: 0.0249
+Fold: 1	 Epoch: 195	 Avg loss: 0.0062	 Time: 0.9177
+Fold: 1	 Epoch: 196	 Avg loss: 0.0061	 Time: 0.9359
+Test mse: 0.0231
+Fold: 1	 Epoch: 197	 Avg loss: 0.0059	 Time: 0.9131
+Fold: 1	 Epoch: 198	 Avg loss: 0.0047	 Time: 0.9158
+Test mse: 0.0228
+Fold: 1	 Epoch: 199	 Avg loss: 0.0040	 Time: 0.9207
+Fold: 1	 Epoch: 200	 Avg loss: 0.0038	 Time: 0.9411
+Test mse: 0.0223
+New decoder selected on fold 1
+Fold: 2	 Epoch: 1	 Avg loss: 0.6803	 Time: 0.9525
+Fold: 2	 Epoch: 2	 Avg loss: 0.3361	 Time: 0.9220
+Test mse: 0.1149
+Fold: 2	 Epoch: 3	 Avg loss: 0.1159	 Time: 0.9146
+Fold: 2	 Epoch: 4	 Avg loss: 0.1167	 Time: 0.9403
+Test mse: 0.1149
+Fold: 2	 Epoch: 5	 Avg loss: 0.1163	 Time: 0.9116
+Fold: 2	 Epoch: 6	 Avg loss: 0.1162	 Time: 0.9313
+Test mse: 0.1134
+New best decoder within a fold!
+Fold: 2	 Epoch: 7	 Avg loss: 0.1161	 Time: 0.9382
+Fold: 2	 Epoch: 8	 Avg loss: 0.1158	 Time: 0.9120
+Test mse: 0.1122
+New best decoder within a fold!
+Fold: 2	 Epoch: 9	 Avg loss: 0.1154	 Time: 0.9269
+Fold: 2	 Epoch: 10	 Avg loss: 0.1152	 Time: 0.9252
+Test mse: 0.1109
+New best decoder within a fold!
+Fold: 2	 Epoch: 11	 Avg loss: 0.1148	 Time: 0.9154
+Fold: 2	 Epoch: 12	 Avg loss: 0.1143	 Time: 0.9246
+Test mse: 0.1098
+New best decoder within a fold!
+Fold: 2	 Epoch: 13	 Avg loss: 0.1139	 Time: 0.9346
+Fold: 2	 Epoch: 14	 Avg loss: 0.1135	 Time: 0.9321
+Test mse: 0.1086
+New best decoder within a fold!
+Fold: 2	 Epoch: 15	 Avg loss: 0.1131	 Time: 0.9348
+Fold: 2	 Epoch: 16	 Avg loss: 0.1127	 Time: 0.9163
+Test mse: 0.1075
+New best decoder within a fold!
+Fold: 2	 Epoch: 17	 Avg loss: 0.1123	 Time: 0.9209
+Fold: 2	 Epoch: 18	 Avg loss: 0.1118	 Time: 0.9437
+Test mse: 0.1063
+New best decoder within a fold!
+Fold: 2	 Epoch: 19	 Avg loss: 0.1114	 Time: 0.9323
+Fold: 2	 Epoch: 20	 Avg loss: 0.1110	 Time: 0.9106
+Test mse: 0.1051
+New best decoder within a fold!
+Fold: 2	 Epoch: 21	 Avg loss: 0.1106	 Time: 0.9084
+Fold: 2	 Epoch: 22	 Avg loss: 0.1101	 Time: 0.9199
+Test mse: 0.1038
+New best decoder within a fold!
+Fold: 2	 Epoch: 23	 Avg loss: 0.1097	 Time: 0.9537
+Fold: 2	 Epoch: 24	 Avg loss: 0.1092	 Time: 0.9324
+Test mse: 0.1025
+New best decoder within a fold!
+Fold: 2	 Epoch: 25	 Avg loss: 0.1087	 Time: 0.9420
+Fold: 2	 Epoch: 26	 Avg loss: 0.1082	 Time: 0.9038
+Test mse: 0.1010
+New best decoder within a fold!
+Fold: 2	 Epoch: 27	 Avg loss: 0.1077	 Time: 0.9478
+Fold: 2	 Epoch: 28	 Avg loss: 0.1071	 Time: 0.9052
+Test mse: 0.0996
+New best decoder within a fold!
+Fold: 2	 Epoch: 29	 Avg loss: 0.1064	 Time: 0.9370
+Fold: 2	 Epoch: 30	 Avg loss: 0.1058	 Time: 1.0005
+Test mse: 0.0979
+New best decoder within a fold!
+Fold: 2	 Epoch: 31	 Avg loss: 0.1051	 Time: 0.9320
+Fold: 2	 Epoch: 32	 Avg loss: 0.1045	 Time: 0.9330
+Test mse: 0.0960
+New best decoder within a fold!
+Fold: 2	 Epoch: 33	 Avg loss: 0.1037	 Time: 0.9336
+Fold: 2	 Epoch: 34	 Avg loss: 0.1030	 Time: 0.9094
+Test mse: 0.0942
+New best decoder within a fold!
+Fold: 2	 Epoch: 35	 Avg loss: 0.1021	 Time: 0.9106
+Fold: 2	 Epoch: 36	 Avg loss: 0.1013	 Time: 0.9191
+Test mse: 0.0922
+New best decoder within a fold!
+Fold: 2	 Epoch: 37	 Avg loss: 0.1003	 Time: 0.9099
+Fold: 2	 Epoch: 38	 Avg loss: 0.0994	 Time: 0.9503
+Test mse: 0.0902
+New best decoder within a fold!
+Fold: 2	 Epoch: 39	 Avg loss: 0.0984	 Time: 0.9218
+Fold: 2	 Epoch: 40	 Avg loss: 0.0973	 Time: 0.9086
+Test mse: 0.0881
+New best decoder within a fold!
+Fold: 2	 Epoch: 41	 Avg loss: 0.0961	 Time: 0.9198
+Fold: 2	 Epoch: 42	 Avg loss: 0.0950	 Time: 0.9243
+Test mse: 0.0858
+New best decoder within a fold!
+Fold: 2	 Epoch: 43	 Avg loss: 0.0938	 Time: 0.9408
+Fold: 2	 Epoch: 44	 Avg loss: 0.0925	 Time: 0.9180
+Test mse: 0.0836
+New best decoder within a fold!
+Fold: 2	 Epoch: 45	 Avg loss: 0.0912	 Time: 0.9485
+Fold: 2	 Epoch: 46	 Avg loss: 0.0899	 Time: 0.9923
+Test mse: 0.0811
+New best decoder within a fold!
+Fold: 2	 Epoch: 47	 Avg loss: 0.0886	 Time: 0.9190
+Fold: 2	 Epoch: 48	 Avg loss: 0.0872	 Time: 0.9367
+Test mse: 0.0784
+New best decoder within a fold!
+Fold: 2	 Epoch: 49	 Avg loss: 0.0857	 Time: 0.9102
+Fold: 2	 Epoch: 50	 Avg loss: 0.0843	 Time: 0.9505
+Test mse: 0.0753
+New best decoder within a fold!
+Fold: 2	 Epoch: 51	 Avg loss: 0.0828	 Time: 0.9293
+Fold: 2	 Epoch: 52	 Avg loss: 0.0813	 Time: 0.9382
+Test mse: 0.0722
+New best decoder within a fold!
+Fold: 2	 Epoch: 53	 Avg loss: 0.0799	 Time: 0.9425
+Fold: 2	 Epoch: 54	 Avg loss: 0.0785	 Time: 0.9328
+Test mse: 0.0690
+New best decoder within a fold!
+Fold: 2	 Epoch: 55	 Avg loss: 0.0771	 Time: 0.9090
+Fold: 2	 Epoch: 56	 Avg loss: 0.0758	 Time: 0.9241
+Test mse: 0.0659
+New best decoder within a fold!
+Fold: 2	 Epoch: 57	 Avg loss: 0.0747	 Time: 0.9196
+Fold: 2	 Epoch: 58	 Avg loss: 0.0735	 Time: 0.9263
+Test mse: 0.0632
+New best decoder within a fold!
+Fold: 2	 Epoch: 59	 Avg loss: 0.0724	 Time: 0.9052
+Fold: 2	 Epoch: 60	 Avg loss: 0.0713	 Time: 0.9215
+Test mse: 0.0611
+New best decoder within a fold!
+Fold: 2	 Epoch: 61	 Avg loss: 0.0704	 Time: 0.9650
+Fold: 2	 Epoch: 62	 Avg loss: 0.0695	 Time: 0.9309
+Test mse: 0.0593
+New best decoder within a fold!
+Fold: 2	 Epoch: 63	 Avg loss: 0.0685	 Time: 0.9072
+Fold: 2	 Epoch: 64	 Avg loss: 0.0677	 Time: 0.9294
+Test mse: 0.0576
+New best decoder within a fold!
+Fold: 2	 Epoch: 65	 Avg loss: 0.0668	 Time: 0.9061
+Fold: 2	 Epoch: 66	 Avg loss: 0.0660	 Time: 0.9531
+Test mse: 0.0563
+New best decoder within a fold!
+Fold: 2	 Epoch: 67	 Avg loss: 0.0652	 Time: 0.9732
+Fold: 2	 Epoch: 68	 Avg loss: 0.0645	 Time: 1.3794
+Test mse: 0.0549
+New best decoder within a fold!
+Fold: 2	 Epoch: 69	 Avg loss: 0.0637	 Time: 0.9688
+Fold: 2	 Epoch: 70	 Avg loss: 0.0629	 Time: 0.9024
+Test mse: 0.0539
+New best decoder within a fold!
+Fold: 2	 Epoch: 71	 Avg loss: 0.0622	 Time: 0.9150
+Fold: 2	 Epoch: 72	 Avg loss: 0.0614	 Time: 0.9308
+Test mse: 0.0529
+New best decoder within a fold!
+Fold: 2	 Epoch: 73	 Avg loss: 0.0608	 Time: 0.9446
+Fold: 2	 Epoch: 74	 Avg loss: 0.0600	 Time: 0.9186
+Test mse: 0.0520
+New best decoder within a fold!
+Fold: 2	 Epoch: 75	 Avg loss: 0.0594	 Time: 0.9387
+Fold: 2	 Epoch: 76	 Avg loss: 0.0586	 Time: 0.9396
+Test mse: 0.0512
+New best decoder within a fold!
+Fold: 2	 Epoch: 77	 Avg loss: 0.0579	 Time: 0.9329
+Fold: 2	 Epoch: 78	 Avg loss: 0.0572	 Time: 0.9013
+Test mse: 0.0502
+New best decoder within a fold!
+Fold: 2	 Epoch: 79	 Avg loss: 0.0564	 Time: 0.9061
+Fold: 2	 Epoch: 80	 Avg loss: 0.0559	 Time: 0.9219
+Test mse: 0.0494
+New best decoder within a fold!
+Fold: 2	 Epoch: 81	 Avg loss: 0.0552	 Time: 0.9167
+Fold: 2	 Epoch: 82	 Avg loss: 0.0545	 Time: 0.9099
+Test mse: 0.0484
+New best decoder within a fold!
+Fold: 2	 Epoch: 83	 Avg loss: 0.0537	 Time: 0.9096
+Fold: 2	 Epoch: 84	 Avg loss: 0.0529	 Time: 0.9300
+Test mse: 0.0474
+New best decoder within a fold!
+Fold: 2	 Epoch: 85	 Avg loss: 0.0523	 Time: 0.9097
+Fold: 2	 Epoch: 86	 Avg loss: 0.0517	 Time: 0.9358
+Test mse: 0.0466
+New best decoder within a fold!
+Fold: 2	 Epoch: 87	 Avg loss: 0.0509	 Time: 0.9365
+Fold: 2	 Epoch: 88	 Avg loss: 0.0503	 Time: 0.9246
+Test mse: 0.0455
+New best decoder within a fold!
+Fold: 2	 Epoch: 89	 Avg loss: 0.0495	 Time: 0.9422
+Fold: 2	 Epoch: 90	 Avg loss: 0.0489	 Time: 0.9370
+Test mse: 0.0446
+New best decoder within a fold!
+Fold: 2	 Epoch: 91	 Avg loss: 0.0482	 Time: 0.9143
+Fold: 2	 Epoch: 92	 Avg loss: 0.0476	 Time: 0.9523
+Test mse: 0.0439
+New best decoder within a fold!
+Fold: 2	 Epoch: 93	 Avg loss: 0.0469	 Time: 0.8991
+Fold: 2	 Epoch: 94	 Avg loss: 0.0463	 Time: 0.9193
+Test mse: 0.0432
+New best decoder within a fold!
+Fold: 2	 Epoch: 95	 Avg loss: 0.0456	 Time: 0.9373
+Fold: 2	 Epoch: 96	 Avg loss: 0.0451	 Time: 0.9222
+Test mse: 0.0418
+New best decoder within a fold!
+Fold: 2	 Epoch: 97	 Avg loss: 0.0445	 Time: 0.9144
+Fold: 2	 Epoch: 98	 Avg loss: 0.0439	 Time: 0.8949
+Test mse: 0.0408
+New best decoder within a fold!
+Fold: 2	 Epoch: 99	 Avg loss: 0.0434	 Time: 0.9522
+Fold: 2	 Epoch: 100	 Avg loss: 0.0428	 Time: 0.9438
+Test mse: 0.0398
+New best decoder within a fold!
+Fold: 2	 Epoch: 101	 Avg loss: 0.0423	 Time: 0.9569
+Fold: 2	 Epoch: 102	 Avg loss: 0.0418	 Time: 0.9146
+Test mse: 0.0393
+New best decoder within a fold!
+Fold: 2	 Epoch: 103	 Avg loss: 0.0413	 Time: 0.9992
+Fold: 2	 Epoch: 104	 Avg loss: 0.0407	 Time: 1.0250
+Test mse: 0.0380
+New best decoder within a fold!
+Fold: 2	 Epoch: 105	 Avg loss: 0.0402	 Time: 0.9563
+Fold: 2	 Epoch: 106	 Avg loss: 0.0396	 Time: 0.9562
+Test mse: 0.0371
+New best decoder within a fold!
+Fold: 2	 Epoch: 107	 Avg loss: 0.0391	 Time: 0.9640
+Fold: 2	 Epoch: 108	 Avg loss: 0.0385	 Time: 0.9152
+Test mse: 0.0363
+New best decoder within a fold!
+Fold: 2	 Epoch: 109	 Avg loss: 0.0380	 Time: 1.0041
+Fold: 2	 Epoch: 110	 Avg loss: 0.0376	 Time: 0.9414
+Test mse: 0.0346
+New best decoder within a fold!
+Fold: 2	 Epoch: 111	 Avg loss: 0.0368	 Time: 0.9747
+Fold: 2	 Epoch: 112	 Avg loss: 0.0363	 Time: 0.9789
+Test mse: 0.0334
+New best decoder within a fold!
+Fold: 2	 Epoch: 113	 Avg loss: 0.0356	 Time: 0.9710
+Fold: 2	 Epoch: 114	 Avg loss: 0.0350	 Time: 0.9450
+Test mse: 0.0318
+New best decoder within a fold!
+Fold: 2	 Epoch: 115	 Avg loss: 0.0343	 Time: 0.9086
+Fold: 2	 Epoch: 116	 Avg loss: 0.0338	 Time: 0.9087
+Test mse: 0.0309
+New best decoder within a fold!
+Fold: 2	 Epoch: 117	 Avg loss: 0.0333	 Time: 0.9124
+Fold: 2	 Epoch: 118	 Avg loss: 0.0327	 Time: 0.9456
+Test mse: 0.0298
+New best decoder within a fold!
+Fold: 2	 Epoch: 119	 Avg loss: 0.0321	 Time: 0.9188
+Fold: 2	 Epoch: 120	 Avg loss: 0.0316	 Time: 0.9165
+Test mse: 0.0288
+New best decoder within a fold!
+Fold: 2	 Epoch: 121	 Avg loss: 0.0311	 Time: 0.9437
+Fold: 2	 Epoch: 122	 Avg loss: 0.0305	 Time: 0.9361
+Test mse: 0.0279
+New best decoder within a fold!
+Fold: 2	 Epoch: 123	 Avg loss: 0.0299	 Time: 0.9165
+Fold: 2	 Epoch: 124	 Avg loss: 0.0295	 Time: 0.9372
+Test mse: 0.0272
+New best decoder within a fold!
+Fold: 2	 Epoch: 125	 Avg loss: 0.0289	 Time: 0.9201
+Fold: 2	 Epoch: 126	 Avg loss: 0.0285	 Time: 0.9110
+Test mse: 0.0265
+New best decoder within a fold!
+Fold: 2	 Epoch: 127	 Avg loss: 0.0280	 Time: 0.9111
+Fold: 2	 Epoch: 128	 Avg loss: 0.0275	 Time: 0.9204
+Test mse: 0.0260
+New best decoder within a fold!
+Fold: 2	 Epoch: 129	 Avg loss: 0.0271	 Time: 0.9280
+Fold: 2	 Epoch: 130	 Avg loss: 0.0266	 Time: 0.9338
+Test mse: 0.0255
+New best decoder within a fold!
+Fold: 2	 Epoch: 131	 Avg loss: 0.0262	 Time: 0.9181
+Fold: 2	 Epoch: 132	 Avg loss: 0.0258	 Time: 0.9195
+Test mse: 0.0248
+New best decoder within a fold!
+Fold: 2	 Epoch: 133	 Avg loss: 0.0255	 Time: 0.9017
+Fold: 2	 Epoch: 134	 Avg loss: 0.0251	 Time: 0.9403
+Test mse: 0.0245
+New best decoder within a fold!
+Fold: 2	 Epoch: 135	 Avg loss: 0.0247	 Time: 0.9091
+Fold: 2	 Epoch: 136	 Avg loss: 0.0242	 Time: 0.9043
+Test mse: 0.0240
+New best decoder within a fold!
+Fold: 2	 Epoch: 137	 Avg loss: 0.0239	 Time: 0.9131
+Fold: 2	 Epoch: 138	 Avg loss: 0.0235	 Time: 0.9310
+Test mse: 0.0237
+New best decoder within a fold!
+Fold: 2	 Epoch: 139	 Avg loss: 0.0231	 Time: 0.9118
+Fold: 2	 Epoch: 140	 Avg loss: 0.0228	 Time: 0.9185
+Test mse: 0.0235
+New best decoder within a fold!
+Fold: 2	 Epoch: 141	 Avg loss: 0.0225	 Time: 0.9344
+Fold: 2	 Epoch: 142	 Avg loss: 0.0221	 Time: 0.9125
+Test mse: 0.0231
+New best decoder within a fold!
+Fold: 2	 Epoch: 143	 Avg loss: 0.0217	 Time: 0.9152
+Fold: 2	 Epoch: 144	 Avg loss: 0.0215	 Time: 0.9248
+Test mse: 0.0228
+New best decoder within a fold!
+Fold: 2	 Epoch: 145	 Avg loss: 0.0211	 Time: 0.9336
+Fold: 2	 Epoch: 146	 Avg loss: 0.0209	 Time: 0.9218
+Test mse: 0.0222
+New best decoder within a fold!
+Fold: 2	 Epoch: 147	 Avg loss: 0.0205	 Time: 0.9057
+Fold: 2	 Epoch: 148	 Avg loss: 0.0202	 Time: 0.9060
+Test mse: 0.0221
+New best decoder within a fold!
+Fold: 2	 Epoch: 149	 Avg loss: 0.0197	 Time: 0.9111
+Fold: 2	 Epoch: 150	 Avg loss: 0.0194	 Time: 0.9243
+Test mse: 0.0217
+New best decoder within a fold!
+Fold: 2	 Epoch: 151	 Avg loss: 0.0191	 Time: 0.9055
+Fold: 2	 Epoch: 152	 Avg loss: 0.0189	 Time: 0.9061
+Test mse: 0.0216
+New best decoder within a fold!
+Fold: 2	 Epoch: 153	 Avg loss: 0.0186	 Time: 0.9245
+Fold: 2	 Epoch: 154	 Avg loss: 0.0182	 Time: 0.9021
+Test mse: 0.0211
+New best decoder within a fold!
+Fold: 2	 Epoch: 155	 Avg loss: 0.0179	 Time: 0.9008
+Fold: 2	 Epoch: 156	 Avg loss: 0.0177	 Time: 0.9075
+Test mse: 0.0209
+New best decoder within a fold!
+Fold: 2	 Epoch: 157	 Avg loss: 0.0173	 Time: 0.9081
+Fold: 2	 Epoch: 158	 Avg loss: 0.0171	 Time: 0.9238
+Test mse: 0.0205
+New best decoder within a fold!
+Fold: 2	 Epoch: 159	 Avg loss: 0.0168	 Time: 0.9193
+Fold: 2	 Epoch: 160	 Avg loss: 0.0164	 Time: 1.0461
+Test mse: 0.0205
+Fold: 2	 Epoch: 161	 Avg loss: 0.0163	 Time: 1.0179
+Fold: 2	 Epoch: 162	 Avg loss: 0.0159	 Time: 0.9747
+Test mse: 0.0201
+New best decoder within a fold!
+Fold: 2	 Epoch: 163	 Avg loss: 0.0158	 Time: 0.9280
+Fold: 2	 Epoch: 164	 Avg loss: 0.0154	 Time: 0.9187
+Test mse: 0.0200
+New best decoder within a fold!
+Fold: 2	 Epoch: 165	 Avg loss: 0.0152	 Time: 0.9530
+Fold: 2	 Epoch: 166	 Avg loss: 0.0150	 Time: 0.9429
+Test mse: 0.0200
+Fold: 2	 Epoch: 167	 Avg loss: 0.0148	 Time: 0.9317
+Fold: 2	 Epoch: 168	 Avg loss: 0.0145	 Time: 1.0810
+Test mse: 0.0198
+New best decoder within a fold!
+Fold: 2	 Epoch: 169	 Avg loss: 0.0142	 Time: 1.0420
+Fold: 2	 Epoch: 170	 Avg loss: 0.0139	 Time: 1.2038
+Test mse: 0.0198
+New best decoder within a fold!
+Fold: 2	 Epoch: 171	 Avg loss: 0.0137	 Time: 1.1396
+Fold: 2	 Epoch: 172	 Avg loss: 0.0135	 Time: 1.0497
+Test mse: 0.0197
+New best decoder within a fold!
+Fold: 2	 Epoch: 173	 Avg loss: 0.0134	 Time: 1.1173
+Fold: 2	 Epoch: 174	 Avg loss: 0.0131	 Time: 1.1358
+Test mse: 0.0195
+New best decoder within a fold!
+Fold: 2	 Epoch: 175	 Avg loss: 0.0130	 Time: 1.1185
+Fold: 2	 Epoch: 176	 Avg loss: 0.0127	 Time: 0.9838
+Test mse: 0.0195
+Fold: 2	 Epoch: 177	 Avg loss: 0.0125	 Time: 0.9860
+Fold: 2	 Epoch: 178	 Avg loss: 0.0124	 Time: 1.1506
+Test mse: 0.0196
+Fold: 2	 Epoch: 179	 Avg loss: 0.0122	 Time: 1.2095
+Fold: 2	 Epoch: 180	 Avg loss: 0.0120	 Time: 1.0699
+Test mse: 0.0194
+New best decoder within a fold!
+Fold: 2	 Epoch: 181	 Avg loss: 0.0118	 Time: 0.9939
+Fold: 2	 Epoch: 182	 Avg loss: 0.0116	 Time: 1.0189
+Test mse: 0.0193
+New best decoder within a fold!
+Fold: 2	 Epoch: 183	 Avg loss: 0.0114	 Time: 0.9541
+Fold: 2	 Epoch: 184	 Avg loss: 0.0114	 Time: 0.9760
+Test mse: 0.0193
+New best decoder within a fold!
+Fold: 2	 Epoch: 185	 Avg loss: 0.0111	 Time: 1.0720
+Fold: 2	 Epoch: 186	 Avg loss: 0.0108	 Time: 0.9852
+Test mse: 0.0192
+New best decoder within a fold!
+Fold: 2	 Epoch: 187	 Avg loss: 0.0107	 Time: 0.9688
+Fold: 2	 Epoch: 188	 Avg loss: 0.0106	 Time: 1.0000
+Test mse: 0.0191
+New best decoder within a fold!
+Fold: 2	 Epoch: 189	 Avg loss: 0.0104	 Time: 1.0706
+Fold: 2	 Epoch: 190	 Avg loss: 0.0103	 Time: 1.3171
+Test mse: 0.0191
+Fold: 2	 Epoch: 191	 Avg loss: 0.0101	 Time: 1.3961
+Fold: 2	 Epoch: 192	 Avg loss: 0.0101	 Time: 1.4195
+Test mse: 0.0190
+New best decoder within a fold!
+Fold: 2	 Epoch: 193	 Avg loss: 0.0099	 Time: 1.3486
+Fold: 2	 Epoch: 194	 Avg loss: 0.0097	 Time: 1.5013
+Test mse: 0.0190
+Fold: 2	 Epoch: 195	 Avg loss: 0.0096	 Time: 1.3685
+Fold: 2	 Epoch: 196	 Avg loss: 0.0095	 Time: 1.2687
+Test mse: 0.0189
+New best decoder within a fold!
+Fold: 2	 Epoch: 197	 Avg loss: 0.0093	 Time: 1.0773
+Fold: 2	 Epoch: 198	 Avg loss: 0.0092	 Time: 1.0015
+Test mse: 0.0189
+Fold: 2	 Epoch: 199	 Avg loss: 0.0091	 Time: 1.0814
+Fold: 2	 Epoch: 200	 Avg loss: 0.0091	 Time: 1.0276
+Test mse: 0.0188
+New best decoder within a fold!
+New decoder selected on fold 2
+Fold: 3	 Epoch: 1	 Avg loss: 0.3302	 Time: 1.2589
+Fold: 3	 Epoch: 2	 Avg loss: 0.1822	 Time: 1.2377
+Test mse: 0.1247
+Fold: 3	 Epoch: 3	 Avg loss: 0.1188	 Time: 1.0109
+Fold: 3	 Epoch: 4	 Avg loss: 0.1209	 Time: 1.0052
+Test mse: 0.1259
+Fold: 3	 Epoch: 5	 Avg loss: 0.1203	 Time: 1.0153
+Fold: 3	 Epoch: 6	 Avg loss: 0.1194	 Time: 1.2214
+Test mse: 0.1237
+New best decoder within a fold!
+Fold: 3	 Epoch: 7	 Avg loss: 0.1190	 Time: 1.0840
+Fold: 3	 Epoch: 8	 Avg loss: 0.1187	 Time: 1.0312
+Test mse: 0.1231
+New best decoder within a fold!
+Fold: 3	 Epoch: 9	 Avg loss: 0.1183	 Time: 1.1351
+Fold: 3	 Epoch: 10	 Avg loss: 0.1179	 Time: 1.0106
+Test mse: 0.1219
+New best decoder within a fold!
+Fold: 3	 Epoch: 11	 Avg loss: 0.1175	 Time: 1.1022
+Fold: 3	 Epoch: 12	 Avg loss: 0.1170	 Time: 1.0764
+Test mse: 0.1206
+New best decoder within a fold!
+Fold: 3	 Epoch: 13	 Avg loss: 0.1165	 Time: 1.1291
+Fold: 3	 Epoch: 14	 Avg loss: 0.1159	 Time: 0.9986
+Test mse: 0.1189
+New best decoder within a fold!
+Fold: 3	 Epoch: 15	 Avg loss: 0.1154	 Time: 1.1007
+Fold: 3	 Epoch: 16	 Avg loss: 0.1148	 Time: 1.0191
+Test mse: 0.1170
+New best decoder within a fold!
+Fold: 3	 Epoch: 17	 Avg loss: 0.1142	 Time: 1.0201
+Fold: 3	 Epoch: 18	 Avg loss: 0.1136	 Time: 1.0134
+Test mse: 0.1149
+New best decoder within a fold!
+Fold: 3	 Epoch: 19	 Avg loss: 0.1129	 Time: 1.2467
+Fold: 3	 Epoch: 20	 Avg loss: 0.1122	 Time: 1.2258
+Test mse: 0.1124
+New best decoder within a fold!
+Fold: 3	 Epoch: 21	 Avg loss: 0.1115	 Time: 0.9836
+Fold: 3	 Epoch: 22	 Avg loss: 0.1108	 Time: 1.0281
+Test mse: 0.1098
+New best decoder within a fold!
+Fold: 3	 Epoch: 23	 Avg loss: 0.1099	 Time: 1.0025
+Fold: 3	 Epoch: 24	 Avg loss: 0.1090	 Time: 1.0056
+Test mse: 0.1067
+New best decoder within a fold!
+Fold: 3	 Epoch: 25	 Avg loss: 0.1080	 Time: 1.0932
+Fold: 3	 Epoch: 26	 Avg loss: 0.1068	 Time: 1.0674
+Test mse: 0.1028
+New best decoder within a fold!
+Fold: 3	 Epoch: 27	 Avg loss: 0.1057	 Time: 1.1057
+Fold: 3	 Epoch: 28	 Avg loss: 0.1042	 Time: 1.0996
+Test mse: 0.0989
+New best decoder within a fold!
+Fold: 3	 Epoch: 29	 Avg loss: 0.1028	 Time: 1.1670
+Fold: 3	 Epoch: 30	 Avg loss: 0.1009	 Time: 1.0417
+Test mse: 0.0944
+New best decoder within a fold!
+Fold: 3	 Epoch: 31	 Avg loss: 0.0991	 Time: 1.1511
+Fold: 3	 Epoch: 32	 Avg loss: 0.0966	 Time: 0.9468
+Test mse: 0.0898
+New best decoder within a fold!
+Fold: 3	 Epoch: 33	 Avg loss: 0.0943	 Time: 1.0175
+Fold: 3	 Epoch: 34	 Avg loss: 0.0914	 Time: 0.9784
+Test mse: 0.0855
+New best decoder within a fold!
+Fold: 3	 Epoch: 35	 Avg loss: 0.0881	 Time: 0.9878
+Fold: 3	 Epoch: 36	 Avg loss: 0.0851	 Time: 1.0995
+Test mse: 0.0799
+New best decoder within a fold!
+Fold: 3	 Epoch: 37	 Avg loss: 0.0819	 Time: 0.9980
+Fold: 3	 Epoch: 38	 Avg loss: 0.0791	 Time: 1.1925
+Test mse: 0.0731
+New best decoder within a fold!
+Fold: 3	 Epoch: 39	 Avg loss: 0.0765	 Time: 1.3264
+Fold: 3	 Epoch: 40	 Avg loss: 0.0742	 Time: 1.1908
+Test mse: 0.0667
+New best decoder within a fold!
+Fold: 3	 Epoch: 41	 Avg loss: 0.0723	 Time: 1.1297
+Fold: 3	 Epoch: 42	 Avg loss: 0.0706	 Time: 1.1765
+Test mse: 0.0620
+New best decoder within a fold!
+Fold: 3	 Epoch: 43	 Avg loss: 0.0689	 Time: 1.1878
+Fold: 3	 Epoch: 44	 Avg loss: 0.0675	 Time: 1.0118
+Test mse: 0.0589
+New best decoder within a fold!
+Fold: 3	 Epoch: 45	 Avg loss: 0.0663	 Time: 1.0114
+Fold: 3	 Epoch: 46	 Avg loss: 0.0649	 Time: 1.1246
+Test mse: 0.0565
+New best decoder within a fold!
+Fold: 3	 Epoch: 47	 Avg loss: 0.0638	 Time: 1.0394
+Fold: 3	 Epoch: 48	 Avg loss: 0.0625	 Time: 1.0759
+Test mse: 0.0549
+New best decoder within a fold!
+Fold: 3	 Epoch: 49	 Avg loss: 0.0616	 Time: 1.0713
+Fold: 3	 Epoch: 50	 Avg loss: 0.0605	 Time: 0.9571
+Test mse: 0.0531
+New best decoder within a fold!
+Fold: 3	 Epoch: 51	 Avg loss: 0.0596	 Time: 1.1904
+Fold: 3	 Epoch: 52	 Avg loss: 0.0584	 Time: 1.1143
+Test mse: 0.0516
+New best decoder within a fold!
+Fold: 3	 Epoch: 53	 Avg loss: 0.0576	 Time: 1.1610
+Fold: 3	 Epoch: 54	 Avg loss: 0.0563	 Time: 1.0485
+Test mse: 0.0502
+New best decoder within a fold!
+Fold: 3	 Epoch: 55	 Avg loss: 0.0554	 Time: 1.0608
+Fold: 3	 Epoch: 56	 Avg loss: 0.0543	 Time: 1.0324
+Test mse: 0.0486
+New best decoder within a fold!
+Fold: 3	 Epoch: 57	 Avg loss: 0.0532	 Time: 0.9774
+Fold: 3	 Epoch: 58	 Avg loss: 0.0520	 Time: 1.0237
+Test mse: 0.0469
+New best decoder within a fold!
+Fold: 3	 Epoch: 59	 Avg loss: 0.0509	 Time: 1.1108
+Fold: 3	 Epoch: 60	 Avg loss: 0.0496	 Time: 1.1470
+Test mse: 0.0455
+New best decoder within a fold!
+Fold: 3	 Epoch: 61	 Avg loss: 0.0485	 Time: 1.0132
+Fold: 3	 Epoch: 62	 Avg loss: 0.0471	 Time: 1.0901
+Test mse: 0.0437
+New best decoder within a fold!
+Fold: 3	 Epoch: 63	 Avg loss: 0.0460	 Time: 1.0648
+Fold: 3	 Epoch: 64	 Avg loss: 0.0449	 Time: 1.0546
+Test mse: 0.0421
+New best decoder within a fold!
+Fold: 3	 Epoch: 65	 Avg loss: 0.0437	 Time: 1.1161
+Fold: 3	 Epoch: 66	 Avg loss: 0.0428	 Time: 1.2353
+Test mse: 0.0403
+New best decoder within a fold!
+Fold: 3	 Epoch: 67	 Avg loss: 0.0418	 Time: 1.0173
+Fold: 3	 Epoch: 68	 Avg loss: 0.0408	 Time: 0.9416
+Test mse: 0.0388
+New best decoder within a fold!
+Fold: 3	 Epoch: 69	 Avg loss: 0.0398	 Time: 0.9474
+Fold: 3	 Epoch: 70	 Avg loss: 0.0390	 Time: 0.9519
+Test mse: 0.0372
+New best decoder within a fold!
+Fold: 3	 Epoch: 71	 Avg loss: 0.0383	 Time: 1.0085
+Fold: 3	 Epoch: 72	 Avg loss: 0.0373	 Time: 0.9966
+Test mse: 0.0360
+New best decoder within a fold!
+Fold: 3	 Epoch: 73	 Avg loss: 0.0366	 Time: 1.1493
+Fold: 3	 Epoch: 74	 Avg loss: 0.0358	 Time: 0.9605
+Test mse: 0.0350
+New best decoder within a fold!
+Fold: 3	 Epoch: 75	 Avg loss: 0.0349	 Time: 0.9301
+Fold: 3	 Epoch: 76	 Avg loss: 0.0342	 Time: 0.9330
+Test mse: 0.0340
+New best decoder within a fold!
+Fold: 3	 Epoch: 77	 Avg loss: 0.0334	 Time: 1.0927
+Fold: 3	 Epoch: 78	 Avg loss: 0.0328	 Time: 1.1657
+Test mse: 0.0332
+New best decoder within a fold!
+Fold: 3	 Epoch: 79	 Avg loss: 0.0319	 Time: 1.1045
+Fold: 3	 Epoch: 80	 Avg loss: 0.0311	 Time: 1.2085
+Test mse: 0.0324
+New best decoder within a fold!
+Fold: 3	 Epoch: 81	 Avg loss: 0.0304	 Time: 1.0191
+Fold: 3	 Epoch: 82	 Avg loss: 0.0296	 Time: 0.9671
+Test mse: 0.0316
+New best decoder within a fold!
+Fold: 3	 Epoch: 83	 Avg loss: 0.0288	 Time: 0.9398
+Fold: 3	 Epoch: 84	 Avg loss: 0.0280	 Time: 0.9660
+Test mse: 0.0311
+New best decoder within a fold!
+Fold: 3	 Epoch: 85	 Avg loss: 0.0274	 Time: 1.0417
+Fold: 3	 Epoch: 86	 Avg loss: 0.0267	 Time: 1.0240
+Test mse: 0.0307
+New best decoder within a fold!
+Fold: 3	 Epoch: 87	 Avg loss: 0.0264	 Time: 0.9998
+Fold: 3	 Epoch: 88	 Avg loss: 0.0254	 Time: 1.0578
+Test mse: 0.0304
+New best decoder within a fold!
+Fold: 3	 Epoch: 89	 Avg loss: 0.0247	 Time: 0.9841
+Fold: 3	 Epoch: 90	 Avg loss: 0.0239	 Time: 1.0229
+Test mse: 0.0298
+New best decoder within a fold!
+Fold: 3	 Epoch: 91	 Avg loss: 0.0234	 Time: 0.9788
+Fold: 3	 Epoch: 92	 Avg loss: 0.0229	 Time: 0.9465
+Test mse: 0.0292
+New best decoder within a fold!
+Fold: 3	 Epoch: 93	 Avg loss: 0.0224	 Time: 0.9357
+Fold: 3	 Epoch: 94	 Avg loss: 0.0217	 Time: 0.9760
+Test mse: 0.0295
+Fold: 3	 Epoch: 95	 Avg loss: 0.0208	 Time: 1.1495
+Fold: 3	 Epoch: 96	 Avg loss: 0.0203	 Time: 0.9340
+Test mse: 0.0294
+Fold: 3	 Epoch: 97	 Avg loss: 0.0197	 Time: 0.9597
+Fold: 3	 Epoch: 98	 Avg loss: 0.0193	 Time: 0.9868
+Test mse: 0.0289
+New best decoder within a fold!
+Fold: 3	 Epoch: 99	 Avg loss: 0.0185	 Time: 1.0130
+Fold: 3	 Epoch: 100	 Avg loss: 0.0183	 Time: 1.0529
+Test mse: 0.0290
+Fold: 3	 Epoch: 101	 Avg loss: 0.0177	 Time: 1.0220
+Fold: 3	 Epoch: 102	 Avg loss: 0.0174	 Time: 1.1492
+Test mse: 0.0288
+New best decoder within a fold!
+Fold: 3	 Epoch: 103	 Avg loss: 0.0168	 Time: 0.9770
+Fold: 3	 Epoch: 104	 Avg loss: 0.0164	 Time: 1.0800
+Test mse: 0.0290
+Fold: 3	 Epoch: 105	 Avg loss: 0.0160	 Time: 1.1332
+Fold: 3	 Epoch: 106	 Avg loss: 0.0155	 Time: 1.0659
+Test mse: 0.0285
+New best decoder within a fold!
+Fold: 3	 Epoch: 107	 Avg loss: 0.0149	 Time: 0.9973
+Fold: 3	 Epoch: 108	 Avg loss: 0.0145	 Time: 1.1481
+Test mse: 0.0277
+New best decoder within a fold!
+Fold: 3	 Epoch: 109	 Avg loss: 0.0141	 Time: 1.1954
+Fold: 3	 Epoch: 110	 Avg loss: 0.0136	 Time: 0.9648
+Test mse: 0.0275
+New best decoder within a fold!
+Fold: 3	 Epoch: 111	 Avg loss: 0.0132	 Time: 1.0311
+Fold: 3	 Epoch: 112	 Avg loss: 0.0129	 Time: 0.9927
+Test mse: 0.0272
+New best decoder within a fold!
+Fold: 3	 Epoch: 113	 Avg loss: 0.0126	 Time: 1.0601
+Fold: 3	 Epoch: 114	 Avg loss: 0.0123	 Time: 0.9453
+Test mse: 0.0265
+New best decoder within a fold!
+Fold: 3	 Epoch: 115	 Avg loss: 0.0120	 Time: 0.9492
+Fold: 3	 Epoch: 116	 Avg loss: 0.0117	 Time: 0.9082
+Test mse: 0.0267
+Fold: 3	 Epoch: 117	 Avg loss: 0.0115	 Time: 0.8657
+Fold: 3	 Epoch: 118	 Avg loss: 0.0113	 Time: 1.0678
+Test mse: 0.0266
+Fold: 3	 Epoch: 119	 Avg loss: 0.0110	 Time: 1.1012
+Fold: 3	 Epoch: 120	 Avg loss: 0.0108	 Time: 0.9433
+Test mse: 0.0262
+New best decoder within a fold!
+Fold: 3	 Epoch: 121	 Avg loss: 0.0105	 Time: 0.8971
+Fold: 3	 Epoch: 122	 Avg loss: 0.0104	 Time: 0.9496
+Test mse: 0.0255
+New best decoder within a fold!
+Fold: 3	 Epoch: 123	 Avg loss: 0.0100	 Time: 0.9402
+Fold: 3	 Epoch: 124	 Avg loss: 0.0101	 Time: 1.0331
+Test mse: 0.0256
+Fold: 3	 Epoch: 125	 Avg loss: 0.0099	 Time: 1.1014
+Fold: 3	 Epoch: 126	 Avg loss: 0.0097	 Time: 0.9923
+Test mse: 0.0260
+Fold: 3	 Epoch: 127	 Avg loss: 0.0097	 Time: 1.0951
+Fold: 3	 Epoch: 128	 Avg loss: 0.0095	 Time: 1.0957
+Test mse: 0.0257
+Fold: 3	 Epoch: 129	 Avg loss: 0.0093	 Time: 1.2409
+Fold: 3	 Epoch: 130	 Avg loss: 0.0092	 Time: 0.9807
+Test mse: 0.0258
+Fold: 3	 Epoch: 131	 Avg loss: 0.0091	 Time: 0.9352
+Fold: 3	 Epoch: 132	 Avg loss: 0.0089	 Time: 1.0446
+Test mse: 0.0255
+Fold: 3	 Epoch: 133	 Avg loss: 0.0089	 Time: 1.0114
+Fold: 3	 Epoch: 134	 Avg loss: 0.0088	 Time: 0.9583
+Test mse: 0.0254
+New best decoder within a fold!
+Fold: 3	 Epoch: 135	 Avg loss: 0.0088	 Time: 1.0623
+Fold: 3	 Epoch: 136	 Avg loss: 0.0084	 Time: 1.1155
+Test mse: 0.0266
+Fold: 3	 Epoch: 137	 Avg loss: 0.0085	 Time: 1.2717
+Fold: 3	 Epoch: 138	 Avg loss: 0.0086	 Time: 1.4122
+Test mse: 0.0263
+Fold: 3	 Epoch: 139	 Avg loss: 0.0085	 Time: 1.0968
+Fold: 3	 Epoch: 140	 Avg loss: 0.0088	 Time: 1.2334
+Test mse: 0.0263
+Fold: 3	 Epoch: 141	 Avg loss: 0.0092	 Time: 0.9927
+Fold: 3	 Epoch: 142	 Avg loss: 0.0099	 Time: 0.9656
+Test mse: 0.0302
+Fold: 3	 Epoch: 143	 Avg loss: 0.0111	 Time: 1.0083
+Fold: 3	 Epoch: 144	 Avg loss: 0.0129	 Time: 0.9841
+Test mse: 0.0332
+Fold: 3	 Epoch: 145	 Avg loss: 0.0153	 Time: 0.9366
+Fold: 3	 Epoch: 146	 Avg loss: 0.0110	 Time: 0.9606
+Test mse: 0.0278
+Fold: 3	 Epoch: 147	 Avg loss: 0.0075	 Time: 0.9286
+Fold: 3	 Epoch: 148	 Avg loss: 0.0074	 Time: 0.9308
+Test mse: 0.0271
+Fold: 3	 Epoch: 149	 Avg loss: 0.0083	 Time: 0.9316
+Fold: 3	 Epoch: 150	 Avg loss: 0.0086	 Time: 0.9467
+Test mse: 0.0262
+Fold: 3	 Epoch: 151	 Avg loss: 0.0081	 Time: 0.9092
+Fold: 3	 Epoch: 152	 Avg loss: 0.0074	 Time: 0.9443
+Test mse: 0.0255
+Fold: 3	 Epoch: 153	 Avg loss: 0.0066	 Time: 0.9289
+Fold: 3	 Epoch: 154	 Avg loss: 0.0060	 Time: 0.9173
+Test mse: 0.0268
+Fold: 3	 Epoch: 155	 Avg loss: 0.0060	 Time: 0.9598
+Fold: 3	 Epoch: 156	 Avg loss: 0.0061	 Time: 0.9279
+Test mse: 0.0260
+Fold: 3	 Epoch: 157	 Avg loss: 0.0062	 Time: 0.9181
+Fold: 3	 Epoch: 158	 Avg loss: 0.0061	 Time: 0.9713
+Test mse: 0.0262
+Fold: 3	 Epoch: 159	 Avg loss: 0.0062	 Time: 0.9572
+Fold: 3	 Epoch: 160	 Avg loss: 0.0063	 Time: 0.9194
+Test mse: 0.0255
+Fold: 3	 Epoch: 161	 Avg loss: 0.0065	 Time: 0.9333
+Fold: 3	 Epoch: 162	 Avg loss: 0.0065	 Time: 0.9707
+Test mse: 0.0254
+Fold: 3	 Epoch: 163	 Avg loss: 0.0069	 Time: 0.9261
+Fold: 3	 Epoch: 164	 Avg loss: 0.0072	 Time: 0.9727
+Test mse: 0.0248
+New best decoder within a fold!
+Fold: 3	 Epoch: 165	 Avg loss: 0.0073	 Time: 1.0570
+Fold: 3	 Epoch: 166	 Avg loss: 0.0070	 Time: 1.0093
+Test mse: 0.0267
+Fold: 3	 Epoch: 167	 Avg loss: 0.0067	 Time: 0.9718
+Fold: 3	 Epoch: 168	 Avg loss: 0.0060	 Time: 0.9207
+Test mse: 0.0287
+Fold: 3	 Epoch: 169	 Avg loss: 0.0058	 Time: 0.9162
+Fold: 3	 Epoch: 170	 Avg loss: 0.0056	 Time: 0.9221
+Test mse: 0.0271
+Fold: 3	 Epoch: 171	 Avg loss: 0.0055	 Time: 0.9060
+Fold: 3	 Epoch: 172	 Avg loss: 0.0053	 Time: 0.9191
+Test mse: 0.0265
+Fold: 3	 Epoch: 173	 Avg loss: 0.0052	 Time: 0.9912
+Fold: 3	 Epoch: 174	 Avg loss: 0.0052	 Time: 0.9369
+Test mse: 0.0261
+Fold: 3	 Epoch: 175	 Avg loss: 0.0050	 Time: 0.9676
+Fold: 3	 Epoch: 176	 Avg loss: 0.0050	 Time: 0.9028
+Test mse: 0.0260
+Fold: 3	 Epoch: 177	 Avg loss: 0.0049	 Time: 0.9366
+Fold: 3	 Epoch: 178	 Avg loss: 0.0048	 Time: 0.9629
+Test mse: 0.0261
+Fold: 3	 Epoch: 179	 Avg loss: 0.0048	 Time: 1.0351
+Fold: 3	 Epoch: 180	 Avg loss: 0.0047	 Time: 1.0548
+Test mse: 0.0268
+Fold: 3	 Epoch: 181	 Avg loss: 0.0046	 Time: 0.9886
+Fold: 3	 Epoch: 182	 Avg loss: 0.0045	 Time: 0.9233
+Test mse: 0.0268
+Fold: 3	 Epoch: 183	 Avg loss: 0.0045	 Time: 0.9049
+Fold: 3	 Epoch: 184	 Avg loss: 0.0043	 Time: 0.9351
+Test mse: 0.0271
+Fold: 3	 Epoch: 185	 Avg loss: 0.0043	 Time: 0.9313
+Fold: 3	 Epoch: 186	 Avg loss: 0.0042	 Time: 0.9302
+Test mse: 0.0273
+Fold: 3	 Epoch: 187	 Avg loss: 0.0042	 Time: 0.9561
+Fold: 3	 Epoch: 188	 Avg loss: 0.0042	 Time: 0.9602
+Test mse: 0.0277
+Fold: 3	 Epoch: 189	 Avg loss: 0.0042	 Time: 0.9275
+Fold: 3	 Epoch: 190	 Avg loss: 0.0042	 Time: 0.9081
+Test mse: 0.0279
+Fold: 3	 Epoch: 191	 Avg loss: 0.0042	 Time: 0.9372
+Fold: 3	 Epoch: 192	 Avg loss: 0.0042	 Time: 0.9239
+Test mse: 0.0276
+Fold: 3	 Epoch: 193	 Avg loss: 0.0043	 Time: 0.9401
+Fold: 3	 Epoch: 194	 Avg loss: 0.0043	 Time: 0.9315
+Test mse: 0.0275
+Fold: 3	 Epoch: 195	 Avg loss: 0.0044	 Time: 0.9217
+Fold: 3	 Epoch: 196	 Avg loss: 0.0044	 Time: 0.9691
+Test mse: 0.0274
+Fold: 3	 Epoch: 197	 Avg loss: 0.0047	 Time: 0.9091
+Fold: 3	 Epoch: 198	 Avg loss: 0.0049	 Time: 0.9264
+Test mse: 0.0259
+Fold: 3	 Epoch: 199	 Avg loss: 0.0054	 Time: 0.9114
+Fold: 3	 Epoch: 200	 Avg loss: 0.0062	 Time: 0.9330
+Test mse: 0.0247
+New best decoder within a fold!
+Fold: 4	 Epoch: 1	 Avg loss: 0.1983	 Time: 0.9088
+Fold: 4	 Epoch: 2	 Avg loss: 0.1286	 Time: 0.9141
+Test mse: 0.1485
+Fold: 4	 Epoch: 3	 Avg loss: 0.1014	 Time: 0.9469
+Fold: 4	 Epoch: 4	 Avg loss: 0.1000	 Time: 0.9324
+Test mse: 0.1419
+Fold: 4	 Epoch: 5	 Avg loss: 0.0993	 Time: 0.9012
+Fold: 4	 Epoch: 6	 Avg loss: 0.0986	 Time: 0.9070
+Test mse: 0.1405
+New best decoder within a fold!
+Fold: 4	 Epoch: 7	 Avg loss: 0.0980	 Time: 0.9168
+Fold: 4	 Epoch: 8	 Avg loss: 0.0973	 Time: 0.9046
+Test mse: 0.1389
+New best decoder within a fold!
+Fold: 4	 Epoch: 9	 Avg loss: 0.0966	 Time: 0.9062
+Fold: 4	 Epoch: 10	 Avg loss: 0.0959	 Time: 0.9208
+Test mse: 0.1368
+New best decoder within a fold!
+Fold: 4	 Epoch: 11	 Avg loss: 0.0952	 Time: 0.9320
+Fold: 4	 Epoch: 12	 Avg loss: 0.0944	 Time: 0.9058
+Test mse: 0.1346
+New best decoder within a fold!
+Fold: 4	 Epoch: 13	 Avg loss: 0.0936	 Time: 0.9249
+Fold: 4	 Epoch: 14	 Avg loss: 0.0929	 Time: 0.9039
+Test mse: 0.1321
+New best decoder within a fold!
+Fold: 4	 Epoch: 15	 Avg loss: 0.0920	 Time: 0.9325
+Fold: 4	 Epoch: 16	 Avg loss: 0.0912	 Time: 0.9274
+Test mse: 0.1286
+New best decoder within a fold!
+Fold: 4	 Epoch: 17	 Avg loss: 0.0903	 Time: 0.9095
+Fold: 4	 Epoch: 18	 Avg loss: 0.0894	 Time: 0.9339
+Test mse: 0.1241
+New best decoder within a fold!
+Fold: 4	 Epoch: 19	 Avg loss: 0.0885	 Time: 0.9349
+Fold: 4	 Epoch: 20	 Avg loss: 0.0874	 Time: 0.9567
+Test mse: 0.1188
+New best decoder within a fold!
+Fold: 4	 Epoch: 21	 Avg loss: 0.0863	 Time: 0.9375
+Fold: 4	 Epoch: 22	 Avg loss: 0.0852	 Time: 0.9384
+Test mse: 0.1124
+New best decoder within a fold!
+Fold: 4	 Epoch: 23	 Avg loss: 0.0839	 Time: 0.9304
+Fold: 4	 Epoch: 24	 Avg loss: 0.0825	 Time: 0.9822
+Test mse: 0.1051
+New best decoder within a fold!
+Fold: 4	 Epoch: 25	 Avg loss: 0.0812	 Time: 0.9028
+Fold: 4	 Epoch: 26	 Avg loss: 0.0799	 Time: 0.9585
+Test mse: 0.0976
+New best decoder within a fold!
+Fold: 4	 Epoch: 27	 Avg loss: 0.0785	 Time: 0.9032
+Fold: 4	 Epoch: 28	 Avg loss: 0.0772	 Time: 0.9452
+Test mse: 0.0904
+New best decoder within a fold!
+Fold: 4	 Epoch: 29	 Avg loss: 0.0758	 Time: 0.9180
+Fold: 4	 Epoch: 30	 Avg loss: 0.0746	 Time: 0.9059
+Test mse: 0.0839
+New best decoder within a fold!
+Fold: 4	 Epoch: 31	 Avg loss: 0.0734	 Time: 0.9184
+Fold: 4	 Epoch: 32	 Avg loss: 0.0721	 Time: 0.9060
+Test mse: 0.0785
+New best decoder within a fold!
+Fold: 4	 Epoch: 33	 Avg loss: 0.0708	 Time: 0.9201
+Fold: 4	 Epoch: 34	 Avg loss: 0.0696	 Time: 0.9704
+Test mse: 0.0742
+New best decoder within a fold!
+Fold: 4	 Epoch: 35	 Avg loss: 0.0684	 Time: 0.9178
+Fold: 4	 Epoch: 36	 Avg loss: 0.0675	 Time: 0.9180
+Test mse: 0.0711
+New best decoder within a fold!
+Fold: 4	 Epoch: 37	 Avg loss: 0.0665	 Time: 0.8961
+Fold: 4	 Epoch: 38	 Avg loss: 0.0656	 Time: 0.9140
+Test mse: 0.0677
+New best decoder within a fold!
+Fold: 4	 Epoch: 39	 Avg loss: 0.0646	 Time: 0.9062
+Fold: 4	 Epoch: 40	 Avg loss: 0.0637	 Time: 0.9432
+Test mse: 0.0651
+New best decoder within a fold!
+Fold: 4	 Epoch: 41	 Avg loss: 0.0629	 Time: 0.9286
+Fold: 4	 Epoch: 42	 Avg loss: 0.0620	 Time: 0.9440
+Test mse: 0.0628
+New best decoder within a fold!
+Fold: 4	 Epoch: 43	 Avg loss: 0.0611	 Time: 0.9598
+Fold: 4	 Epoch: 44	 Avg loss: 0.0604	 Time: 0.9059
+Test mse: 0.0608
+New best decoder within a fold!
+Fold: 4	 Epoch: 45	 Avg loss: 0.0595	 Time: 0.9118
+Fold: 4	 Epoch: 46	 Avg loss: 0.0588	 Time: 0.9168
+Test mse: 0.0586
+New best decoder within a fold!
+Fold: 4	 Epoch: 47	 Avg loss: 0.0580	 Time: 0.9438
+Fold: 4	 Epoch: 48	 Avg loss: 0.0574	 Time: 0.9995
+Test mse: 0.0568
+New best decoder within a fold!
+Fold: 4	 Epoch: 49	 Avg loss: 0.0565	 Time: 0.9741
+Fold: 4	 Epoch: 50	 Avg loss: 0.0557	 Time: 0.9776
+Test mse: 0.0544
+New best decoder within a fold!
+Fold: 4	 Epoch: 51	 Avg loss: 0.0548	 Time: 0.9727
+Fold: 4	 Epoch: 52	 Avg loss: 0.0540	 Time: 1.0249
+Test mse: 0.0524
+New best decoder within a fold!
+Fold: 4	 Epoch: 53	 Avg loss: 0.0532	 Time: 1.1952
+Fold: 4	 Epoch: 54	 Avg loss: 0.0525	 Time: 1.0207
+Test mse: 0.0510
+New best decoder within a fold!
+Fold: 4	 Epoch: 55	 Avg loss: 0.0519	 Time: 0.9608
+Fold: 4	 Epoch: 56	 Avg loss: 0.0509	 Time: 0.9616
+Test mse: 0.0496
+New best decoder within a fold!
+Fold: 4	 Epoch: 57	 Avg loss: 0.0500	 Time: 0.9637
+Fold: 4	 Epoch: 58	 Avg loss: 0.0492	 Time: 0.9927
+Test mse: 0.0481
+New best decoder within a fold!
+Fold: 4	 Epoch: 59	 Avg loss: 0.0486	 Time: 1.0091
+Fold: 4	 Epoch: 60	 Avg loss: 0.0474	 Time: 1.1497
+Test mse: 0.0460
+New best decoder within a fold!
+Fold: 4	 Epoch: 61	 Avg loss: 0.0466	 Time: 1.2097
+Fold: 4	 Epoch: 62	 Avg loss: 0.0453	 Time: 1.2714
+Test mse: 0.0447
+New best decoder within a fold!
+Fold: 4	 Epoch: 63	 Avg loss: 0.0442	 Time: 1.0229
+Fold: 4	 Epoch: 64	 Avg loss: 0.0432	 Time: 1.0129
+Test mse: 0.0445
+New best decoder within a fold!
+Fold: 4	 Epoch: 65	 Avg loss: 0.0425	 Time: 1.0393
+Fold: 4	 Epoch: 66	 Avg loss: 0.0412	 Time: 1.0525
+Test mse: 0.0437
+New best decoder within a fold!
+Fold: 4	 Epoch: 67	 Avg loss: 0.0405	 Time: 1.0629
+Fold: 4	 Epoch: 68	 Avg loss: 0.0399	 Time: 1.0113
+Test mse: 0.0429
+New best decoder within a fold!
+Fold: 4	 Epoch: 69	 Avg loss: 0.0391	 Time: 0.9225
+Fold: 4	 Epoch: 70	 Avg loss: 0.0382	 Time: 0.9553
+Test mse: 0.0421
+New best decoder within a fold!
+Fold: 4	 Epoch: 71	 Avg loss: 0.0372	 Time: 0.9037
+Fold: 4	 Epoch: 72	 Avg loss: 0.0365	 Time: 1.0505
+Test mse: 0.0410
+New best decoder within a fold!
+Fold: 4	 Epoch: 73	 Avg loss: 0.0356	 Time: 0.9730
+Fold: 4	 Epoch: 74	 Avg loss: 0.0347	 Time: 0.9061
+Test mse: 0.0407
+New best decoder within a fold!
+Fold: 4	 Epoch: 75	 Avg loss: 0.0339	 Time: 0.9473
+Fold: 4	 Epoch: 76	 Avg loss: 0.0334	 Time: 0.9049
+Test mse: 0.0407
+Fold: 4	 Epoch: 77	 Avg loss: 0.0327	 Time: 0.9351
+Fold: 4	 Epoch: 78	 Avg loss: 0.0319	 Time: 1.0496
+Test mse: 0.0396
+New best decoder within a fold!
+Fold: 4	 Epoch: 79	 Avg loss: 0.0308	 Time: 0.8909
+Fold: 4	 Epoch: 80	 Avg loss: 0.0296	 Time: 1.0676
+Test mse: 0.0384
+New best decoder within a fold!
+Fold: 4	 Epoch: 81	 Avg loss: 0.0281	 Time: 1.0549
+Fold: 4	 Epoch: 82	 Avg loss: 0.0270	 Time: 1.0144
+Test mse: 0.0363
+New best decoder within a fold!
+Fold: 4	 Epoch: 83	 Avg loss: 0.0263	 Time: 1.0014
+Fold: 4	 Epoch: 84	 Avg loss: 0.0251	 Time: 0.9754
+Test mse: 0.0356
+New best decoder within a fold!
+Fold: 4	 Epoch: 85	 Avg loss: 0.0243	 Time: 0.9974
+Fold: 4	 Epoch: 86	 Avg loss: 0.0237	 Time: 1.0103
+Test mse: 0.0348
+New best decoder within a fold!
+Fold: 4	 Epoch: 87	 Avg loss: 0.0231	 Time: 1.1592
+Fold: 4	 Epoch: 88	 Avg loss: 0.0223	 Time: 1.1252
+Test mse: 0.0353
+Fold: 4	 Epoch: 89	 Avg loss: 0.0217	 Time: 1.0729
+Fold: 4	 Epoch: 90	 Avg loss: 0.0212	 Time: 1.1743
+Test mse: 0.0353
+Fold: 4	 Epoch: 91	 Avg loss: 0.0207	 Time: 0.9115
+Fold: 4	 Epoch: 92	 Avg loss: 0.0200	 Time: 0.9372
+Test mse: 0.0338
+New best decoder within a fold!
+Fold: 4	 Epoch: 93	 Avg loss: 0.0194	 Time: 0.9257
+Fold: 4	 Epoch: 94	 Avg loss: 0.0187	 Time: 0.9393
+Test mse: 0.0326
+New best decoder within a fold!
+Fold: 4	 Epoch: 95	 Avg loss: 0.0180	 Time: 0.9315
+Fold: 4	 Epoch: 96	 Avg loss: 0.0176	 Time: 1.0146
+Test mse: 0.0315
+New best decoder within a fold!
+Fold: 4	 Epoch: 97	 Avg loss: 0.0171	 Time: 0.9531
+Fold: 4	 Epoch: 98	 Avg loss: 0.0167	 Time: 0.9595
+Test mse: 0.0309
+New best decoder within a fold!
+Fold: 4	 Epoch: 99	 Avg loss: 0.0164	 Time: 1.0172
+Fold: 4	 Epoch: 100	 Avg loss: 0.0163	 Time: 0.9411
+Test mse: 0.0297
+New best decoder within a fold!
+Fold: 4	 Epoch: 101	 Avg loss: 0.0162	 Time: 0.9246
+Fold: 4	 Epoch: 102	 Avg loss: 0.0164	 Time: 0.9211
+Test mse: 0.0300
+Fold: 4	 Epoch: 103	 Avg loss: 0.0162	 Time: 0.9193
+Fold: 4	 Epoch: 104	 Avg loss: 0.0163	 Time: 0.9238
+Test mse: 0.0309
+Fold: 4	 Epoch: 105	 Avg loss: 0.0158	 Time: 0.9380
+Fold: 4	 Epoch: 106	 Avg loss: 0.0151	 Time: 1.0783
+Test mse: 0.0310
+Fold: 4	 Epoch: 107	 Avg loss: 0.0146	 Time: 0.9451
+Fold: 4	 Epoch: 108	 Avg loss: 0.0141	 Time: 0.9020
+Test mse: 0.0311
+Fold: 4	 Epoch: 109	 Avg loss: 0.0139	 Time: 1.0031
+Fold: 4	 Epoch: 110	 Avg loss: 0.0137	 Time: 0.9354
+Test mse: 0.0328
+Fold: 4	 Epoch: 111	 Avg loss: 0.0136	 Time: 0.9218
+Fold: 4	 Epoch: 112	 Avg loss: 0.0135	 Time: 0.9245
+Test mse: 0.0313
+Fold: 4	 Epoch: 113	 Avg loss: 0.0134	 Time: 0.9250
+Fold: 4	 Epoch: 114	 Avg loss: 0.0132	 Time: 0.9984
+Test mse: 0.0302
+Fold: 4	 Epoch: 115	 Avg loss: 0.0129	 Time: 1.0200
+Fold: 4	 Epoch: 116	 Avg loss: 0.0123	 Time: 0.9757
+Test mse: 0.0305
+Fold: 4	 Epoch: 117	 Avg loss: 0.0119	 Time: 1.0163
+Fold: 4	 Epoch: 118	 Avg loss: 0.0116	 Time: 0.9655
+Test mse: 0.0288
+New best decoder within a fold!
+Fold: 4	 Epoch: 119	 Avg loss: 0.0113	 Time: 0.9457
+Fold: 4	 Epoch: 120	 Avg loss: 0.0112	 Time: 0.9914
+Test mse: 0.0262
+New best decoder within a fold!
+Fold: 4	 Epoch: 121	 Avg loss: 0.0115	 Time: 1.0133
+Fold: 4	 Epoch: 122	 Avg loss: 0.0117	 Time: 1.0897
+Test mse: 0.0239
+New best decoder within a fold!
+Fold: 4	 Epoch: 123	 Avg loss: 0.0122	 Time: 1.0207
+Fold: 4	 Epoch: 124	 Avg loss: 0.0131	 Time: 1.0282
+Test mse: 0.0258
+Fold: 4	 Epoch: 125	 Avg loss: 0.0142	 Time: 1.0721
+Fold: 4	 Epoch: 126	 Avg loss: 0.0142	 Time: 1.0179
+Test mse: 0.0272
+Fold: 4	 Epoch: 127	 Avg loss: 0.0129	 Time: 1.0343
+Fold: 4	 Epoch: 128	 Avg loss: 0.0109	 Time: 0.9952
+Test mse: 0.0297
+Fold: 4	 Epoch: 129	 Avg loss: 0.0096	 Time: 1.0134
+Fold: 4	 Epoch: 130	 Avg loss: 0.0090	 Time: 1.0476
+Test mse: 0.0282
+Fold: 4	 Epoch: 131	 Avg loss: 0.0085	 Time: 0.9196
+Fold: 4	 Epoch: 132	 Avg loss: 0.0084	 Time: 0.9173
+Test mse: 0.0265
+Fold: 4	 Epoch: 133	 Avg loss: 0.0084	 Time: 0.9316
+Fold: 4	 Epoch: 134	 Avg loss: 0.0084	 Time: 0.9390
+Test mse: 0.0256
+Fold: 4	 Epoch: 135	 Avg loss: 0.0080	 Time: 0.9125
+Fold: 4	 Epoch: 136	 Avg loss: 0.0079	 Time: 0.9516
+Test mse: 0.0252
+Fold: 4	 Epoch: 137	 Avg loss: 0.0077	 Time: 1.0193
+Fold: 4	 Epoch: 138	 Avg loss: 0.0077	 Time: 0.9823
+Test mse: 0.0248
+Fold: 4	 Epoch: 139	 Avg loss: 0.0074	 Time: 0.9665
+Fold: 4	 Epoch: 140	 Avg loss: 0.0073	 Time: 0.9558
+Test mse: 0.0253
+Fold: 4	 Epoch: 141	 Avg loss: 0.0071	 Time: 0.9791
+Fold: 4	 Epoch: 142	 Avg loss: 0.0071	 Time: 0.9692
+Test mse: 0.0254
+Fold: 4	 Epoch: 143	 Avg loss: 0.0071	 Time: 1.0903
+Fold: 4	 Epoch: 144	 Avg loss: 0.0070	 Time: 1.0570
+Test mse: 0.0258
+Fold: 4	 Epoch: 145	 Avg loss: 0.0068	 Time: 1.0086
+Fold: 4	 Epoch: 146	 Avg loss: 0.0067	 Time: 0.9604
+Test mse: 0.0265
+Fold: 4	 Epoch: 147	 Avg loss: 0.0066	 Time: 1.0571
+Fold: 4	 Epoch: 148	 Avg loss: 0.0063	 Time: 0.9655
+Test mse: 0.0264
+Fold: 4	 Epoch: 149	 Avg loss: 0.0064	 Time: 1.0269
+Fold: 4	 Epoch: 150	 Avg loss: 0.0061	 Time: 1.0057
+Test mse: 0.0269
+Fold: 4	 Epoch: 151	 Avg loss: 0.0062	 Time: 0.9165
+Fold: 4	 Epoch: 152	 Avg loss: 0.0060	 Time: 0.9662
+Test mse: 0.0275
+Fold: 4	 Epoch: 153	 Avg loss: 0.0059	 Time: 0.9067
+Fold: 4	 Epoch: 154	 Avg loss: 0.0058	 Time: 0.9045
+Test mse: 0.0275
+Fold: 4	 Epoch: 155	 Avg loss: 0.0058	 Time: 1.0116
+Fold: 4	 Epoch: 156	 Avg loss: 0.0057	 Time: 0.9202
+Test mse: 0.0286
+Fold: 4	 Epoch: 157	 Avg loss: 0.0057	 Time: 0.9214
+Fold: 4	 Epoch: 158	 Avg loss: 0.0055	 Time: 0.9668
+Test mse: 0.0297
+Fold: 4	 Epoch: 159	 Avg loss: 0.0054	 Time: 0.9144
+Fold: 4	 Epoch: 160	 Avg loss: 0.0054	 Time: 0.9162
+Test mse: 0.0298
+Fold: 4	 Epoch: 161	 Avg loss: 0.0056	 Time: 0.9177
+Fold: 4	 Epoch: 162	 Avg loss: 0.0058	 Time: 0.9192
+Test mse: 0.0310
+Fold: 4	 Epoch: 163	 Avg loss: 0.0058	 Time: 0.9363
+Fold: 4	 Epoch: 164	 Avg loss: 0.0058	 Time: 0.9414
+Test mse: 0.0346
+Fold: 4	 Epoch: 165	 Avg loss: 0.0057	 Time: 1.0001
+Fold: 4	 Epoch: 166	 Avg loss: 0.0059	 Time: 0.9533
+Test mse: 0.0357
+Fold: 4	 Epoch: 167	 Avg loss: 0.0066	 Time: 0.9339
+Fold: 4	 Epoch: 168	 Avg loss: 0.0077	 Time: 0.9224
+Test mse: 0.0357
+Fold: 4	 Epoch: 169	 Avg loss: 0.0083	 Time: 0.9386
+Fold: 4	 Epoch: 170	 Avg loss: 0.0082	 Time: 0.9389
+Test mse: 0.0310
+Fold: 4	 Epoch: 171	 Avg loss: 0.0077	 Time: 0.9421
+Fold: 4	 Epoch: 172	 Avg loss: 0.0079	 Time: 0.9135
+Test mse: 0.0260
+Fold: 4	 Epoch: 173	 Avg loss: 0.0070	 Time: 0.9529
+Fold: 4	 Epoch: 174	 Avg loss: 0.0073	 Time: 0.9297
+Test mse: 0.0291
+Fold: 4	 Epoch: 175	 Avg loss: 0.0091	 Time: 0.9133
+Fold: 4	 Epoch: 176	 Avg loss: 0.0082	 Time: 0.9217
+Test mse: 0.0272
+Fold: 4	 Epoch: 177	 Avg loss: 0.0058	 Time: 0.9139
+Fold: 4	 Epoch: 178	 Avg loss: 0.0056	 Time: 0.9112
+Test mse: 0.0278
+Fold: 4	 Epoch: 179	 Avg loss: 0.0056	 Time: 0.9312
+Fold: 4	 Epoch: 180	 Avg loss: 0.0057	 Time: 0.9177
+Test mse: 0.0285
+Fold: 4	 Epoch: 181	 Avg loss: 0.0058	 Time: 1.0122
+Fold: 4	 Epoch: 182	 Avg loss: 0.0061	 Time: 0.9432
+Test mse: 0.0287
+Fold: 4	 Epoch: 183	 Avg loss: 0.0065	 Time: 0.9426
+Fold: 4	 Epoch: 184	 Avg loss: 0.0070	 Time: 0.9142
+Test mse: 0.0269
+Fold: 4	 Epoch: 185	 Avg loss: 0.0071	 Time: 0.9431
+Fold: 4	 Epoch: 186	 Avg loss: 0.0066	 Time: 0.9427
+Test mse: 0.0268
+Fold: 4	 Epoch: 187	 Avg loss: 0.0057	 Time: 0.9397
+Fold: 4	 Epoch: 188	 Avg loss: 0.0048	 Time: 0.9055
+Test mse: 0.0286
+Fold: 4	 Epoch: 189	 Avg loss: 0.0043	 Time: 0.9419
+Fold: 4	 Epoch: 190	 Avg loss: 0.0040	 Time: 0.9182
+Test mse: 0.0291
+Fold: 4	 Epoch: 191	 Avg loss: 0.0037	 Time: 0.9075
+Fold: 4	 Epoch: 192	 Avg loss: 0.0036	 Time: 0.9398
+Test mse: 0.0284
+Fold: 4	 Epoch: 193	 Avg loss: 0.0035	 Time: 0.9243
+Fold: 4	 Epoch: 194	 Avg loss: 0.0035	 Time: 0.9162
+Test mse: 0.0279
+Fold: 4	 Epoch: 195	 Avg loss: 0.0034	 Time: 0.9355
+Fold: 4	 Epoch: 196	 Avg loss: 0.0034	 Time: 0.9369
+Test mse: 0.0276
+Fold: 4	 Epoch: 197	 Avg loss: 0.0034	 Time: 0.9159
+Fold: 4	 Epoch: 198	 Avg loss: 0.0033	 Time: 0.9174
+Test mse: 0.0273
+Fold: 4	 Epoch: 199	 Avg loss: 0.0033	 Time: 0.9461
+Fold: 4	 Epoch: 200	 Avg loss: 0.0032	 Time: 0.9618
+Test mse: 0.0273
+Fold: 5	 Epoch: 1	 Avg loss: 0.3421	 Time: 0.9195
+Fold: 5	 Epoch: 2	 Avg loss: 0.1874	 Time: 0.9422
+Test mse: 0.0798
+Fold: 5	 Epoch: 3	 Avg loss: 0.1254	 Time: 0.9257
+Fold: 5	 Epoch: 4	 Avg loss: 0.1195	 Time: 0.9403
+Test mse: 0.0737
+Fold: 5	 Epoch: 5	 Avg loss: 0.1182	 Time: 0.9084
+Fold: 5	 Epoch: 6	 Avg loss: 0.1171	 Time: 0.9359
+Test mse: 0.0712
+New best decoder within a fold!
+Fold: 5	 Epoch: 7	 Avg loss: 0.1158	 Time: 0.9208
+Fold: 5	 Epoch: 8	 Avg loss: 0.1145	 Time: 0.9317
+Test mse: 0.0694
+New best decoder within a fold!
+Fold: 5	 Epoch: 9	 Avg loss: 0.1130	 Time: 0.9157
+Fold: 5	 Epoch: 10	 Avg loss: 0.1115	 Time: 0.9120
+Test mse: 0.0681
+New best decoder within a fold!
+Fold: 5	 Epoch: 11	 Avg loss: 0.1100	 Time: 0.9239
+Fold: 5	 Epoch: 12	 Avg loss: 0.1084	 Time: 0.9405
+Test mse: 0.0669
+New best decoder within a fold!
+Fold: 5	 Epoch: 13	 Avg loss: 0.1067	 Time: 0.9306
+Fold: 5	 Epoch: 14	 Avg loss: 0.1051	 Time: 0.9411
+Test mse: 0.0660
+New best decoder within a fold!
+Fold: 5	 Epoch: 15	 Avg loss: 0.1035	 Time: 0.9403
+Fold: 5	 Epoch: 16	 Avg loss: 0.1020	 Time: 0.9294
+Test mse: 0.0659
+New best decoder within a fold!
+Fold: 5	 Epoch: 17	 Avg loss: 0.1007	 Time: 0.9418
+Fold: 5	 Epoch: 18	 Avg loss: 0.0995	 Time: 0.9067
+Test mse: 0.0659
+Fold: 5	 Epoch: 19	 Avg loss: 0.0982	 Time: 0.9731
+Fold: 5	 Epoch: 20	 Avg loss: 0.0969	 Time: 0.9263
+Test mse: 0.0660
+Fold: 5	 Epoch: 21	 Avg loss: 0.0957	 Time: 0.9258
+Fold: 5	 Epoch: 22	 Avg loss: 0.0944	 Time: 0.9333
+Test mse: 0.0658
+New best decoder within a fold!
+Fold: 5	 Epoch: 23	 Avg loss: 0.0930	 Time: 0.9194
+Fold: 5	 Epoch: 24	 Avg loss: 0.0916	 Time: 0.9255
+Test mse: 0.0657
+New best decoder within a fold!
+Fold: 5	 Epoch: 25	 Avg loss: 0.0903	 Time: 0.9239
+Fold: 5	 Epoch: 26	 Avg loss: 0.0885	 Time: 0.9834
+Test mse: 0.0654
+New best decoder within a fold!
+Fold: 5	 Epoch: 27	 Avg loss: 0.0871	 Time: 0.9675
+Fold: 5	 Epoch: 28	 Avg loss: 0.0854	 Time: 0.9227
+Test mse: 0.0653
+New best decoder within a fold!
+Fold: 5	 Epoch: 29	 Avg loss: 0.0839	 Time: 0.9182
+Fold: 5	 Epoch: 30	 Avg loss: 0.0824	 Time: 0.9174
+Test mse: 0.0656
+Fold: 5	 Epoch: 31	 Avg loss: 0.0810	 Time: 0.9339
+Fold: 5	 Epoch: 32	 Avg loss: 0.0795	 Time: 0.9206
+Test mse: 0.0649
+New best decoder within a fold!
+Fold: 5	 Epoch: 33	 Avg loss: 0.0781	 Time: 0.9215
+Fold: 5	 Epoch: 34	 Avg loss: 0.0769	 Time: 0.9069
+Test mse: 0.0636
+New best decoder within a fold!
+Fold: 5	 Epoch: 35	 Avg loss: 0.0757	 Time: 0.9886
+Fold: 5	 Epoch: 36	 Avg loss: 0.0746	 Time: 0.9225
+Test mse: 0.0627
+New best decoder within a fold!
+Fold: 5	 Epoch: 37	 Avg loss: 0.0735	 Time: 0.9018
+Fold: 5	 Epoch: 38	 Avg loss: 0.0726	 Time: 0.9278
+Test mse: 0.0616
+New best decoder within a fold!
+Fold: 5	 Epoch: 39	 Avg loss: 0.0717	 Time: 0.9279
+Fold: 5	 Epoch: 40	 Avg loss: 0.0708	 Time: 0.9261
+Test mse: 0.0600
+New best decoder within a fold!
+Fold: 5	 Epoch: 41	 Avg loss: 0.0698	 Time: 0.9377
+Fold: 5	 Epoch: 42	 Avg loss: 0.0692	 Time: 0.9962
+Test mse: 0.0595
+New best decoder within a fold!
+Fold: 5	 Epoch: 43	 Avg loss: 0.0685	 Time: 0.9193
+Fold: 5	 Epoch: 44	 Avg loss: 0.0680	 Time: 0.9424
+Test mse: 0.0583
+New best decoder within a fold!
+Fold: 5	 Epoch: 45	 Avg loss: 0.0674	 Time: 0.9276
+Fold: 5	 Epoch: 46	 Avg loss: 0.0666	 Time: 0.9306
+Test mse: 0.0570
+New best decoder within a fold!
+Fold: 5	 Epoch: 47	 Avg loss: 0.0658	 Time: 0.9405
+Fold: 5	 Epoch: 48	 Avg loss: 0.0653	 Time: 0.9212
+Test mse: 0.0560
+New best decoder within a fold!
+Fold: 5	 Epoch: 49	 Avg loss: 0.0645	 Time: 0.9178
+Fold: 5	 Epoch: 50	 Avg loss: 0.0639	 Time: 0.9365
+Test mse: 0.0552
+New best decoder within a fold!
+Fold: 5	 Epoch: 51	 Avg loss: 0.0630	 Time: 0.9319
+Fold: 5	 Epoch: 52	 Avg loss: 0.0625	 Time: 0.9403
+Test mse: 0.0544
+New best decoder within a fold!
+Fold: 5	 Epoch: 53	 Avg loss: 0.0620	 Time: 0.9405
+Fold: 5	 Epoch: 54	 Avg loss: 0.0612	 Time: 0.9101
+Test mse: 0.0530
+New best decoder within a fold!
+Fold: 5	 Epoch: 55	 Avg loss: 0.0605	 Time: 0.9261
+Fold: 5	 Epoch: 56	 Avg loss: 0.0599	 Time: 0.9251
+Test mse: 0.0519
+New best decoder within a fold!
+Fold: 5	 Epoch: 57	 Avg loss: 0.0590	 Time: 0.9275
+Fold: 5	 Epoch: 58	 Avg loss: 0.0583	 Time: 0.9452
+Test mse: 0.0509
+New best decoder within a fold!
+Fold: 5	 Epoch: 59	 Avg loss: 0.0576	 Time: 0.9153
+Fold: 5	 Epoch: 60	 Avg loss: 0.0569	 Time: 0.9286
+Test mse: 0.0500
+New best decoder within a fold!
+Fold: 5	 Epoch: 61	 Avg loss: 0.0561	 Time: 0.9331
+Fold: 5	 Epoch: 62	 Avg loss: 0.0553	 Time: 0.9567
+Test mse: 0.0484
+New best decoder within a fold!
+Fold: 5	 Epoch: 63	 Avg loss: 0.0545	 Time: 0.9401
+Fold: 5	 Epoch: 64	 Avg loss: 0.0537	 Time: 0.9194
+Test mse: 0.0474
+New best decoder within a fold!
+Fold: 5	 Epoch: 65	 Avg loss: 0.0528	 Time: 0.9621
+Fold: 5	 Epoch: 66	 Avg loss: 0.0519	 Time: 0.9216
+Test mse: 0.0461
+New best decoder within a fold!
+Fold: 5	 Epoch: 67	 Avg loss: 0.0510	 Time: 0.9351
+Fold: 5	 Epoch: 68	 Avg loss: 0.0501	 Time: 0.9196
+Test mse: 0.0451
+New best decoder within a fold!
+Fold: 5	 Epoch: 69	 Avg loss: 0.0493	 Time: 0.9188
+Fold: 5	 Epoch: 70	 Avg loss: 0.0483	 Time: 0.9164
+Test mse: 0.0444
+New best decoder within a fold!
+Fold: 5	 Epoch: 71	 Avg loss: 0.0474	 Time: 0.9256
+Fold: 5	 Epoch: 72	 Avg loss: 0.0465	 Time: 0.9199
+Test mse: 0.0437
+New best decoder within a fold!
+Fold: 5	 Epoch: 73	 Avg loss: 0.0455	 Time: 0.9547
+Fold: 5	 Epoch: 74	 Avg loss: 0.0446	 Time: 0.9125
+Test mse: 0.0427
+New best decoder within a fold!
+Fold: 5	 Epoch: 75	 Avg loss: 0.0439	 Time: 0.9345
+Fold: 5	 Epoch: 76	 Avg loss: 0.0426	 Time: 0.9053
+Test mse: 0.0416
+New best decoder within a fold!
+Fold: 5	 Epoch: 77	 Avg loss: 0.0419	 Time: 0.9151
+Fold: 5	 Epoch: 78	 Avg loss: 0.0406	 Time: 0.9360
+Test mse: 0.0397
+New best decoder within a fold!
+Fold: 5	 Epoch: 79	 Avg loss: 0.0397	 Time: 0.9553
+Fold: 5	 Epoch: 80	 Avg loss: 0.0385	 Time: 0.9050
+Test mse: 0.0385
+New best decoder within a fold!
+Fold: 5	 Epoch: 81	 Avg loss: 0.0374	 Time: 0.9598
+Fold: 5	 Epoch: 82	 Avg loss: 0.0362	 Time: 0.9114
+Test mse: 0.0363
+New best decoder within a fold!
+Fold: 5	 Epoch: 83	 Avg loss: 0.0354	 Time: 0.9194
+Fold: 5	 Epoch: 84	 Avg loss: 0.0340	 Time: 0.9084
+Test mse: 0.0349
+New best decoder within a fold!
+Fold: 5	 Epoch: 85	 Avg loss: 0.0331	 Time: 0.9452
+Fold: 5	 Epoch: 86	 Avg loss: 0.0320	 Time: 0.9395
+Test mse: 0.0333
+New best decoder within a fold!
+Fold: 5	 Epoch: 87	 Avg loss: 0.0310	 Time: 0.9704
+Fold: 5	 Epoch: 88	 Avg loss: 0.0298	 Time: 0.9580
+Test mse: 0.0323
+New best decoder within a fold!
+Fold: 5	 Epoch: 89	 Avg loss: 0.0288	 Time: 0.9745
+Fold: 5	 Epoch: 90	 Avg loss: 0.0282	 Time: 0.9631
+Test mse: 0.0307
+New best decoder within a fold!
+Fold: 5	 Epoch: 91	 Avg loss: 0.0273	 Time: 0.9451
+Fold: 5	 Epoch: 92	 Avg loss: 0.0264	 Time: 0.9251
+Test mse: 0.0286
+New best decoder within a fold!
+Fold: 5	 Epoch: 93	 Avg loss: 0.0256	 Time: 0.9807
+Fold: 5	 Epoch: 94	 Avg loss: 0.0251	 Time: 0.9175
+Test mse: 0.0280
+New best decoder within a fold!
+Fold: 5	 Epoch: 95	 Avg loss: 0.0242	 Time: 0.9343
+Fold: 5	 Epoch: 96	 Avg loss: 0.0237	 Time: 0.9873
+Test mse: 0.0273
+New best decoder within a fold!
+Fold: 5	 Epoch: 97	 Avg loss: 0.0230	 Time: 0.9767
+Fold: 5	 Epoch: 98	 Avg loss: 0.0226	 Time: 0.9348
+Test mse: 0.0265
+New best decoder within a fold!
+Fold: 5	 Epoch: 99	 Avg loss: 0.0222	 Time: 0.9314
+Fold: 5	 Epoch: 100	 Avg loss: 0.0216	 Time: 0.9240
+Test mse: 0.0256
+New best decoder within a fold!
+Fold: 5	 Epoch: 101	 Avg loss: 0.0213	 Time: 0.9553
+Fold: 5	 Epoch: 102	 Avg loss: 0.0208	 Time: 0.9295
+Test mse: 0.0247
+New best decoder within a fold!
+Fold: 5	 Epoch: 103	 Avg loss: 0.0202	 Time: 0.9586
+Fold: 5	 Epoch: 104	 Avg loss: 0.0199	 Time: 0.9621
+Test mse: 0.0242
+New best decoder within a fold!
+Fold: 5	 Epoch: 105	 Avg loss: 0.0195	 Time: 0.9348
+Fold: 5	 Epoch: 106	 Avg loss: 0.0192	 Time: 0.9382
+Test mse: 0.0237
+New best decoder within a fold!
+Fold: 5	 Epoch: 107	 Avg loss: 0.0188	 Time: 0.9372
+Fold: 5	 Epoch: 108	 Avg loss: 0.0184	 Time: 0.9277
+Test mse: 0.0229
+New best decoder within a fold!
+Fold: 5	 Epoch: 109	 Avg loss: 0.0180	 Time: 0.9337
+Fold: 5	 Epoch: 110	 Avg loss: 0.0176	 Time: 0.9399
+Test mse: 0.0224
+New best decoder within a fold!
+Fold: 5	 Epoch: 111	 Avg loss: 0.0171	 Time: 0.9761
+Fold: 5	 Epoch: 112	 Avg loss: 0.0167	 Time: 0.9331
+Test mse: 0.0222
+New best decoder within a fold!
+Fold: 5	 Epoch: 113	 Avg loss: 0.0164	 Time: 0.9711
+Fold: 5	 Epoch: 114	 Avg loss: 0.0160	 Time: 0.9400
+Test mse: 0.0222
+Fold: 5	 Epoch: 115	 Avg loss: 0.0157	 Time: 0.9213
+Fold: 5	 Epoch: 116	 Avg loss: 0.0154	 Time: 0.9234
+Test mse: 0.0223
+Fold: 5	 Epoch: 117	 Avg loss: 0.0153	 Time: 0.9109
+Fold: 5	 Epoch: 118	 Avg loss: 0.0149	 Time: 0.9153
+Test mse: 0.0222
+Fold: 5	 Epoch: 119	 Avg loss: 0.0147	 Time: 0.9495
+Fold: 5	 Epoch: 120	 Avg loss: 0.0146	 Time: 0.9529
+Test mse: 0.0221
+New best decoder within a fold!
+Fold: 5	 Epoch: 121	 Avg loss: 0.0142	 Time: 0.9079
+Fold: 5	 Epoch: 122	 Avg loss: 0.0142	 Time: 0.9408
+Test mse: 0.0221
+New best decoder within a fold!
+Fold: 5	 Epoch: 123	 Avg loss: 0.0138	 Time: 0.9332
+Fold: 5	 Epoch: 124	 Avg loss: 0.0138	 Time: 0.9564
+Test mse: 0.0219
+New best decoder within a fold!
+Fold: 5	 Epoch: 125	 Avg loss: 0.0136	 Time: 0.9372
+Fold: 5	 Epoch: 126	 Avg loss: 0.0136	 Time: 0.9370
+Test mse: 0.0216
+New best decoder within a fold!
+Fold: 5	 Epoch: 127	 Avg loss: 0.0134	 Time: 0.9601
+Fold: 5	 Epoch: 128	 Avg loss: 0.0135	 Time: 0.9475
+Test mse: 0.0209
+New best decoder within a fold!
+Fold: 5	 Epoch: 129	 Avg loss: 0.0132	 Time: 0.9215
+Fold: 5	 Epoch: 130	 Avg loss: 0.0137	 Time: 0.9396
+Test mse: 0.0205
+New best decoder within a fold!
+Fold: 5	 Epoch: 131	 Avg loss: 0.0132	 Time: 0.9237
+Fold: 5	 Epoch: 132	 Avg loss: 0.0137	 Time: 0.9259
+Test mse: 0.0200
+New best decoder within a fold!
+Fold: 5	 Epoch: 133	 Avg loss: 0.0133	 Time: 0.9180
+Fold: 5	 Epoch: 134	 Avg loss: 0.0138	 Time: 0.9361
+Test mse: 0.0198
+New best decoder within a fold!
+Fold: 5	 Epoch: 135	 Avg loss: 0.0138	 Time: 0.9185
+Fold: 5	 Epoch: 136	 Avg loss: 0.0140	 Time: 0.9440
+Test mse: 0.0203
+Fold: 5	 Epoch: 137	 Avg loss: 0.0142	 Time: 0.9345
+Fold: 5	 Epoch: 138	 Avg loss: 0.0149	 Time: 0.9235
+Test mse: 0.0191
+New best decoder within a fold!
+Fold: 5	 Epoch: 139	 Avg loss: 0.0175	 Time: 0.9501
+Fold: 5	 Epoch: 140	 Avg loss: 0.0175	 Time: 0.9280
+Test mse: 0.0322
+Fold: 5	 Epoch: 141	 Avg loss: 0.0140	 Time: 0.9437
+Fold: 5	 Epoch: 142	 Avg loss: 0.0119	 Time: 0.9787
+Test mse: 0.0202
+Fold: 5	 Epoch: 143	 Avg loss: 0.0117	 Time: 0.9092
+Fold: 5	 Epoch: 144	 Avg loss: 0.0117	 Time: 0.9256
+Test mse: 0.0207
+Fold: 5	 Epoch: 145	 Avg loss: 0.0117	 Time: 0.9389
+Fold: 5	 Epoch: 146	 Avg loss: 0.0114	 Time: 0.9453
+Test mse: 0.0218
+Fold: 5	 Epoch: 147	 Avg loss: 0.0112	 Time: 0.9208
+Fold: 5	 Epoch: 148	 Avg loss: 0.0109	 Time: 0.9596
+Test mse: 0.0215
+Fold: 5	 Epoch: 149	 Avg loss: 0.0106	 Time: 0.9327
+Fold: 5	 Epoch: 150	 Avg loss: 0.0103	 Time: 0.9547
+Test mse: 0.0211
+Fold: 5	 Epoch: 151	 Avg loss: 0.0102	 Time: 0.9208
+Fold: 5	 Epoch: 152	 Avg loss: 0.0100	 Time: 0.9110
+Test mse: 0.0208
+Fold: 5	 Epoch: 153	 Avg loss: 0.0099	 Time: 0.9454
+Fold: 5	 Epoch: 154	 Avg loss: 0.0098	 Time: 0.9089
+Test mse: 0.0204
+Fold: 5	 Epoch: 155	 Avg loss: 0.0096	 Time: 0.9432
+Fold: 5	 Epoch: 156	 Avg loss: 0.0095	 Time: 0.9318
+Test mse: 0.0203
+Fold: 5	 Epoch: 157	 Avg loss: 0.0094	 Time: 0.9498
+Fold: 5	 Epoch: 158	 Avg loss: 0.0093	 Time: 0.9184
+Test mse: 0.0200
+Fold: 5	 Epoch: 159	 Avg loss: 0.0092	 Time: 0.9220
+Fold: 5	 Epoch: 160	 Avg loss: 0.0091	 Time: 0.9132
+Test mse: 0.0203
+Fold: 5	 Epoch: 161	 Avg loss: 0.0091	 Time: 0.9392
+Fold: 5	 Epoch: 162	 Avg loss: 0.0090	 Time: 0.9160
+Test mse: 0.0206
+Fold: 5	 Epoch: 163	 Avg loss: 0.0088	 Time: 0.9232
+Fold: 5	 Epoch: 164	 Avg loss: 0.0087	 Time: 0.9369
+Test mse: 0.0206
+Fold: 5	 Epoch: 165	 Avg loss: 0.0087	 Time: 1.0112
+Fold: 5	 Epoch: 166	 Avg loss: 0.0086	 Time: 0.9199
+Test mse: 0.0207
+Fold: 5	 Epoch: 167	 Avg loss: 0.0084	 Time: 0.9110
+Fold: 5	 Epoch: 168	 Avg loss: 0.0083	 Time: 0.9488
+Test mse: 0.0214
+Fold: 5	 Epoch: 169	 Avg loss: 0.0083	 Time: 0.9312
+Fold: 5	 Epoch: 170	 Avg loss: 0.0082	 Time: 0.9352
+Test mse: 0.0214
+Fold: 5	 Epoch: 171	 Avg loss: 0.0080	 Time: 0.9236
+Fold: 5	 Epoch: 172	 Avg loss: 0.0081	 Time: 0.9135
+Test mse: 0.0219
+Fold: 5	 Epoch: 173	 Avg loss: 0.0080	 Time: 0.9639
+Fold: 5	 Epoch: 174	 Avg loss: 0.0079	 Time: 0.9261
+Test mse: 0.0231
+Fold: 5	 Epoch: 175	 Avg loss: 0.0080	 Time: 0.9130
+Fold: 5	 Epoch: 176	 Avg loss: 0.0082	 Time: 0.9080
+Test mse: 0.0235
+Fold: 5	 Epoch: 177	 Avg loss: 0.0082	 Time: 0.9230
+Fold: 5	 Epoch: 178	 Avg loss: 0.0086	 Time: 0.9101
+Test mse: 0.0243
+Fold: 5	 Epoch: 179	 Avg loss: 0.0089	 Time: 0.9072
+Fold: 5	 Epoch: 180	 Avg loss: 0.0094	 Time: 0.9368
+Test mse: 0.0255
+Fold: 5	 Epoch: 181	 Avg loss: 0.0101	 Time: 0.9491
+Fold: 5	 Epoch: 182	 Avg loss: 0.0110	 Time: 0.9255
+Test mse: 0.0230
+Fold: 5	 Epoch: 183	 Avg loss: 0.0124	 Time: 0.9323
+Fold: 5	 Epoch: 184	 Avg loss: 0.0126	 Time: 0.9397
+Test mse: 0.0343
+Fold: 5	 Epoch: 185	 Avg loss: 0.0108	 Time: 0.9256
+Fold: 5	 Epoch: 186	 Avg loss: 0.0083	 Time: 0.9101
+Test mse: 0.0236
+Fold: 5	 Epoch: 187	 Avg loss: 0.0072	 Time: 0.9435
+Fold: 5	 Epoch: 188	 Avg loss: 0.0071	 Time: 0.9389
+Test mse: 0.0233
+Fold: 5	 Epoch: 189	 Avg loss: 0.0070	 Time: 0.9381
+Fold: 5	 Epoch: 190	 Avg loss: 0.0070	 Time: 0.9205
+Test mse: 0.0249
+Fold: 5	 Epoch: 191	 Avg loss: 0.0068	 Time: 0.9154
+Fold: 5	 Epoch: 192	 Avg loss: 0.0067	 Time: 0.9354
+Test mse: 0.0255
+Fold: 5	 Epoch: 193	 Avg loss: 0.0066	 Time: 0.9380
+Fold: 5	 Epoch: 194	 Avg loss: 0.0064	 Time: 0.9302
+Test mse: 0.0251
+Fold: 5	 Epoch: 195	 Avg loss: 0.0062	 Time: 0.9409
+Fold: 5	 Epoch: 196	 Avg loss: 0.0062	 Time: 0.9567
+Test mse: 0.0250
+Fold: 5	 Epoch: 197	 Avg loss: 0.0060	 Time: 0.9216
+Fold: 5	 Epoch: 198	 Avg loss: 0.0060	 Time: 0.9260
+Test mse: 0.0250
+Fold: 5	 Epoch: 199	 Avg loss: 0.0059	 Time: 0.9128
+Fold: 5	 Epoch: 200	 Avg loss: 0.0058	 Time: 0.9260
+Test mse: 0.0259
+Fold: 6	 Epoch: 1	 Avg loss: 0.3743	 Time: 1.1731
+Fold: 6	 Epoch: 2	 Avg loss: 0.1797	 Time: 1.0314
+Test mse: 0.1254
+Fold: 6	 Epoch: 3	 Avg loss: 0.1105	 Time: 0.9850
+Fold: 6	 Epoch: 4	 Avg loss: 0.1008	 Time: 1.0574
+Test mse: 0.1186
+Fold: 6	 Epoch: 5	 Avg loss: 0.1016	 Time: 0.9462
+Fold: 6	 Epoch: 6	 Avg loss: 0.1018	 Time: 0.9465
+Test mse: 0.1162
+New best decoder within a fold!
+Fold: 6	 Epoch: 7	 Avg loss: 0.1015	 Time: 0.9185
+Fold: 6	 Epoch: 8	 Avg loss: 0.1011	 Time: 0.9640
+Test mse: 0.1144
+New best decoder within a fold!
+Fold: 6	 Epoch: 9	 Avg loss: 0.1007	 Time: 1.1528
+Fold: 6	 Epoch: 10	 Avg loss: 0.1003	 Time: 0.9966
+Test mse: 0.1126
+New best decoder within a fold!
+Fold: 6	 Epoch: 11	 Avg loss: 0.0998	 Time: 1.0099
+Fold: 6	 Epoch: 12	 Avg loss: 0.0994	 Time: 0.9552
+Test mse: 0.1107
+New best decoder within a fold!
+Fold: 6	 Epoch: 13	 Avg loss: 0.0989	 Time: 1.0674
+Fold: 6	 Epoch: 14	 Avg loss: 0.0984	 Time: 1.1879
+Test mse: 0.1089
+New best decoder within a fold!
+Fold: 6	 Epoch: 15	 Avg loss: 0.0979	 Time: 1.0448
+Fold: 6	 Epoch: 16	 Avg loss: 0.0974	 Time: 1.1154
+Test mse: 0.1070
+New best decoder within a fold!
+Fold: 6	 Epoch: 17	 Avg loss: 0.0969	 Time: 1.0736
+Fold: 6	 Epoch: 18	 Avg loss: 0.0963	 Time: 0.9400
+Test mse: 0.1050
+New best decoder within a fold!
+Fold: 6	 Epoch: 19	 Avg loss: 0.0957	 Time: 1.0315
+Fold: 6	 Epoch: 20	 Avg loss: 0.0951	 Time: 1.0257
+Test mse: 0.1029
+New best decoder within a fold!
+Fold: 6	 Epoch: 21	 Avg loss: 0.0945	 Time: 1.0439
+Fold: 6	 Epoch: 22	 Avg loss: 0.0938	 Time: 1.0381
+Test mse: 0.1008
+New best decoder within a fold!
+Fold: 6	 Epoch: 23	 Avg loss: 0.0932	 Time: 1.0548
+Fold: 6	 Epoch: 24	 Avg loss: 0.0922	 Time: 0.9762
+Test mse: 0.0983
+New best decoder within a fold!
+Fold: 6	 Epoch: 25	 Avg loss: 0.0915	 Time: 1.0420
+Fold: 6	 Epoch: 26	 Avg loss: 0.0905	 Time: 0.9857
+Test mse: 0.0957
+New best decoder within a fold!
+Fold: 6	 Epoch: 27	 Avg loss: 0.0896	 Time: 0.9531
+Fold: 6	 Epoch: 28	 Avg loss: 0.0885	 Time: 0.9995
+Test mse: 0.0928
+New best decoder within a fold!
+Fold: 6	 Epoch: 29	 Avg loss: 0.0874	 Time: 0.9772
+Fold: 6	 Epoch: 30	 Avg loss: 0.0861	 Time: 1.1011
+Test mse: 0.0899
+New best decoder within a fold!
+Fold: 6	 Epoch: 31	 Avg loss: 0.0847	 Time: 0.9768
+Fold: 6	 Epoch: 32	 Avg loss: 0.0832	 Time: 1.0146
+Test mse: 0.0869
+New best decoder within a fold!
+Fold: 6	 Epoch: 33	 Avg loss: 0.0816	 Time: 1.0758
+Fold: 6	 Epoch: 34	 Avg loss: 0.0800	 Time: 0.9433
+Test mse: 0.0846
+New best decoder within a fold!
+Fold: 6	 Epoch: 35	 Avg loss: 0.0782	 Time: 0.9960
+Fold: 6	 Epoch: 36	 Avg loss: 0.0766	 Time: 1.0751
+Test mse: 0.0818
+New best decoder within a fold!
+Fold: 6	 Epoch: 37	 Avg loss: 0.0749	 Time: 1.0376
+Fold: 6	 Epoch: 38	 Avg loss: 0.0734	 Time: 1.1165
+Test mse: 0.0783
+New best decoder within a fold!
+Fold: 6	 Epoch: 39	 Avg loss: 0.0719	 Time: 1.0697
+Fold: 6	 Epoch: 40	 Avg loss: 0.0706	 Time: 1.0264
+Test mse: 0.0745
+New best decoder within a fold!
+Fold: 6	 Epoch: 41	 Avg loss: 0.0693	 Time: 1.0010
+Fold: 6	 Epoch: 42	 Avg loss: 0.0681	 Time: 1.0092
+Test mse: 0.0708
+New best decoder within a fold!
+Fold: 6	 Epoch: 43	 Avg loss: 0.0671	 Time: 1.0626
+Fold: 6	 Epoch: 44	 Avg loss: 0.0660	 Time: 1.0140
+Test mse: 0.0678
+New best decoder within a fold!
+Fold: 6	 Epoch: 45	 Avg loss: 0.0652	 Time: 1.0834
+Fold: 6	 Epoch: 46	 Avg loss: 0.0643	 Time: 0.9791
+Test mse: 0.0653
+New best decoder within a fold!
+Fold: 6	 Epoch: 47	 Avg loss: 0.0635	 Time: 0.9655
+Fold: 6	 Epoch: 48	 Avg loss: 0.0626	 Time: 0.9765
+Test mse: 0.0632
+New best decoder within a fold!
+Fold: 6	 Epoch: 49	 Avg loss: 0.0619	 Time: 0.9429
+Fold: 6	 Epoch: 50	 Avg loss: 0.0613	 Time: 0.9886
+Test mse: 0.0615
+New best decoder within a fold!
+Fold: 6	 Epoch: 51	 Avg loss: 0.0606	 Time: 0.9602
+Fold: 6	 Epoch: 52	 Avg loss: 0.0598	 Time: 0.9544
+Test mse: 0.0603
+New best decoder within a fold!
+Fold: 6	 Epoch: 53	 Avg loss: 0.0591	 Time: 0.9344
+Fold: 6	 Epoch: 54	 Avg loss: 0.0585	 Time: 0.9241
+Test mse: 0.0590
+New best decoder within a fold!
+Fold: 6	 Epoch: 55	 Avg loss: 0.0580	 Time: 0.9337
+Fold: 6	 Epoch: 56	 Avg loss: 0.0573	 Time: 0.9142
+Test mse: 0.0579
+New best decoder within a fold!
+Fold: 6	 Epoch: 57	 Avg loss: 0.0568	 Time: 0.9287
+Fold: 6	 Epoch: 58	 Avg loss: 0.0560	 Time: 0.9435
+Test mse: 0.0568
+New best decoder within a fold!
+Fold: 6	 Epoch: 59	 Avg loss: 0.0555	 Time: 0.9120
+Fold: 6	 Epoch: 60	 Avg loss: 0.0548	 Time: 0.9696
+Test mse: 0.0554
+New best decoder within a fold!
+Fold: 6	 Epoch: 61	 Avg loss: 0.0544	 Time: 0.9263
+Fold: 6	 Epoch: 62	 Avg loss: 0.0535	 Time: 0.9018
+Test mse: 0.0542
+New best decoder within a fold!
+Fold: 6	 Epoch: 63	 Avg loss: 0.0530	 Time: 0.9143
+Fold: 6	 Epoch: 64	 Avg loss: 0.0524	 Time: 0.9210
+Test mse: 0.0532
+New best decoder within a fold!
+Fold: 6	 Epoch: 65	 Avg loss: 0.0518	 Time: 0.9526
+Fold: 6	 Epoch: 66	 Avg loss: 0.0512	 Time: 0.9686
+Test mse: 0.0516
+New best decoder within a fold!
+Fold: 6	 Epoch: 67	 Avg loss: 0.0505	 Time: 1.0300
+Fold: 6	 Epoch: 68	 Avg loss: 0.0496	 Time: 0.9522
+Test mse: 0.0499
+New best decoder within a fold!
+Fold: 6	 Epoch: 69	 Avg loss: 0.0491	 Time: 0.9010
+Fold: 6	 Epoch: 70	 Avg loss: 0.0483	 Time: 0.9277
+Test mse: 0.0484
+New best decoder within a fold!
+Fold: 6	 Epoch: 71	 Avg loss: 0.0476	 Time: 0.9309
+Fold: 6	 Epoch: 72	 Avg loss: 0.0470	 Time: 0.9357
+Test mse: 0.0468
+New best decoder within a fold!
+Fold: 6	 Epoch: 73	 Avg loss: 0.0461	 Time: 0.9611
+Fold: 6	 Epoch: 74	 Avg loss: 0.0457	 Time: 0.9413
+Test mse: 0.0451
+New best decoder within a fold!
+Fold: 6	 Epoch: 75	 Avg loss: 0.0448	 Time: 0.9865
+Fold: 6	 Epoch: 76	 Avg loss: 0.0441	 Time: 0.9317
+Test mse: 0.0433
+New best decoder within a fold!
+Fold: 6	 Epoch: 77	 Avg loss: 0.0433	 Time: 0.9244
+Fold: 6	 Epoch: 78	 Avg loss: 0.0423	 Time: 0.9171
+Test mse: 0.0418
+New best decoder within a fold!
+Fold: 6	 Epoch: 79	 Avg loss: 0.0414	 Time: 0.9250
+Fold: 6	 Epoch: 80	 Avg loss: 0.0406	 Time: 0.9280
+Test mse: 0.0403
+New best decoder within a fold!
+Fold: 6	 Epoch: 81	 Avg loss: 0.0398	 Time: 0.9310
+Fold: 6	 Epoch: 82	 Avg loss: 0.0389	 Time: 0.9772
+Test mse: 0.0387
+New best decoder within a fold!
+Fold: 6	 Epoch: 83	 Avg loss: 0.0379	 Time: 0.9505
+Fold: 6	 Epoch: 84	 Avg loss: 0.0373	 Time: 0.9373
+Test mse: 0.0375
+New best decoder within a fold!
+Fold: 6	 Epoch: 85	 Avg loss: 0.0363	 Time: 0.9226
+Fold: 6	 Epoch: 86	 Avg loss: 0.0355	 Time: 0.9319
+Test mse: 0.0366
+New best decoder within a fold!
+Fold: 6	 Epoch: 87	 Avg loss: 0.0347	 Time: 0.9245
+Fold: 6	 Epoch: 88	 Avg loss: 0.0339	 Time: 0.9230
+Test mse: 0.0355
+New best decoder within a fold!
+Fold: 6	 Epoch: 89	 Avg loss: 0.0333	 Time: 0.9317
+Fold: 6	 Epoch: 90	 Avg loss: 0.0325	 Time: 0.9635
+Test mse: 0.0344
+New best decoder within a fold!
+Fold: 6	 Epoch: 91	 Avg loss: 0.0319	 Time: 0.9325
+Fold: 6	 Epoch: 92	 Avg loss: 0.0313	 Time: 0.9344
+Test mse: 0.0335
+New best decoder within a fold!
+Fold: 6	 Epoch: 93	 Avg loss: 0.0309	 Time: 0.9344
+Fold: 6	 Epoch: 94	 Avg loss: 0.0303	 Time: 0.9262
+Test mse: 0.0326
+New best decoder within a fold!
+Fold: 6	 Epoch: 95	 Avg loss: 0.0298	 Time: 0.9303
+Fold: 6	 Epoch: 96	 Avg loss: 0.0293	 Time: 0.9296
+Test mse: 0.0319
+New best decoder within a fold!
+Fold: 6	 Epoch: 97	 Avg loss: 0.0290	 Time: 0.9149
+Fold: 6	 Epoch: 98	 Avg loss: 0.0283	 Time: 0.9619
+Test mse: 0.0313
+New best decoder within a fold!
+Fold: 6	 Epoch: 99	 Avg loss: 0.0279	 Time: 0.9464
+Fold: 6	 Epoch: 100	 Avg loss: 0.0273	 Time: 0.9422
+Test mse: 0.0307
+New best decoder within a fold!
+Fold: 6	 Epoch: 101	 Avg loss: 0.0268	 Time: 0.9310
+Fold: 6	 Epoch: 102	 Avg loss: 0.0268	 Time: 0.9284
+Test mse: 0.0304
+New best decoder within a fold!
+Fold: 6	 Epoch: 103	 Avg loss: 0.0261	 Time: 0.9323
+Fold: 6	 Epoch: 104	 Avg loss: 0.0256	 Time: 0.9415
+Test mse: 0.0300
+New best decoder within a fold!
+Fold: 6	 Epoch: 105	 Avg loss: 0.0253	 Time: 0.9444
+Fold: 6	 Epoch: 106	 Avg loss: 0.0247	 Time: 0.9524
+Test mse: 0.0298
+New best decoder within a fold!
+Fold: 6	 Epoch: 107	 Avg loss: 0.0244	 Time: 0.9531
+Fold: 6	 Epoch: 108	 Avg loss: 0.0241	 Time: 0.9137
+Test mse: 0.0292
+New best decoder within a fold!
+Fold: 6	 Epoch: 109	 Avg loss: 0.0236	 Time: 0.9334
+Fold: 6	 Epoch: 110	 Avg loss: 0.0235	 Time: 0.9256
+Test mse: 0.0293
+Fold: 6	 Epoch: 111	 Avg loss: 0.0230	 Time: 0.9209
+Fold: 6	 Epoch: 112	 Avg loss: 0.0229	 Time: 0.9151
+Test mse: 0.0288
+New best decoder within a fold!
+Fold: 6	 Epoch: 113	 Avg loss: 0.0226	 Time: 0.9456
+Fold: 6	 Epoch: 114	 Avg loss: 0.0221	 Time: 0.9118
+Test mse: 0.0283
+New best decoder within a fold!
+Fold: 6	 Epoch: 115	 Avg loss: 0.0218	 Time: 0.9460
+Fold: 6	 Epoch: 116	 Avg loss: 0.0213	 Time: 0.9465
+Test mse: 0.0281
+New best decoder within a fold!
+Fold: 6	 Epoch: 117	 Avg loss: 0.0210	 Time: 0.9142
+Fold: 6	 Epoch: 118	 Avg loss: 0.0207	 Time: 0.9313
+Test mse: 0.0279
+New best decoder within a fold!
+Fold: 6	 Epoch: 119	 Avg loss: 0.0203	 Time: 0.9132
+Fold: 6	 Epoch: 120	 Avg loss: 0.0200	 Time: 0.9938
+Test mse: 0.0276
+New best decoder within a fold!
+Fold: 6	 Epoch: 121	 Avg loss: 0.0198	 Time: 0.9423
+Fold: 6	 Epoch: 122	 Avg loss: 0.0196	 Time: 0.9400
+Test mse: 0.0275
+New best decoder within a fold!
+Fold: 6	 Epoch: 123	 Avg loss: 0.0194	 Time: 0.9121
+Fold: 6	 Epoch: 124	 Avg loss: 0.0192	 Time: 0.9201
+Test mse: 0.0274
+New best decoder within a fold!
+Fold: 6	 Epoch: 125	 Avg loss: 0.0189	 Time: 0.9551
+Fold: 6	 Epoch: 126	 Avg loss: 0.0187	 Time: 0.9272
+Test mse: 0.0274
+Fold: 6	 Epoch: 127	 Avg loss: 0.0185	 Time: 0.9746
+Fold: 6	 Epoch: 128	 Avg loss: 0.0182	 Time: 0.9582
+Test mse: 0.0277
+Fold: 6	 Epoch: 129	 Avg loss: 0.0181	 Time: 0.9624
+Fold: 6	 Epoch: 130	 Avg loss: 0.0179	 Time: 0.9140
+Test mse: 0.0275
+Fold: 6	 Epoch: 131	 Avg loss: 0.0177	 Time: 0.9251
+Fold: 6	 Epoch: 132	 Avg loss: 0.0173	 Time: 0.9457
+Test mse: 0.0279
+Fold: 6	 Epoch: 133	 Avg loss: 0.0171	 Time: 0.9254
+Fold: 6	 Epoch: 134	 Avg loss: 0.0168	 Time: 0.9072
+Test mse: 0.0279
+Fold: 6	 Epoch: 135	 Avg loss: 0.0166	 Time: 0.9369
+Fold: 6	 Epoch: 136	 Avg loss: 0.0163	 Time: 0.9755
+Test mse: 0.0280
+Fold: 6	 Epoch: 137	 Avg loss: 0.0160	 Time: 0.9591
+Fold: 6	 Epoch: 138	 Avg loss: 0.0157	 Time: 0.9153
+Test mse: 0.0281
+Fold: 6	 Epoch: 139	 Avg loss: 0.0154	 Time: 0.9472
+Fold: 6	 Epoch: 140	 Avg loss: 0.0153	 Time: 0.9288
+Test mse: 0.0282
+Fold: 6	 Epoch: 141	 Avg loss: 0.0151	 Time: 0.9177
+Fold: 6	 Epoch: 142	 Avg loss: 0.0148	 Time: 0.9173
+Test mse: 0.0283
+Fold: 6	 Epoch: 143	 Avg loss: 0.0146	 Time: 0.9198
+Fold: 6	 Epoch: 144	 Avg loss: 0.0143	 Time: 0.9349
+Test mse: 0.0285
+Fold: 6	 Epoch: 145	 Avg loss: 0.0142	 Time: 0.9154
+Fold: 6	 Epoch: 146	 Avg loss: 0.0140	 Time: 0.9206
+Test mse: 0.0282
+Fold: 6	 Epoch: 147	 Avg loss: 0.0137	 Time: 0.9484
+Fold: 6	 Epoch: 148	 Avg loss: 0.0135	 Time: 0.9504
+Test mse: 0.0286
+Fold: 6	 Epoch: 149	 Avg loss: 0.0133	 Time: 0.9792
+Fold: 6	 Epoch: 150	 Avg loss: 0.0131	 Time: 0.9638
+Test mse: 0.0284
+Fold: 6	 Epoch: 151	 Avg loss: 0.0129	 Time: 0.9484
+Fold: 6	 Epoch: 152	 Avg loss: 0.0127	 Time: 0.9463
+Test mse: 0.0287
+Fold: 6	 Epoch: 153	 Avg loss: 0.0126	 Time: 0.9450
+Fold: 6	 Epoch: 154	 Avg loss: 0.0124	 Time: 0.9233
+Test mse: 0.0290
+Fold: 6	 Epoch: 155	 Avg loss: 0.0122	 Time: 0.9402
+Fold: 6	 Epoch: 156	 Avg loss: 0.0120	 Time: 0.9256
+Test mse: 0.0291
+Fold: 6	 Epoch: 157	 Avg loss: 0.0118	 Time: 0.9264
+Fold: 6	 Epoch: 158	 Avg loss: 0.0118	 Time: 0.9114
+Test mse: 0.0295
+Fold: 6	 Epoch: 159	 Avg loss: 0.0116	 Time: 0.9801
+Fold: 6	 Epoch: 160	 Avg loss: 0.0115	 Time: 0.9343
+Test mse: 0.0296
+Fold: 6	 Epoch: 161	 Avg loss: 0.0113	 Time: 0.9298
+Fold: 6	 Epoch: 162	 Avg loss: 0.0112	 Time: 0.9354
+Test mse: 0.0300
+Fold: 6	 Epoch: 163	 Avg loss: 0.0112	 Time: 0.9449
+Fold: 6	 Epoch: 164	 Avg loss: 0.0110	 Time: 0.9251
+Test mse: 0.0301
+Fold: 6	 Epoch: 165	 Avg loss: 0.0107	 Time: 0.9177
+Fold: 6	 Epoch: 166	 Avg loss: 0.0107	 Time: 0.9417
+Test mse: 0.0307
+Fold: 6	 Epoch: 167	 Avg loss: 0.0107	 Time: 0.9684
+Fold: 6	 Epoch: 168	 Avg loss: 0.0106	 Time: 0.9177
+Test mse: 0.0312
+Fold: 6	 Epoch: 169	 Avg loss: 0.0103	 Time: 0.9279
+Fold: 6	 Epoch: 170	 Avg loss: 0.0102	 Time: 0.9248
+Test mse: 0.0311
+Fold: 6	 Epoch: 171	 Avg loss: 0.0100	 Time: 0.9195
+Fold: 6	 Epoch: 172	 Avg loss: 0.0100	 Time: 0.9140
+Test mse: 0.0320
+Fold: 6	 Epoch: 173	 Avg loss: 0.0099	 Time: 0.9138
+Fold: 6	 Epoch: 174	 Avg loss: 0.0097	 Time: 0.9249
+Test mse: 0.0322
+Fold: 6	 Epoch: 175	 Avg loss: 0.0096	 Time: 0.9458
+Fold: 6	 Epoch: 176	 Avg loss: 0.0094	 Time: 0.9281
+Test mse: 0.0326
+Fold: 6	 Epoch: 177	 Avg loss: 0.0090	 Time: 0.9198
+Fold: 6	 Epoch: 178	 Avg loss: 0.0089	 Time: 0.9149
+Test mse: 0.0324
+Fold: 6	 Epoch: 179	 Avg loss: 0.0088	 Time: 0.9144
+Fold: 6	 Epoch: 180	 Avg loss: 0.0086	 Time: 0.9095
+Test mse: 0.0327
+Fold: 6	 Epoch: 181	 Avg loss: 0.0085	 Time: 0.9120
+Fold: 6	 Epoch: 182	 Avg loss: 0.0084	 Time: 0.9217
+Test mse: 0.0333
+Fold: 6	 Epoch: 183	 Avg loss: 0.0082	 Time: 0.9206
+Fold: 6	 Epoch: 184	 Avg loss: 0.0082	 Time: 0.9365
+Test mse: 0.0339
+Fold: 6	 Epoch: 185	 Avg loss: 0.0080	 Time: 0.9173
+Fold: 6	 Epoch: 186	 Avg loss: 0.0080	 Time: 0.9323
+Test mse: 0.0348
+Fold: 6	 Epoch: 187	 Avg loss: 0.0078	 Time: 0.9280
+Fold: 6	 Epoch: 188	 Avg loss: 0.0079	 Time: 0.9077
+Test mse: 0.0360
+Fold: 6	 Epoch: 189	 Avg loss: 0.0078	 Time: 0.9584
+Fold: 6	 Epoch: 190	 Avg loss: 0.0077	 Time: 0.9554
+Test mse: 0.0360
+Fold: 6	 Epoch: 191	 Avg loss: 0.0077	 Time: 0.9447
+Fold: 6	 Epoch: 192	 Avg loss: 0.0077	 Time: 0.9337
+Test mse: 0.0364
+Fold: 6	 Epoch: 193	 Avg loss: 0.0080	 Time: 0.9387
+Fold: 6	 Epoch: 194	 Avg loss: 0.0079	 Time: 0.9111
+Test mse: 0.0349
+Fold: 6	 Epoch: 195	 Avg loss: 0.0084	 Time: 0.9122
+Fold: 6	 Epoch: 196	 Avg loss: 0.0089	 Time: 0.9088
+Test mse: 0.0355
+Fold: 6	 Epoch: 197	 Avg loss: 0.0109	 Time: 0.9278
+Fold: 6	 Epoch: 198	 Avg loss: 0.0103	 Time: 0.9502
+Test mse: 0.0332
+Fold: 6	 Epoch: 199	 Avg loss: 0.0090	 Time: 0.9232
+Fold: 6	 Epoch: 200	 Avg loss: 0.0072	 Time: 0.9192
+Test mse: 0.0315
+Fold: 7	 Epoch: 1	 Avg loss: 0.2934	 Time: 0.9261
+Fold: 7	 Epoch: 2	 Avg loss: 0.1737	 Time: 0.9256
+Test mse: 0.1364
+Fold: 7	 Epoch: 3	 Avg loss: 0.1252	 Time: 0.9128
+Fold: 7	 Epoch: 4	 Avg loss: 0.1192	 Time: 0.9323
+Test mse: 0.1284
+Fold: 7	 Epoch: 5	 Avg loss: 0.1186	 Time: 0.9533
+Fold: 7	 Epoch: 6	 Avg loss: 0.1183	 Time: 0.9152
+Test mse: 0.1267
+New best decoder within a fold!
+Fold: 7	 Epoch: 7	 Avg loss: 0.1177	 Time: 0.9363
+Fold: 7	 Epoch: 8	 Avg loss: 0.1170	 Time: 0.9148
+Test mse: 0.1252
+New best decoder within a fold!
+Fold: 7	 Epoch: 9	 Avg loss: 0.1163	 Time: 0.9157
+Fold: 7	 Epoch: 10	 Avg loss: 0.1156	 Time: 0.9026
+Test mse: 0.1238
+New best decoder within a fold!
+Fold: 7	 Epoch: 11	 Avg loss: 0.1149	 Time: 0.9290
+Fold: 7	 Epoch: 12	 Avg loss: 0.1143	 Time: 0.9197
+Test mse: 0.1225
+New best decoder within a fold!
+Fold: 7	 Epoch: 13	 Avg loss: 0.1137	 Time: 0.9433
+Fold: 7	 Epoch: 14	 Avg loss: 0.1130	 Time: 0.9295
+Test mse: 0.1211
+New best decoder within a fold!
+Fold: 7	 Epoch: 15	 Avg loss: 0.1124	 Time: 0.9211
+Fold: 7	 Epoch: 16	 Avg loss: 0.1118	 Time: 0.9239
+Test mse: 0.1197
+New best decoder within a fold!
+Fold: 7	 Epoch: 17	 Avg loss: 0.1111	 Time: 0.9382
+Fold: 7	 Epoch: 18	 Avg loss: 0.1103	 Time: 0.9503
+Test mse: 0.1179
+New best decoder within a fold!
+Fold: 7	 Epoch: 19	 Avg loss: 0.1096	 Time: 0.9245
+Fold: 7	 Epoch: 20	 Avg loss: 0.1088	 Time: 0.9173
+Test mse: 0.1162
+New best decoder within a fold!
+Fold: 7	 Epoch: 21	 Avg loss: 0.1081	 Time: 0.9541
+Fold: 7	 Epoch: 22	 Avg loss: 0.1071	 Time: 0.9079
+Test mse: 0.1143
+New best decoder within a fold!
+Fold: 7	 Epoch: 23	 Avg loss: 0.1061	 Time: 0.9183
+Fold: 7	 Epoch: 24	 Avg loss: 0.1047	 Time: 0.9400
+Test mse: 0.1112
+New best decoder within a fold!
+Fold: 7	 Epoch: 25	 Avg loss: 0.1037	 Time: 0.9279
+Fold: 7	 Epoch: 26	 Avg loss: 0.1021	 Time: 0.9112
+Test mse: 0.1078
+New best decoder within a fold!
+Fold: 7	 Epoch: 27	 Avg loss: 0.1010	 Time: 0.9366
+Fold: 7	 Epoch: 28	 Avg loss: 0.0993	 Time: 0.9253
+Test mse: 0.1036
+New best decoder within a fold!
+Fold: 7	 Epoch: 29	 Avg loss: 0.0977	 Time: 0.9379
+Fold: 7	 Epoch: 30	 Avg loss: 0.0954	 Time: 0.9232
+Test mse: 0.0975
+New best decoder within a fold!
+Fold: 7	 Epoch: 31	 Avg loss: 0.0933	 Time: 0.9283
+Fold: 7	 Epoch: 32	 Avg loss: 0.0907	 Time: 0.9238
+Test mse: 0.0904
+New best decoder within a fold!
+Fold: 7	 Epoch: 33	 Avg loss: 0.0883	 Time: 0.9291
+Fold: 7	 Epoch: 34	 Avg loss: 0.0855	 Time: 0.9067
+Test mse: 0.0831
+New best decoder within a fold!
+Fold: 7	 Epoch: 35	 Avg loss: 0.0831	 Time: 0.9121
+Fold: 7	 Epoch: 36	 Avg loss: 0.0805	 Time: 0.9462
+Test mse: 0.0764
+New best decoder within a fold!
+Fold: 7	 Epoch: 37	 Avg loss: 0.0779	 Time: 0.9135
+Fold: 7	 Epoch: 38	 Avg loss: 0.0757	 Time: 0.9088
+Test mse: 0.0701
+New best decoder within a fold!
+Fold: 7	 Epoch: 39	 Avg loss: 0.0736	 Time: 0.9255
+Fold: 7	 Epoch: 40	 Avg loss: 0.0718	 Time: 0.9230
+Test mse: 0.0658
+New best decoder within a fold!
+Fold: 7	 Epoch: 41	 Avg loss: 0.0703	 Time: 0.9126
+Fold: 7	 Epoch: 42	 Avg loss: 0.0687	 Time: 0.9134
+Test mse: 0.0623
+New best decoder within a fold!
+Fold: 7	 Epoch: 43	 Avg loss: 0.0673	 Time: 0.9293
+Fold: 7	 Epoch: 44	 Avg loss: 0.0660	 Time: 0.9376
+Test mse: 0.0599
+New best decoder within a fold!
+Fold: 7	 Epoch: 45	 Avg loss: 0.0646	 Time: 0.9200
+Fold: 7	 Epoch: 46	 Avg loss: 0.0634	 Time: 0.9140
+Test mse: 0.0579
+New best decoder within a fold!
+Fold: 7	 Epoch: 47	 Avg loss: 0.0624	 Time: 0.9369
+Fold: 7	 Epoch: 48	 Avg loss: 0.0613	 Time: 0.9447
+Test mse: 0.0558
+New best decoder within a fold!
+Fold: 7	 Epoch: 49	 Avg loss: 0.0600	 Time: 0.9100
+Fold: 7	 Epoch: 50	 Avg loss: 0.0590	 Time: 0.9757
+Test mse: 0.0545
+New best decoder within a fold!
+Fold: 7	 Epoch: 51	 Avg loss: 0.0579	 Time: 0.9674
+Fold: 7	 Epoch: 52	 Avg loss: 0.0571	 Time: 0.9414
+Test mse: 0.0545
+New best decoder within a fold!
+Fold: 7	 Epoch: 53	 Avg loss: 0.0562	 Time: 0.9209
+Fold: 7	 Epoch: 54	 Avg loss: 0.0550	 Time: 0.9318
+Test mse: 0.0537
+New best decoder within a fold!
+Fold: 7	 Epoch: 55	 Avg loss: 0.0544	 Time: 0.9796
+Fold: 7	 Epoch: 56	 Avg loss: 0.0533	 Time: 0.9365
+Test mse: 0.0523
+New best decoder within a fold!
+Fold: 7	 Epoch: 57	 Avg loss: 0.0524	 Time: 0.9350
+Fold: 7	 Epoch: 58	 Avg loss: 0.0513	 Time: 0.9276
+Test mse: 0.0512
+New best decoder within a fold!
+Fold: 7	 Epoch: 59	 Avg loss: 0.0503	 Time: 1.0023
+Fold: 7	 Epoch: 60	 Avg loss: 0.0494	 Time: 0.9297
+Test mse: 0.0501
+New best decoder within a fold!
+Fold: 7	 Epoch: 61	 Avg loss: 0.0486	 Time: 0.9078
+Fold: 7	 Epoch: 62	 Avg loss: 0.0477	 Time: 0.9141
+Test mse: 0.0482
+New best decoder within a fold!
+Fold: 7	 Epoch: 63	 Avg loss: 0.0469	 Time: 0.9205
+Fold: 7	 Epoch: 64	 Avg loss: 0.0462	 Time: 0.9104
+Test mse: 0.0474
+New best decoder within a fold!
+Fold: 7	 Epoch: 65	 Avg loss: 0.0454	 Time: 0.9383
+Fold: 7	 Epoch: 66	 Avg loss: 0.0444	 Time: 0.9392
+Test mse: 0.0456
+New best decoder within a fold!
+Fold: 7	 Epoch: 67	 Avg loss: 0.0435	 Time: 0.9429
+Fold: 7	 Epoch: 68	 Avg loss: 0.0424	 Time: 0.9166
+Test mse: 0.0430
+New best decoder within a fold!
+Fold: 7	 Epoch: 69	 Avg loss: 0.0421	 Time: 0.9169
+Fold: 7	 Epoch: 70	 Avg loss: 0.0411	 Time: 0.9224
+Test mse: 0.0412
+New best decoder within a fold!
+Fold: 7	 Epoch: 71	 Avg loss: 0.0403	 Time: 0.9433
+Fold: 7	 Epoch: 72	 Avg loss: 0.0395	 Time: 0.9152
+Test mse: 0.0391
+New best decoder within a fold!
+Fold: 7	 Epoch: 73	 Avg loss: 0.0384	 Time: 0.9114
+Fold: 7	 Epoch: 74	 Avg loss: 0.0376	 Time: 0.9221
+Test mse: 0.0375
+New best decoder within a fold!
+Fold: 7	 Epoch: 75	 Avg loss: 0.0369	 Time: 0.9473
+Fold: 7	 Epoch: 76	 Avg loss: 0.0364	 Time: 0.9286
+Test mse: 0.0359
+New best decoder within a fold!
+Fold: 7	 Epoch: 77	 Avg loss: 0.0352	 Time: 0.9390
+Fold: 7	 Epoch: 78	 Avg loss: 0.0344	 Time: 0.9402
+Test mse: 0.0336
+New best decoder within a fold!
+Fold: 7	 Epoch: 79	 Avg loss: 0.0337	 Time: 0.9215
+Fold: 7	 Epoch: 80	 Avg loss: 0.0329	 Time: 0.9135
+Test mse: 0.0316
+New best decoder within a fold!
+Fold: 7	 Epoch: 81	 Avg loss: 0.0319	 Time: 0.9464
+Fold: 7	 Epoch: 82	 Avg loss: 0.0307	 Time: 0.9058
+Test mse: 0.0294
+New best decoder within a fold!
+Fold: 7	 Epoch: 83	 Avg loss: 0.0300	 Time: 0.9549
+Fold: 7	 Epoch: 84	 Avg loss: 0.0290	 Time: 0.9015
+Test mse: 0.0281
+New best decoder within a fold!
+Fold: 7	 Epoch: 85	 Avg loss: 0.0282	 Time: 0.9215
+Fold: 7	 Epoch: 86	 Avg loss: 0.0272	 Time: 0.9488
+Test mse: 0.0269
+New best decoder within a fold!
+Fold: 7	 Epoch: 87	 Avg loss: 0.0266	 Time: 0.9419
+Fold: 7	 Epoch: 88	 Avg loss: 0.0258	 Time: 0.9101
+Test mse: 0.0258
+New best decoder within a fold!
+Fold: 7	 Epoch: 89	 Avg loss: 0.0256	 Time: 0.9232
+Fold: 7	 Epoch: 90	 Avg loss: 0.0250	 Time: 0.9460
+Test mse: 0.0254
+New best decoder within a fold!
+Fold: 7	 Epoch: 91	 Avg loss: 0.0244	 Time: 0.9155
+Fold: 7	 Epoch: 92	 Avg loss: 0.0236	 Time: 0.9358
+Test mse: 0.0245
+New best decoder within a fold!
+Fold: 7	 Epoch: 93	 Avg loss: 0.0229	 Time: 0.9199
+Fold: 7	 Epoch: 94	 Avg loss: 0.0223	 Time: 0.9333
+Test mse: 0.0237
+New best decoder within a fold!
+Fold: 7	 Epoch: 95	 Avg loss: 0.0218	 Time: 0.9629
+Fold: 7	 Epoch: 96	 Avg loss: 0.0211	 Time: 0.9169
+Test mse: 0.0231
+New best decoder within a fold!
+Fold: 7	 Epoch: 97	 Avg loss: 0.0208	 Time: 0.9173
+Fold: 7	 Epoch: 98	 Avg loss: 0.0203	 Time: 0.9562
+Test mse: 0.0222
+New best decoder within a fold!
+Fold: 7	 Epoch: 99	 Avg loss: 0.0198	 Time: 0.9429
+Fold: 7	 Epoch: 100	 Avg loss: 0.0195	 Time: 0.9451
+Test mse: 0.0220
+New best decoder within a fold!
+Fold: 7	 Epoch: 101	 Avg loss: 0.0188	 Time: 0.9343
+Fold: 7	 Epoch: 102	 Avg loss: 0.0187	 Time: 0.9069
+Test mse: 0.0219
+New best decoder within a fold!
+Fold: 7	 Epoch: 103	 Avg loss: 0.0183	 Time: 0.9401
+Fold: 7	 Epoch: 104	 Avg loss: 0.0177	 Time: 0.9253
+Test mse: 0.0213
+New best decoder within a fold!
+Fold: 7	 Epoch: 105	 Avg loss: 0.0174	 Time: 0.9162
+Fold: 7	 Epoch: 106	 Avg loss: 0.0170	 Time: 0.9567
+Test mse: 0.0209
+New best decoder within a fold!
+Fold: 7	 Epoch: 107	 Avg loss: 0.0167	 Time: 0.9396
+Fold: 7	 Epoch: 108	 Avg loss: 0.0164	 Time: 0.9169
+Test mse: 0.0207
+New best decoder within a fold!
+Fold: 7	 Epoch: 109	 Avg loss: 0.0161	 Time: 0.9582
+Fold: 7	 Epoch: 110	 Avg loss: 0.0159	 Time: 0.9290
+Test mse: 0.0205
+New best decoder within a fold!
+Fold: 7	 Epoch: 111	 Avg loss: 0.0156	 Time: 0.9180
+Fold: 7	 Epoch: 112	 Avg loss: 0.0155	 Time: 0.9681
+Test mse: 0.0201
+New best decoder within a fold!
+Fold: 7	 Epoch: 113	 Avg loss: 0.0152	 Time: 0.9457
+Fold: 7	 Epoch: 114	 Avg loss: 0.0151	 Time: 0.9212
+Test mse: 0.0203
+Fold: 7	 Epoch: 115	 Avg loss: 0.0148	 Time: 0.9209
+Fold: 7	 Epoch: 116	 Avg loss: 0.0148	 Time: 0.9269
+Test mse: 0.0203
+Fold: 7	 Epoch: 117	 Avg loss: 0.0147	 Time: 0.9143
+Fold: 7	 Epoch: 118	 Avg loss: 0.0145	 Time: 0.9251
+Test mse: 0.0204
+Fold: 7	 Epoch: 119	 Avg loss: 0.0143	 Time: 0.9389
+Fold: 7	 Epoch: 120	 Avg loss: 0.0142	 Time: 0.9542
+Test mse: 0.0213
+Fold: 7	 Epoch: 121	 Avg loss: 0.0142	 Time: 0.9527
+Fold: 7	 Epoch: 122	 Avg loss: 0.0141	 Time: 0.9288
+Test mse: 0.0219
+Fold: 7	 Epoch: 123	 Avg loss: 0.0140	 Time: 0.9143
+Fold: 7	 Epoch: 124	 Avg loss: 0.0138	 Time: 0.9297
+Test mse: 0.0225
+Fold: 7	 Epoch: 125	 Avg loss: 0.0137	 Time: 0.9258
+Fold: 7	 Epoch: 126	 Avg loss: 0.0140	 Time: 0.9140
+Test mse: 0.0250
+Fold: 7	 Epoch: 127	 Avg loss: 0.0141	 Time: 1.0826
+Fold: 7	 Epoch: 128	 Avg loss: 0.0147	 Time: 1.0266
+Test mse: 0.0261
+Fold: 7	 Epoch: 129	 Avg loss: 0.0157	 Time: 0.9110
+Fold: 7	 Epoch: 130	 Avg loss: 0.0162	 Time: 0.9270
+Test mse: 0.0204
+Fold: 7	 Epoch: 131	 Avg loss: 0.0158	 Time: 0.9270
+Fold: 7	 Epoch: 132	 Avg loss: 0.0142	 Time: 0.9187
+Test mse: 0.0227
+Fold: 7	 Epoch: 133	 Avg loss: 0.0133	 Time: 0.9195
+Fold: 7	 Epoch: 134	 Avg loss: 0.0133	 Time: 0.9029
+Test mse: 0.0242
+Fold: 7	 Epoch: 135	 Avg loss: 0.0131	 Time: 0.9092
+Fold: 7	 Epoch: 136	 Avg loss: 0.0133	 Time: 0.9493
+Test mse: 0.0231
+Fold: 7	 Epoch: 137	 Avg loss: 0.0133	 Time: 0.9046
+Fold: 7	 Epoch: 138	 Avg loss: 0.0130	 Time: 0.9060
+Test mse: 0.0231
+Fold: 7	 Epoch: 139	 Avg loss: 0.0125	 Time: 0.9417
+Fold: 7	 Epoch: 140	 Avg loss: 0.0122	 Time: 0.9448
+Test mse: 0.0234
+Fold: 7	 Epoch: 141	 Avg loss: 0.0119	 Time: 0.9304
+Fold: 7	 Epoch: 142	 Avg loss: 0.0117	 Time: 0.9146
+Test mse: 0.0227
+Fold: 7	 Epoch: 143	 Avg loss: 0.0113	 Time: 0.9212
+Fold: 7	 Epoch: 144	 Avg loss: 0.0114	 Time: 0.9646
+Test mse: 0.0231
+Fold: 7	 Epoch: 145	 Avg loss: 0.0110	 Time: 0.9503
+Fold: 7	 Epoch: 146	 Avg loss: 0.0111	 Time: 0.9184
+Test mse: 0.0231
+Fold: 7	 Epoch: 147	 Avg loss: 0.0108	 Time: 0.9213
+Fold: 7	 Epoch: 148	 Avg loss: 0.0105	 Time: 0.9187
+Test mse: 0.0227
+Fold: 7	 Epoch: 149	 Avg loss: 0.0106	 Time: 0.9222
+Fold: 7	 Epoch: 150	 Avg loss: 0.0104	 Time: 0.9302
+Test mse: 0.0221
+Fold: 7	 Epoch: 151	 Avg loss: 0.0107	 Time: 0.9328
+Fold: 7	 Epoch: 152	 Avg loss: 0.0106	 Time: 0.9401
+Test mse: 0.0223
+Fold: 7	 Epoch: 153	 Avg loss: 0.0106	 Time: 0.9221
+Fold: 7	 Epoch: 154	 Avg loss: 0.0107	 Time: 0.9237
+Test mse: 0.0233
+Fold: 7	 Epoch: 155	 Avg loss: 0.0107	 Time: 0.9129
+Fold: 7	 Epoch: 156	 Avg loss: 0.0108	 Time: 0.9328
+Test mse: 0.0236
+Fold: 7	 Epoch: 157	 Avg loss: 0.0109	 Time: 0.9300
+Fold: 7	 Epoch: 158	 Avg loss: 0.0108	 Time: 0.9181
+Test mse: 0.0245
+Fold: 7	 Epoch: 159	 Avg loss: 0.0108	 Time: 0.9603
+Fold: 7	 Epoch: 160	 Avg loss: 0.0108	 Time: 0.9463
+Test mse: 0.0247
+Fold: 7	 Epoch: 161	 Avg loss: 0.0111	 Time: 0.9283
+Fold: 7	 Epoch: 162	 Avg loss: 0.0117	 Time: 0.9493
+Test mse: 0.0236
+Fold: 7	 Epoch: 163	 Avg loss: 0.0132	 Time: 0.9352
+Fold: 7	 Epoch: 164	 Avg loss: 0.0119	 Time: 0.9224
+Test mse: 0.0206
+Fold: 7	 Epoch: 165	 Avg loss: 0.0126	 Time: 0.9168
+Fold: 7	 Epoch: 166	 Avg loss: 0.0128	 Time: 0.9160
+Test mse: 0.0241
+Fold: 7	 Epoch: 167	 Avg loss: 0.0124	 Time: 0.9434
+Fold: 7	 Epoch: 168	 Avg loss: 0.0114	 Time: 0.9354
+Test mse: 0.0241
+Fold: 7	 Epoch: 169	 Avg loss: 0.0103	 Time: 0.9163
+Fold: 7	 Epoch: 170	 Avg loss: 0.0095	 Time: 0.9090
+Test mse: 0.0224
+Fold: 7	 Epoch: 171	 Avg loss: 0.0090	 Time: 0.9465
+Fold: 7	 Epoch: 172	 Avg loss: 0.0088	 Time: 0.9293
+Test mse: 0.0218
+Fold: 7	 Epoch: 173	 Avg loss: 0.0085	 Time: 0.9914
+Fold: 7	 Epoch: 174	 Avg loss: 0.0083	 Time: 0.9355
+Test mse: 0.0215
+Fold: 7	 Epoch: 175	 Avg loss: 0.0081	 Time: 0.9459
+Fold: 7	 Epoch: 176	 Avg loss: 0.0080	 Time: 0.9330
+Test mse: 0.0214
+Fold: 7	 Epoch: 177	 Avg loss: 0.0078	 Time: 0.9169
+Fold: 7	 Epoch: 178	 Avg loss: 0.0077	 Time: 0.9392
+Test mse: 0.0210
+Fold: 7	 Epoch: 179	 Avg loss: 0.0076	 Time: 0.9243
+Fold: 7	 Epoch: 180	 Avg loss: 0.0075	 Time: 0.9188
+Test mse: 0.0210
+Fold: 7	 Epoch: 181	 Avg loss: 0.0074	 Time: 0.9342
+Fold: 7	 Epoch: 182	 Avg loss: 0.0073	 Time: 0.9304
+Test mse: 0.0208
+Fold: 7	 Epoch: 183	 Avg loss: 0.0072	 Time: 0.9621
+Fold: 7	 Epoch: 184	 Avg loss: 0.0071	 Time: 0.9074
+Test mse: 0.0208
+Fold: 7	 Epoch: 185	 Avg loss: 0.0070	 Time: 0.9287
+Fold: 7	 Epoch: 186	 Avg loss: 0.0069	 Time: 0.9126
+Test mse: 0.0208
+Fold: 7	 Epoch: 187	 Avg loss: 0.0068	 Time: 0.9259
+Fold: 7	 Epoch: 188	 Avg loss: 0.0068	 Time: 0.9011
+Test mse: 0.0208
+Fold: 7	 Epoch: 189	 Avg loss: 0.0067	 Time: 0.9208
+Fold: 7	 Epoch: 190	 Avg loss: 0.0066	 Time: 0.9394
+Test mse: 0.0207
+Fold: 7	 Epoch: 191	 Avg loss: 0.0065	 Time: 0.9264
+Fold: 7	 Epoch: 192	 Avg loss: 0.0064	 Time: 0.9147
+Test mse: 0.0206
+Fold: 7	 Epoch: 193	 Avg loss: 0.0064	 Time: 0.9195
+Fold: 7	 Epoch: 194	 Avg loss: 0.0063	 Time: 0.9144
+Test mse: 0.0206
+Fold: 7	 Epoch: 195	 Avg loss: 0.0062	 Time: 0.9193
+Fold: 7	 Epoch: 196	 Avg loss: 0.0061	 Time: 0.9336
+Test mse: 0.0206
+Fold: 7	 Epoch: 197	 Avg loss: 0.0061	 Time: 0.9070
+Fold: 7	 Epoch: 198	 Avg loss: 0.0060	 Time: 0.9518
+Test mse: 0.0205
+Fold: 7	 Epoch: 199	 Avg loss: 0.0060	 Time: 0.9305
+Fold: 7	 Epoch: 200	 Avg loss: 0.0059	 Time: 0.9343
+Test mse: 0.0204
+Fold: 8	 Epoch: 1	 Avg loss: 0.3757	 Time: 0.9435
+Fold: 8	 Epoch: 2	 Avg loss: 0.1837	 Time: 0.9258
+Test mse: 0.1101
+Fold: 8	 Epoch: 3	 Avg loss: 0.1164	 Time: 0.9278
+Fold: 8	 Epoch: 4	 Avg loss: 0.1127	 Time: 0.9262
+Test mse: 0.1129
+Fold: 8	 Epoch: 5	 Avg loss: 0.1113	 Time: 0.9228
+Fold: 8	 Epoch: 6	 Avg loss: 0.1100	 Time: 0.9360
+Test mse: 0.1092
+New best decoder within a fold!
+Fold: 8	 Epoch: 7	 Avg loss: 0.1086	 Time: 0.9136
+Fold: 8	 Epoch: 8	 Avg loss: 0.1071	 Time: 0.9304
+Test mse: 0.1067
+New best decoder within a fold!
+Fold: 8	 Epoch: 9	 Avg loss: 0.1054	 Time: 0.9248
+Fold: 8	 Epoch: 10	 Avg loss: 0.1036	 Time: 0.9073
+Test mse: 0.1042
+New best decoder within a fold!
+Fold: 8	 Epoch: 11	 Avg loss: 0.1018	 Time: 0.9222
+Fold: 8	 Epoch: 12	 Avg loss: 0.0999	 Time: 0.9311
+Test mse: 0.1015
+New best decoder within a fold!
+Fold: 8	 Epoch: 13	 Avg loss: 0.0979	 Time: 0.9466
+Fold: 8	 Epoch: 14	 Avg loss: 0.0960	 Time: 0.9413
+Test mse: 0.0979
+New best decoder within a fold!
+Fold: 8	 Epoch: 15	 Avg loss: 0.0942	 Time: 0.9166
+Fold: 8	 Epoch: 16	 Avg loss: 0.0923	 Time: 0.9522
+Test mse: 0.0942
+New best decoder within a fold!
+Fold: 8	 Epoch: 17	 Avg loss: 0.0906	 Time: 0.9070
+Fold: 8	 Epoch: 18	 Avg loss: 0.0887	 Time: 0.9187
+Test mse: 0.0905
+New best decoder within a fold!
+Fold: 8	 Epoch: 19	 Avg loss: 0.0869	 Time: 0.9122
+Fold: 8	 Epoch: 20	 Avg loss: 0.0850	 Time: 0.9353
+Test mse: 0.0867
+New best decoder within a fold!
+Fold: 8	 Epoch: 21	 Avg loss: 0.0831	 Time: 0.9437
+Fold: 8	 Epoch: 22	 Avg loss: 0.0813	 Time: 0.9194
+Test mse: 0.0837
+New best decoder within a fold!
+Fold: 8	 Epoch: 23	 Avg loss: 0.0793	 Time: 0.9200
+Fold: 8	 Epoch: 24	 Avg loss: 0.0774	 Time: 0.9222
+Test mse: 0.0810
+New best decoder within a fold!
+Fold: 8	 Epoch: 25	 Avg loss: 0.0755	 Time: 0.9203
+Fold: 8	 Epoch: 26	 Avg loss: 0.0738	 Time: 0.9316
+Test mse: 0.0780
+New best decoder within a fold!
+Fold: 8	 Epoch: 27	 Avg loss: 0.0722	 Time: 0.9230
+Fold: 8	 Epoch: 28	 Avg loss: 0.0707	 Time: 0.9248
+Test mse: 0.0751
+New best decoder within a fold!
+Fold: 8	 Epoch: 29	 Avg loss: 0.0691	 Time: 0.9435
+Fold: 8	 Epoch: 30	 Avg loss: 0.0678	 Time: 0.9365
+Test mse: 0.0730
+New best decoder within a fold!
+Fold: 8	 Epoch: 31	 Avg loss: 0.0664	 Time: 0.9164
+Fold: 8	 Epoch: 32	 Avg loss: 0.0652	 Time: 0.9573
+Test mse: 0.0713
+New best decoder within a fold!
+Fold: 8	 Epoch: 33	 Avg loss: 0.0639	 Time: 1.0109
+Fold: 8	 Epoch: 34	 Avg loss: 0.0628	 Time: 1.0022
+Test mse: 0.0692
+New best decoder within a fold!
+Fold: 8	 Epoch: 35	 Avg loss: 0.0616	 Time: 1.0582
+Fold: 8	 Epoch: 36	 Avg loss: 0.0604	 Time: 0.9632
+Test mse: 0.0677
+New best decoder within a fold!
+Fold: 8	 Epoch: 37	 Avg loss: 0.0595	 Time: 0.9214
+Fold: 8	 Epoch: 38	 Avg loss: 0.0584	 Time: 0.9101
+Test mse: 0.0663
+New best decoder within a fold!
+Fold: 8	 Epoch: 39	 Avg loss: 0.0574	 Time: 0.9368
+Fold: 8	 Epoch: 40	 Avg loss: 0.0566	 Time: 0.9146
+Test mse: 0.0646
+New best decoder within a fold!
+Fold: 8	 Epoch: 41	 Avg loss: 0.0556	 Time: 0.9246
+Fold: 8	 Epoch: 42	 Avg loss: 0.0549	 Time: 0.9280
+Test mse: 0.0632
+New best decoder within a fold!
+Fold: 8	 Epoch: 43	 Avg loss: 0.0540	 Time: 0.9246
+Fold: 8	 Epoch: 44	 Avg loss: 0.0531	 Time: 0.9353
+Test mse: 0.0610
+New best decoder within a fold!
+Fold: 8	 Epoch: 45	 Avg loss: 0.0523	 Time: 0.9445
+Fold: 8	 Epoch: 46	 Avg loss: 0.0515	 Time: 0.9282
+Test mse: 0.0594
+New best decoder within a fold!
+Fold: 8	 Epoch: 47	 Avg loss: 0.0507	 Time: 0.9239
+Fold: 8	 Epoch: 48	 Avg loss: 0.0500	 Time: 0.9541
+Test mse: 0.0577
+New best decoder within a fold!
+Fold: 8	 Epoch: 49	 Avg loss: 0.0493	 Time: 0.9175
+Fold: 8	 Epoch: 50	 Avg loss: 0.0484	 Time: 0.9695
+Test mse: 0.0564
+New best decoder within a fold!
+Fold: 8	 Epoch: 51	 Avg loss: 0.0478	 Time: 0.9309
+Fold: 8	 Epoch: 52	 Avg loss: 0.0471	 Time: 0.9445
+Test mse: 0.0548
+New best decoder within a fold!
+Fold: 8	 Epoch: 53	 Avg loss: 0.0464	 Time: 0.9250
+Fold: 8	 Epoch: 54	 Avg loss: 0.0455	 Time: 0.9202
+Test mse: 0.0531
+New best decoder within a fold!
+Fold: 8	 Epoch: 55	 Avg loss: 0.0450	 Time: 0.9282
+Fold: 8	 Epoch: 56	 Avg loss: 0.0444	 Time: 0.9131
+Test mse: 0.0525
+New best decoder within a fold!
+Fold: 8	 Epoch: 57	 Avg loss: 0.0436	 Time: 0.9136
+Fold: 8	 Epoch: 58	 Avg loss: 0.0432	 Time: 0.9322
+Test mse: 0.0512
+New best decoder within a fold!
+Fold: 8	 Epoch: 59	 Avg loss: 0.0425	 Time: 0.9462
+Fold: 8	 Epoch: 60	 Avg loss: 0.0418	 Time: 0.9373
+Test mse: 0.0496
+New best decoder within a fold!
+Fold: 8	 Epoch: 61	 Avg loss: 0.0412	 Time: 0.9197
+Fold: 8	 Epoch: 62	 Avg loss: 0.0406	 Time: 0.9079
+Test mse: 0.0486
+New best decoder within a fold!
+Fold: 8	 Epoch: 63	 Avg loss: 0.0398	 Time: 0.9380
+Fold: 8	 Epoch: 64	 Avg loss: 0.0392	 Time: 0.9178
+Test mse: 0.0473
+New best decoder within a fold!
+Fold: 8	 Epoch: 65	 Avg loss: 0.0387	 Time: 0.9337
+Fold: 8	 Epoch: 66	 Avg loss: 0.0383	 Time: 0.9239
+Test mse: 0.0466
+New best decoder within a fold!
+Fold: 8	 Epoch: 67	 Avg loss: 0.0378	 Time: 0.9516
+Fold: 8	 Epoch: 68	 Avg loss: 0.0373	 Time: 0.9357
+Test mse: 0.0455
+New best decoder within a fold!
+Fold: 8	 Epoch: 69	 Avg loss: 0.0367	 Time: 0.9257
+Fold: 8	 Epoch: 70	 Avg loss: 0.0360	 Time: 0.9279
+Test mse: 0.0446
+New best decoder within a fold!
+Fold: 8	 Epoch: 71	 Avg loss: 0.0354	 Time: 0.9285
+Fold: 8	 Epoch: 72	 Avg loss: 0.0348	 Time: 0.9100
+Test mse: 0.0441
+New best decoder within a fold!
+Fold: 8	 Epoch: 73	 Avg loss: 0.0344	 Time: 0.9579
+Fold: 8	 Epoch: 74	 Avg loss: 0.0340	 Time: 0.9194
+Test mse: 0.0433
+New best decoder within a fold!
+Fold: 8	 Epoch: 75	 Avg loss: 0.0333	 Time: 0.9498
+Fold: 8	 Epoch: 76	 Avg loss: 0.0329	 Time: 0.9131
+Test mse: 0.0425
+New best decoder within a fold!
+Fold: 8	 Epoch: 77	 Avg loss: 0.0321	 Time: 0.9205
+Fold: 8	 Epoch: 78	 Avg loss: 0.0320	 Time: 0.9179
+Test mse: 0.0415
+New best decoder within a fold!
+Fold: 8	 Epoch: 79	 Avg loss: 0.0312	 Time: 0.9140
+Fold: 8	 Epoch: 80	 Avg loss: 0.0307	 Time: 0.9174
+Test mse: 0.0407
+New best decoder within a fold!
+Fold: 8	 Epoch: 81	 Avg loss: 0.0302	 Time: 0.9168
+Fold: 8	 Epoch: 82	 Avg loss: 0.0297	 Time: 0.9562
+Test mse: 0.0403
+New best decoder within a fold!
+Fold: 8	 Epoch: 83	 Avg loss: 0.0293	 Time: 0.9386
+Fold: 8	 Epoch: 84	 Avg loss: 0.0286	 Time: 0.9175
+Test mse: 0.0398
+New best decoder within a fold!
+Fold: 8	 Epoch: 85	 Avg loss: 0.0282	 Time: 0.9237
+Fold: 8	 Epoch: 86	 Avg loss: 0.0275	 Time: 0.9495
+Test mse: 0.0390
+New best decoder within a fold!
+Fold: 8	 Epoch: 87	 Avg loss: 0.0271	 Time: 0.9383
+Fold: 8	 Epoch: 88	 Avg loss: 0.0267	 Time: 0.9145
+Test mse: 0.0380
+New best decoder within a fold!
+Fold: 8	 Epoch: 89	 Avg loss: 0.0258	 Time: 0.9230
+Fold: 8	 Epoch: 90	 Avg loss: 0.0257	 Time: 0.9527
+Test mse: 0.0377
+New best decoder within a fold!
+Fold: 8	 Epoch: 91	 Avg loss: 0.0248	 Time: 0.9127
+Fold: 8	 Epoch: 92	 Avg loss: 0.0245	 Time: 0.9265
+Test mse: 0.0372
+New best decoder within a fold!
+Fold: 8	 Epoch: 93	 Avg loss: 0.0239	 Time: 0.9089
+Fold: 8	 Epoch: 94	 Avg loss: 0.0236	 Time: 0.9211
+Test mse: 0.0376
+Fold: 8	 Epoch: 95	 Avg loss: 0.0230	 Time: 0.9463
+Fold: 8	 Epoch: 96	 Avg loss: 0.0227	 Time: 0.9671
+Test mse: 0.0370
+New best decoder within a fold!
+Fold: 8	 Epoch: 97	 Avg loss: 0.0224	 Time: 0.9339
+Fold: 8	 Epoch: 98	 Avg loss: 0.0218	 Time: 0.9485
+Test mse: 0.0358
+New best decoder within a fold!
+Fold: 8	 Epoch: 99	 Avg loss: 0.0214	 Time: 0.9414
+Fold: 8	 Epoch: 100	 Avg loss: 0.0209	 Time: 0.9416
+Test mse: 0.0358
+New best decoder within a fold!
+Fold: 8	 Epoch: 101	 Avg loss: 0.0206	 Time: 0.9300
+Fold: 8	 Epoch: 102	 Avg loss: 0.0203	 Time: 0.9104
+Test mse: 0.0362
+Fold: 8	 Epoch: 103	 Avg loss: 0.0200	 Time: 0.9139
+Fold: 8	 Epoch: 104	 Avg loss: 0.0196	 Time: 0.9301
+Test mse: 0.0368
+Fold: 8	 Epoch: 105	 Avg loss: 0.0193	 Time: 0.9543
+Fold: 8	 Epoch: 106	 Avg loss: 0.0186	 Time: 0.9278
+Test mse: 0.0358
+New best decoder within a fold!
+Fold: 8	 Epoch: 107	 Avg loss: 0.0184	 Time: 0.9396
+Fold: 8	 Epoch: 108	 Avg loss: 0.0176	 Time: 0.9488
+Test mse: 0.0360
+Fold: 8	 Epoch: 109	 Avg loss: 0.0175	 Time: 0.9330
+Fold: 8	 Epoch: 110	 Avg loss: 0.0170	 Time: 0.9194
+Test mse: 0.0362
+Fold: 8	 Epoch: 111	 Avg loss: 0.0168	 Time: 0.9279
+Fold: 8	 Epoch: 112	 Avg loss: 0.0164	 Time: 0.9261
+Test mse: 0.0362
+Fold: 8	 Epoch: 113	 Avg loss: 0.0161	 Time: 0.9413
+Fold: 8	 Epoch: 114	 Avg loss: 0.0158	 Time: 0.9220
+Test mse: 0.0363
+Fold: 8	 Epoch: 115	 Avg loss: 0.0155	 Time: 0.9261
+Fold: 8	 Epoch: 116	 Avg loss: 0.0152	 Time: 0.9331
+Test mse: 0.0365
+Fold: 8	 Epoch: 117	 Avg loss: 0.0150	 Time: 0.9364
+Fold: 8	 Epoch: 118	 Avg loss: 0.0147	 Time: 0.9253
+Test mse: 0.0374
+Fold: 8	 Epoch: 119	 Avg loss: 0.0144	 Time: 0.9423
+Fold: 8	 Epoch: 120	 Avg loss: 0.0144	 Time: 0.9372
+Test mse: 0.0370
+Fold: 8	 Epoch: 121	 Avg loss: 0.0140	 Time: 0.9706
+Fold: 8	 Epoch: 122	 Avg loss: 0.0138	 Time: 0.9174
+Test mse: 0.0371
+Fold: 8	 Epoch: 123	 Avg loss: 0.0135	 Time: 0.9234
+Fold: 8	 Epoch: 124	 Avg loss: 0.0132	 Time: 0.9188
+Test mse: 0.0362
+Fold: 8	 Epoch: 125	 Avg loss: 0.0129	 Time: 0.9227
+Fold: 8	 Epoch: 126	 Avg loss: 0.0126	 Time: 0.9284
+Test mse: 0.0357
+New best decoder within a fold!
+Fold: 8	 Epoch: 127	 Avg loss: 0.0122	 Time: 0.9145
+Fold: 8	 Epoch: 128	 Avg loss: 0.0120	 Time: 0.9261
+Test mse: 0.0351
+New best decoder within a fold!
+Fold: 8	 Epoch: 129	 Avg loss: 0.0117	 Time: 0.9772
+Fold: 8	 Epoch: 130	 Avg loss: 0.0115	 Time: 0.9081
+Test mse: 0.0349
+New best decoder within a fold!
+Fold: 8	 Epoch: 131	 Avg loss: 0.0112	 Time: 0.9459
+Fold: 8	 Epoch: 132	 Avg loss: 0.0109	 Time: 0.9323
+Test mse: 0.0342
+New best decoder within a fold!
+Fold: 8	 Epoch: 133	 Avg loss: 0.0108	 Time: 0.9372
+Fold: 8	 Epoch: 134	 Avg loss: 0.0106	 Time: 0.9112
+Test mse: 0.0340
+New best decoder within a fold!
+Fold: 8	 Epoch: 135	 Avg loss: 0.0103	 Time: 0.9318
+Fold: 8	 Epoch: 136	 Avg loss: 0.0102	 Time: 0.9460
+Test mse: 0.0342
+Fold: 8	 Epoch: 137	 Avg loss: 0.0098	 Time: 0.9283
+Fold: 8	 Epoch: 138	 Avg loss: 0.0097	 Time: 0.9271
+Test mse: 0.0337
+New best decoder within a fold!
+Fold: 8	 Epoch: 139	 Avg loss: 0.0096	 Time: 0.9383
+Fold: 8	 Epoch: 140	 Avg loss: 0.0094	 Time: 0.9450
+Test mse: 0.0334
+New best decoder within a fold!
+Fold: 8	 Epoch: 141	 Avg loss: 0.0091	 Time: 0.9429
+Fold: 8	 Epoch: 142	 Avg loss: 0.0090	 Time: 0.9151
+Test mse: 0.0335
+Fold: 8	 Epoch: 143	 Avg loss: 0.0087	 Time: 0.9205
+Fold: 8	 Epoch: 144	 Avg loss: 0.0086	 Time: 0.9338
+Test mse: 0.0331
+New best decoder within a fold!
+Fold: 8	 Epoch: 145	 Avg loss: 0.0084	 Time: 0.9151
+Fold: 8	 Epoch: 146	 Avg loss: 0.0084	 Time: 0.9063
+Test mse: 0.0330
+New best decoder within a fold!
+Fold: 8	 Epoch: 147	 Avg loss: 0.0081	 Time: 0.9413
+Fold: 8	 Epoch: 148	 Avg loss: 0.0081	 Time: 0.9169
+Test mse: 0.0337
+Fold: 8	 Epoch: 149	 Avg loss: 0.0079	 Time: 0.9451
+Fold: 8	 Epoch: 150	 Avg loss: 0.0078	 Time: 0.9289
+Test mse: 0.0327
+New best decoder within a fold!
+Fold: 8	 Epoch: 151	 Avg loss: 0.0076	 Time: 0.9321
+Fold: 8	 Epoch: 152	 Avg loss: 0.0076	 Time: 0.9404
+Test mse: 0.0335
+Fold: 8	 Epoch: 153	 Avg loss: 0.0075	 Time: 0.9474
+Fold: 8	 Epoch: 154	 Avg loss: 0.0075	 Time: 0.9435
+Test mse: 0.0337
+Fold: 8	 Epoch: 155	 Avg loss: 0.0072	 Time: 0.9240
+Fold: 8	 Epoch: 156	 Avg loss: 0.0071	 Time: 0.9169
+Test mse: 0.0336
+Fold: 8	 Epoch: 157	 Avg loss: 0.0069	 Time: 0.9595
+Fold: 8	 Epoch: 158	 Avg loss: 0.0068	 Time: 0.9701
+Test mse: 0.0341
+Fold: 8	 Epoch: 159	 Avg loss: 0.0067	 Time: 0.9529
+Fold: 8	 Epoch: 160	 Avg loss: 0.0066	 Time: 0.9204
+Test mse: 0.0338
+Fold: 8	 Epoch: 161	 Avg loss: 0.0067	 Time: 0.9291
+Fold: 8	 Epoch: 162	 Avg loss: 0.0068	 Time: 0.9416
+Test mse: 0.0345
+Fold: 8	 Epoch: 163	 Avg loss: 0.0069	 Time: 0.9300
+Fold: 8	 Epoch: 164	 Avg loss: 0.0071	 Time: 0.9243
+Test mse: 0.0365
+Fold: 8	 Epoch: 165	 Avg loss: 0.0078	 Time: 0.9114
+Fold: 8	 Epoch: 166	 Avg loss: 0.0089	 Time: 0.9214
+Test mse: 0.0345
+Fold: 8	 Epoch: 167	 Avg loss: 0.0100	 Time: 0.9408
+Fold: 8	 Epoch: 168	 Avg loss: 0.0093	 Time: 0.9119
+Test mse: 0.0333
+Fold: 8	 Epoch: 169	 Avg loss: 0.0076	 Time: 0.9168
+Fold: 8	 Epoch: 170	 Avg loss: 0.0066	 Time: 0.9609
+Test mse: 0.0347
+Fold: 8	 Epoch: 171	 Avg loss: 0.0060	 Time: 0.9198
+Fold: 8	 Epoch: 172	 Avg loss: 0.0057	 Time: 0.9321
+Test mse: 0.0341
+Fold: 8	 Epoch: 173	 Avg loss: 0.0058	 Time: 0.9324
+Fold: 8	 Epoch: 174	 Avg loss: 0.0058	 Time: 0.9411
+Test mse: 0.0355
+Fold: 8	 Epoch: 175	 Avg loss: 0.0058	 Time: 0.9516
+Fold: 8	 Epoch: 176	 Avg loss: 0.0060	 Time: 0.9317
+Test mse: 0.0356
+Fold: 8	 Epoch: 177	 Avg loss: 0.0062	 Time: 0.9170
+Fold: 8	 Epoch: 178	 Avg loss: 0.0062	 Time: 0.9494
+Test mse: 0.0344
+Fold: 8	 Epoch: 179	 Avg loss: 0.0061	 Time: 0.9227
+Fold: 8	 Epoch: 180	 Avg loss: 0.0058	 Time: 0.9240
+Test mse: 0.0353
+Fold: 8	 Epoch: 181	 Avg loss: 0.0064	 Time: 0.9184
+Fold: 8	 Epoch: 182	 Avg loss: 0.0069	 Time: 0.9505
+Test mse: 0.0366
+Fold: 8	 Epoch: 183	 Avg loss: 0.0065	 Time: 0.9072
+Fold: 8	 Epoch: 184	 Avg loss: 0.0065	 Time: 0.9028
+Test mse: 0.0344
+Fold: 8	 Epoch: 185	 Avg loss: 0.0063	 Time: 0.9272
+Fold: 8	 Epoch: 186	 Avg loss: 0.0059	 Time: 0.9258
+Test mse: 0.0360
+Fold: 8	 Epoch: 187	 Avg loss: 0.0066	 Time: 0.9511
+Fold: 8	 Epoch: 188	 Avg loss: 0.0071	 Time: 0.9107
+Test mse: 0.0352
+Fold: 8	 Epoch: 189	 Avg loss: 0.0060	 Time: 0.9382
+Fold: 8	 Epoch: 190	 Avg loss: 0.0054	 Time: 0.9650
+Test mse: 0.0351
+Fold: 8	 Epoch: 191	 Avg loss: 0.0058	 Time: 0.9269
+Fold: 8	 Epoch: 192	 Avg loss: 0.0063	 Time: 0.9407
+Test mse: 0.0344
+Fold: 8	 Epoch: 193	 Avg loss: 0.0062	 Time: 0.9214
+Fold: 8	 Epoch: 194	 Avg loss: 0.0058	 Time: 0.9132
+Test mse: 0.0344
+Fold: 8	 Epoch: 195	 Avg loss: 0.0058	 Time: 0.9227
+Fold: 8	 Epoch: 196	 Avg loss: 0.0057	 Time: 0.9293
+Test mse: 0.0345
+Fold: 8	 Epoch: 197	 Avg loss: 0.0062	 Time: 0.9399
+Fold: 8	 Epoch: 198	 Avg loss: 0.0078	 Time: 0.9848
+Test mse: 0.0360
+Fold: 8	 Epoch: 199	 Avg loss: 0.0061	 Time: 0.9143
+Fold: 8	 Epoch: 200	 Avg loss: 0.0052	 Time: 0.9202
+Test mse: 0.0347
+Fold: 9	 Epoch: 1	 Avg loss: 0.4284	 Time: 0.9303
+Fold: 9	 Epoch: 2	 Avg loss: 0.2008	 Time: 0.9438
+Test mse: 0.1242
+Fold: 9	 Epoch: 3	 Avg loss: 0.1147	 Time: 0.9122
+Fold: 9	 Epoch: 4	 Avg loss: 0.1132	 Time: 0.9282
+Test mse: 0.1239
+Fold: 9	 Epoch: 5	 Avg loss: 0.1118	 Time: 0.9545
+Fold: 9	 Epoch: 6	 Avg loss: 0.1106	 Time: 0.9216
+Test mse: 0.1203
+New best decoder within a fold!
+Fold: 9	 Epoch: 7	 Avg loss: 0.1098	 Time: 0.9399
+Fold: 9	 Epoch: 8	 Avg loss: 0.1091	 Time: 0.9077
+Test mse: 0.1185
+New best decoder within a fold!
+Fold: 9	 Epoch: 9	 Avg loss: 0.1084	 Time: 0.9252
+Fold: 9	 Epoch: 10	 Avg loss: 0.1078	 Time: 0.9301
+Test mse: 0.1162
+New best decoder within a fold!
+Fold: 9	 Epoch: 11	 Avg loss: 0.1071	 Time: 0.9491
+Fold: 9	 Epoch: 12	 Avg loss: 0.1063	 Time: 0.9550
+Test mse: 0.1136
+New best decoder within a fold!
+Fold: 9	 Epoch: 13	 Avg loss: 0.1057	 Time: 0.9676
+Fold: 9	 Epoch: 14	 Avg loss: 0.1050	 Time: 0.9208
+Test mse: 0.1109
+New best decoder within a fold!
+Fold: 9	 Epoch: 15	 Avg loss: 0.1043	 Time: 0.9260
+Fold: 9	 Epoch: 16	 Avg loss: 0.1036	 Time: 0.9284
+Test mse: 0.1082
+New best decoder within a fold!
+Fold: 9	 Epoch: 17	 Avg loss: 0.1029	 Time: 0.9463
+Fold: 9	 Epoch: 18	 Avg loss: 0.1023	 Time: 0.9304
+Test mse: 0.1058
+New best decoder within a fold!
+Fold: 9	 Epoch: 19	 Avg loss: 0.1016	 Time: 0.9777
+Fold: 9	 Epoch: 20	 Avg loss: 0.1009	 Time: 0.9520
+Test mse: 0.1032
+New best decoder within a fold!
+Fold: 9	 Epoch: 21	 Avg loss: 0.1002	 Time: 0.9927
+Fold: 9	 Epoch: 22	 Avg loss: 0.0994	 Time: 0.9286
+Test mse: 0.1003
+New best decoder within a fold!
+Fold: 9	 Epoch: 23	 Avg loss: 0.0988	 Time: 0.9672
+Fold: 9	 Epoch: 24	 Avg loss: 0.0979	 Time: 0.9125
+Test mse: 0.0979
+New best decoder within a fold!
+Fold: 9	 Epoch: 25	 Avg loss: 0.0971	 Time: 0.9321
+Fold: 9	 Epoch: 26	 Avg loss: 0.0961	 Time: 0.9512
+Test mse: 0.0954
+New best decoder within a fold!
+Fold: 9	 Epoch: 27	 Avg loss: 0.0952	 Time: 0.9550
+Fold: 9	 Epoch: 28	 Avg loss: 0.0941	 Time: 0.9990
+Test mse: 0.0926
+New best decoder within a fold!
+Fold: 9	 Epoch: 29	 Avg loss: 0.0930	 Time: 0.9091
+Fold: 9	 Epoch: 30	 Avg loss: 0.0916	 Time: 0.9103
+Test mse: 0.0898
+New best decoder within a fold!
+Fold: 9	 Epoch: 31	 Avg loss: 0.0903	 Time: 0.9500
+Fold: 9	 Epoch: 32	 Avg loss: 0.0889	 Time: 0.9416
+Test mse: 0.0873
+New best decoder within a fold!
+Fold: 9	 Epoch: 33	 Avg loss: 0.0874	 Time: 0.9172
+Fold: 9	 Epoch: 34	 Avg loss: 0.0857	 Time: 0.9291
+Test mse: 0.0848
+New best decoder within a fold!
+Fold: 9	 Epoch: 35	 Avg loss: 0.0851	 Time: 0.9276
+Fold: 9	 Epoch: 36	 Avg loss: 0.0843	 Time: 0.9456
+Test mse: 0.0858
+Fold: 9	 Epoch: 37	 Avg loss: 0.0830	 Time: 0.9198
+Fold: 9	 Epoch: 38	 Avg loss: 0.0820	 Time: 0.9202
+Test mse: 0.0830
+New best decoder within a fold!
+Fold: 9	 Epoch: 39	 Avg loss: 0.0813	 Time: 0.9340
+Fold: 9	 Epoch: 40	 Avg loss: 0.0807	 Time: 0.9315
+Test mse: 0.0815
+New best decoder within a fold!
+Fold: 9	 Epoch: 41	 Avg loss: 0.0801	 Time: 0.9296
+Fold: 9	 Epoch: 42	 Avg loss: 0.0794	 Time: 0.9249
+Test mse: 0.0798
+New best decoder within a fold!
+Fold: 9	 Epoch: 43	 Avg loss: 0.0788	 Time: 0.9287
+Fold: 9	 Epoch: 44	 Avg loss: 0.0782	 Time: 0.9453
+Test mse: 0.0783
+New best decoder within a fold!
+Fold: 9	 Epoch: 45	 Avg loss: 0.0776	 Time: 0.9389
+Fold: 9	 Epoch: 46	 Avg loss: 0.0770	 Time: 0.9183
+Test mse: 0.0767
+New best decoder within a fold!
+Fold: 9	 Epoch: 47	 Avg loss: 0.0764	 Time: 0.9447
+Fold: 9	 Epoch: 48	 Avg loss: 0.0758	 Time: 0.9405
+Test mse: 0.0752
+New best decoder within a fold!
+Fold: 9	 Epoch: 49	 Avg loss: 0.0753	 Time: 0.9232
+Fold: 9	 Epoch: 50	 Avg loss: 0.0748	 Time: 0.9203
+Test mse: 0.0739
+New best decoder within a fold!
+Fold: 9	 Epoch: 51	 Avg loss: 0.0742	 Time: 0.9643
+Fold: 9	 Epoch: 52	 Avg loss: 0.0737	 Time: 0.9269
+Test mse: 0.0725
+New best decoder within a fold!
+Fold: 9	 Epoch: 53	 Avg loss: 0.0732	 Time: 0.9174
+Fold: 9	 Epoch: 54	 Avg loss: 0.0727	 Time: 0.9324
+Test mse: 0.0713
+New best decoder within a fold!
+Fold: 9	 Epoch: 55	 Avg loss: 0.0722	 Time: 0.9256
+Fold: 9	 Epoch: 56	 Avg loss: 0.0718	 Time: 0.9149
+Test mse: 0.0702
+New best decoder within a fold!
+Fold: 9	 Epoch: 57	 Avg loss: 0.0713	 Time: 0.9315
+Fold: 9	 Epoch: 58	 Avg loss: 0.0709	 Time: 0.9225
+Test mse: 0.0691
+New best decoder within a fold!
+Fold: 9	 Epoch: 59	 Avg loss: 0.0705	 Time: 0.9466
+Fold: 9	 Epoch: 60	 Avg loss: 0.0701	 Time: 0.9099
+Test mse: 0.0680
+New best decoder within a fold!
+Fold: 9	 Epoch: 61	 Avg loss: 0.0697	 Time: 0.9339
+Fold: 9	 Epoch: 62	 Avg loss: 0.0693	 Time: 0.9243
+Test mse: 0.0671
+New best decoder within a fold!
+Fold: 9	 Epoch: 63	 Avg loss: 0.0689	 Time: 0.9223
+Fold: 9	 Epoch: 64	 Avg loss: 0.0685	 Time: 0.9104
+Test mse: 0.0661
+New best decoder within a fold!
+Fold: 9	 Epoch: 65	 Avg loss: 0.0681	 Time: 0.9249
+Fold: 9	 Epoch: 66	 Avg loss: 0.0677	 Time: 0.9248
+Test mse: 0.0653
+New best decoder within a fold!
+Fold: 9	 Epoch: 67	 Avg loss: 0.0674	 Time: 0.9523
+Fold: 9	 Epoch: 68	 Avg loss: 0.0670	 Time: 0.9427
+Test mse: 0.0645
+New best decoder within a fold!
+Fold: 9	 Epoch: 69	 Avg loss: 0.0667	 Time: 0.9402
+Fold: 9	 Epoch: 70	 Avg loss: 0.0664	 Time: 0.9208
+Test mse: 0.0637
+New best decoder within a fold!
+Fold: 9	 Epoch: 71	 Avg loss: 0.0661	 Time: 0.9363
+Fold: 9	 Epoch: 72	 Avg loss: 0.0657	 Time: 0.9093
+Test mse: 0.0630
+New best decoder within a fold!
+Fold: 9	 Epoch: 73	 Avg loss: 0.0653	 Time: 0.9330
+Fold: 9	 Epoch: 74	 Avg loss: 0.0650	 Time: 0.9441
+Test mse: 0.0623
+New best decoder within a fold!
+Fold: 9	 Epoch: 75	 Avg loss: 0.0646	 Time: 0.9181
+Fold: 9	 Epoch: 76	 Avg loss: 0.0643	 Time: 0.9302
+Test mse: 0.0616
+New best decoder within a fold!
+Fold: 9	 Epoch: 77	 Avg loss: 0.0640	 Time: 0.9274
+Fold: 9	 Epoch: 78	 Avg loss: 0.0636	 Time: 0.9165
+Test mse: 0.0610
+New best decoder within a fold!
+Fold: 9	 Epoch: 79	 Avg loss: 0.0633	 Time: 0.9272
+Fold: 9	 Epoch: 80	 Avg loss: 0.0629	 Time: 0.9887
+Test mse: 0.0603
+New best decoder within a fold!
+Fold: 9	 Epoch: 81	 Avg loss: 0.0625	 Time: 0.9413
+Fold: 9	 Epoch: 82	 Avg loss: 0.0621	 Time: 0.9749
+Test mse: 0.0596
+New best decoder within a fold!
+Fold: 9	 Epoch: 83	 Avg loss: 0.0618	 Time: 0.9330
+Fold: 9	 Epoch: 84	 Avg loss: 0.0614	 Time: 0.9222
+Test mse: 0.0590
+New best decoder within a fold!
+Fold: 9	 Epoch: 85	 Avg loss: 0.0611	 Time: 0.9164
+Fold: 9	 Epoch: 86	 Avg loss: 0.0607	 Time: 0.9587
+Test mse: 0.0584
+New best decoder within a fold!
+Fold: 9	 Epoch: 87	 Avg loss: 0.0604	 Time: 0.9186
+Fold: 9	 Epoch: 88	 Avg loss: 0.0600	 Time: 0.9394
+Test mse: 0.0578
+New best decoder within a fold!
+Fold: 9	 Epoch: 89	 Avg loss: 0.0596	 Time: 0.9256
+Fold: 9	 Epoch: 90	 Avg loss: 0.0592	 Time: 0.9483
+Test mse: 0.0571
+New best decoder within a fold!
+Fold: 9	 Epoch: 91	 Avg loss: 0.0587	 Time: 0.9393
+Fold: 9	 Epoch: 92	 Avg loss: 0.0583	 Time: 0.9101
+Test mse: 0.0566
+New best decoder within a fold!
+Fold: 9	 Epoch: 93	 Avg loss: 0.0579	 Time: 0.9408
+Fold: 9	 Epoch: 94	 Avg loss: 0.0576	 Time: 0.9307
+Test mse: 0.0560
+New best decoder within a fold!
+Fold: 9	 Epoch: 95	 Avg loss: 0.0571	 Time: 0.9594
+Fold: 9	 Epoch: 96	 Avg loss: 0.0567	 Time: 0.9910
+Test mse: 0.0554
+New best decoder within a fold!
+Fold: 9	 Epoch: 97	 Avg loss: 0.0563	 Time: 0.9712
+Fold: 9	 Epoch: 98	 Avg loss: 0.0558	 Time: 0.9380
+Test mse: 0.0549
+New best decoder within a fold!
+Fold: 9	 Epoch: 99	 Avg loss: 0.0554	 Time: 0.9579
+Fold: 9	 Epoch: 100	 Avg loss: 0.0550	 Time: 0.9343
+Test mse: 0.0544
+New best decoder within a fold!
+Fold: 9	 Epoch: 101	 Avg loss: 0.0545	 Time: 0.9284
+Fold: 9	 Epoch: 102	 Avg loss: 0.0540	 Time: 0.9412
+Test mse: 0.0539
+New best decoder within a fold!
+Fold: 9	 Epoch: 103	 Avg loss: 0.0536	 Time: 0.9280
+Fold: 9	 Epoch: 104	 Avg loss: 0.0531	 Time: 0.9232
+Test mse: 0.0533
+New best decoder within a fold!
+Fold: 9	 Epoch: 105	 Avg loss: 0.0526	 Time: 0.9393
+Fold: 9	 Epoch: 106	 Avg loss: 0.0521	 Time: 0.9180
+Test mse: 0.0528
+New best decoder within a fold!
+Fold: 9	 Epoch: 107	 Avg loss: 0.0516	 Time: 0.9162
+Fold: 9	 Epoch: 108	 Avg loss: 0.0511	 Time: 0.9287
+Test mse: 0.0523
+New best decoder within a fold!
+Fold: 9	 Epoch: 109	 Avg loss: 0.0506	 Time: 0.9226
+Fold: 9	 Epoch: 110	 Avg loss: 0.0501	 Time: 0.9377
+Test mse: 0.0519
+New best decoder within a fold!
+Fold: 9	 Epoch: 111	 Avg loss: 0.0496	 Time: 0.9138
+Fold: 9	 Epoch: 112	 Avg loss: 0.0491	 Time: 0.9133
+Test mse: 0.0515
+New best decoder within a fold!
+Fold: 9	 Epoch: 113	 Avg loss: 0.0486	 Time: 0.9614
+Fold: 9	 Epoch: 114	 Avg loss: 0.0481	 Time: 0.9377
+Test mse: 0.0512
+New best decoder within a fold!
+Fold: 9	 Epoch: 115	 Avg loss: 0.0476	 Time: 0.9432
+Fold: 9	 Epoch: 116	 Avg loss: 0.0471	 Time: 0.9175
+Test mse: 0.0507
+New best decoder within a fold!
+Fold: 9	 Epoch: 117	 Avg loss: 0.0465	 Time: 0.9482
+Fold: 9	 Epoch: 118	 Avg loss: 0.0460	 Time: 0.9415
+Test mse: 0.0502
+New best decoder within a fold!
+Fold: 9	 Epoch: 119	 Avg loss: 0.0456	 Time: 0.9238
+Fold: 9	 Epoch: 120	 Avg loss: 0.0450	 Time: 0.9613
+Test mse: 0.0498
+New best decoder within a fold!
+Fold: 9	 Epoch: 121	 Avg loss: 0.0445	 Time: 0.9312
+Fold: 9	 Epoch: 122	 Avg loss: 0.0440	 Time: 0.9281
+Test mse: 0.0492
+New best decoder within a fold!
+Fold: 9	 Epoch: 123	 Avg loss: 0.0435	 Time: 0.9406
+Fold: 9	 Epoch: 124	 Avg loss: 0.0430	 Time: 0.9585
+Test mse: 0.0486
+New best decoder within a fold!
+Fold: 9	 Epoch: 125	 Avg loss: 0.0426	 Time: 0.9200
+Fold: 9	 Epoch: 126	 Avg loss: 0.0421	 Time: 0.9273
+Test mse: 0.0481
+New best decoder within a fold!
+Fold: 9	 Epoch: 127	 Avg loss: 0.0416	 Time: 0.9320
+Fold: 9	 Epoch: 128	 Avg loss: 0.0411	 Time: 0.9435
+Test mse: 0.0476
+New best decoder within a fold!
+Fold: 9	 Epoch: 129	 Avg loss: 0.0407	 Time: 0.9360
+Fold: 9	 Epoch: 130	 Avg loss: 0.0402	 Time: 0.9174
+Test mse: 0.0471
+New best decoder within a fold!
+Fold: 9	 Epoch: 131	 Avg loss: 0.0397	 Time: 0.9194
+Fold: 9	 Epoch: 132	 Avg loss: 0.0392	 Time: 0.9319
+Test mse: 0.0465
+New best decoder within a fold!
+Fold: 9	 Epoch: 133	 Avg loss: 0.0387	 Time: 0.9211
+Fold: 9	 Epoch: 134	 Avg loss: 0.0383	 Time: 0.9173
+Test mse: 0.0461
+New best decoder within a fold!
+Fold: 9	 Epoch: 135	 Avg loss: 0.0379	 Time: 0.9059
+Fold: 9	 Epoch: 136	 Avg loss: 0.0374	 Time: 0.9461
+Test mse: 0.0455
+New best decoder within a fold!
+Fold: 9	 Epoch: 137	 Avg loss: 0.0370	 Time: 0.9137
+Fold: 9	 Epoch: 138	 Avg loss: 0.0366	 Time: 0.9120
+Test mse: 0.0450
+New best decoder within a fold!
+Fold: 9	 Epoch: 139	 Avg loss: 0.0361	 Time: 0.9270
+Fold: 9	 Epoch: 140	 Avg loss: 0.0356	 Time: 0.9334
+Test mse: 0.0447
+New best decoder within a fold!
+Fold: 9	 Epoch: 141	 Avg loss: 0.0352	 Time: 0.9524
+Fold: 9	 Epoch: 142	 Avg loss: 0.0349	 Time: 0.9856
+Test mse: 0.0442
+New best decoder within a fold!
+Fold: 9	 Epoch: 143	 Avg loss: 0.0344	 Time: 0.9679
+Fold: 9	 Epoch: 144	 Avg loss: 0.0340	 Time: 0.9548
+Test mse: 0.0437
+New best decoder within a fold!
+Fold: 9	 Epoch: 145	 Avg loss: 0.0336	 Time: 0.9378
+Fold: 9	 Epoch: 146	 Avg loss: 0.0333	 Time: 0.9562
+Test mse: 0.0431
+New best decoder within a fold!
+Fold: 9	 Epoch: 147	 Avg loss: 0.0327	 Time: 0.9303
+Fold: 9	 Epoch: 148	 Avg loss: 0.0324	 Time: 0.9248
+Test mse: 0.0429
+New best decoder within a fold!
+Fold: 9	 Epoch: 149	 Avg loss: 0.0320	 Time: 0.9253
+Fold: 9	 Epoch: 150	 Avg loss: 0.0317	 Time: 0.9388
+Test mse: 0.0426
+New best decoder within a fold!
+Fold: 9	 Epoch: 151	 Avg loss: 0.0313	 Time: 0.9571
+Fold: 9	 Epoch: 152	 Avg loss: 0.0310	 Time: 0.9134
+Test mse: 0.0420
+New best decoder within a fold!
+Fold: 9	 Epoch: 153	 Avg loss: 0.0305	 Time: 0.9335
+Fold: 9	 Epoch: 154	 Avg loss: 0.0302	 Time: 0.9457
+Test mse: 0.0419
+New best decoder within a fold!
+Fold: 9	 Epoch: 155	 Avg loss: 0.0299	 Time: 0.9291
+Fold: 9	 Epoch: 156	 Avg loss: 0.0295	 Time: 0.9213
+Test mse: 0.0411
+New best decoder within a fold!
+Fold: 9	 Epoch: 157	 Avg loss: 0.0291	 Time: 0.9496
+Fold: 9	 Epoch: 158	 Avg loss: 0.0288	 Time: 0.9343
+Test mse: 0.0409
+New best decoder within a fold!
+Fold: 9	 Epoch: 159	 Avg loss: 0.0285	 Time: 0.9489
+Fold: 9	 Epoch: 160	 Avg loss: 0.0282	 Time: 0.9122
+Test mse: 0.0406
+New best decoder within a fold!
+Fold: 9	 Epoch: 161	 Avg loss: 0.0278	 Time: 0.9392
+Fold: 9	 Epoch: 162	 Avg loss: 0.0275	 Time: 0.9211
+Test mse: 0.0402
+New best decoder within a fold!
+Fold: 9	 Epoch: 163	 Avg loss: 0.0272	 Time: 0.9246
+Fold: 9	 Epoch: 164	 Avg loss: 0.0269	 Time: 0.9171
+Test mse: 0.0398
+New best decoder within a fold!
+Fold: 9	 Epoch: 165	 Avg loss: 0.0265	 Time: 0.9145
+Fold: 9	 Epoch: 166	 Avg loss: 0.0261	 Time: 0.9583
+Test mse: 0.0393
+New best decoder within a fold!
+Fold: 9	 Epoch: 167	 Avg loss: 0.0258	 Time: 0.9135
+Fold: 9	 Epoch: 168	 Avg loss: 0.0254	 Time: 0.9194
+Test mse: 0.0392
+New best decoder within a fold!
+Fold: 9	 Epoch: 169	 Avg loss: 0.0251	 Time: 0.9350
+Fold: 9	 Epoch: 170	 Avg loss: 0.0247	 Time: 0.9428
+Test mse: 0.0386
+New best decoder within a fold!
+Fold: 9	 Epoch: 171	 Avg loss: 0.0243	 Time: 0.9101
+Fold: 9	 Epoch: 172	 Avg loss: 0.0241	 Time: 0.9201
+Test mse: 0.0381
+New best decoder within a fold!
+Fold: 9	 Epoch: 173	 Avg loss: 0.0238	 Time: 0.9355
+Fold: 9	 Epoch: 174	 Avg loss: 0.0235	 Time: 0.9438
+Test mse: 0.0378
+New best decoder within a fold!
+Fold: 9	 Epoch: 175	 Avg loss: 0.0233	 Time: 0.9182
+Fold: 9	 Epoch: 176	 Avg loss: 0.0230	 Time: 0.9263
+Test mse: 0.0375
+New best decoder within a fold!
+Fold: 9	 Epoch: 177	 Avg loss: 0.0227	 Time: 0.9080
+Fold: 9	 Epoch: 178	 Avg loss: 0.0224	 Time: 0.9143
+Test mse: 0.0374
+New best decoder within a fold!
+Fold: 9	 Epoch: 179	 Avg loss: 0.0222	 Time: 0.9277
+Fold: 9	 Epoch: 180	 Avg loss: 0.0219	 Time: 0.9386
+Test mse: 0.0371
+New best decoder within a fold!
+Fold: 9	 Epoch: 181	 Avg loss: 0.0217	 Time: 0.9482
+Fold: 9	 Epoch: 182	 Avg loss: 0.0215	 Time: 0.9601
+Test mse: 0.0366
+New best decoder within a fold!
+Fold: 9	 Epoch: 183	 Avg loss: 0.0212	 Time: 0.9327
+Fold: 9	 Epoch: 184	 Avg loss: 0.0210	 Time: 0.9217
+Test mse: 0.0361
+New best decoder within a fold!
+Fold: 9	 Epoch: 185	 Avg loss: 0.0207	 Time: 0.9345
+Fold: 9	 Epoch: 186	 Avg loss: 0.0206	 Time: 0.9277
+Test mse: 0.0356
+New best decoder within a fold!
+Fold: 9	 Epoch: 187	 Avg loss: 0.0203	 Time: 0.9136
+Fold: 9	 Epoch: 188	 Avg loss: 0.0201	 Time: 0.9207
+Test mse: 0.0352
+New best decoder within a fold!
+Fold: 9	 Epoch: 189	 Avg loss: 0.0198	 Time: 0.9508
+Fold: 9	 Epoch: 190	 Avg loss: 0.0196	 Time: 0.9120
+Test mse: 0.0346
+New best decoder within a fold!
+Fold: 9	 Epoch: 191	 Avg loss: 0.0193	 Time: 0.9263
+Fold: 9	 Epoch: 192	 Avg loss: 0.0191	 Time: 0.9162
+Test mse: 0.0343
+New best decoder within a fold!
+Fold: 9	 Epoch: 193	 Avg loss: 0.0189	 Time: 0.9261
+Fold: 9	 Epoch: 194	 Avg loss: 0.0188	 Time: 0.9096
+Test mse: 0.0338
+New best decoder within a fold!
+Fold: 9	 Epoch: 195	 Avg loss: 0.0185	 Time: 0.9332
+Fold: 9	 Epoch: 196	 Avg loss: 0.0183	 Time: 0.9105
+Test mse: 0.0334
+New best decoder within a fold!
+Fold: 9	 Epoch: 197	 Avg loss: 0.0181	 Time: 0.9398
+Fold: 9	 Epoch: 198	 Avg loss: 0.0179	 Time: 0.9129
+Test mse: 0.0331
+New best decoder within a fold!
+Fold: 9	 Epoch: 199	 Avg loss: 0.0177	 Time: 0.9148
+Fold: 9	 Epoch: 200	 Avg loss: 0.0175	 Time: 0.9227
+Test mse: 0.0327
+New best decoder within a fold!
+Fold: 10	 Epoch: 1	 Avg loss: 0.2965	 Time: 0.9183
+Fold: 10	 Epoch: 2	 Avg loss: 0.1729	 Time: 0.9175
+Test mse: 0.1085
+Fold: 10	 Epoch: 3	 Avg loss: 0.1236	 Time: 0.9606
+Fold: 10	 Epoch: 4	 Avg loss: 0.1198	 Time: 0.9274
+Test mse: 0.1182
+Fold: 10	 Epoch: 5	 Avg loss: 0.1198	 Time: 0.9392
+Fold: 10	 Epoch: 6	 Avg loss: 0.1193	 Time: 0.9914
+Test mse: 0.1159
+New best decoder within a fold!
+Fold: 10	 Epoch: 7	 Avg loss: 0.1185	 Time: 0.9513
+Fold: 10	 Epoch: 8	 Avg loss: 0.1177	 Time: 0.9853
+Test mse: 0.1150
+New best decoder within a fold!
+Fold: 10	 Epoch: 9	 Avg loss: 0.1168	 Time: 0.9778
+Fold: 10	 Epoch: 10	 Avg loss: 0.1160	 Time: 0.9093
+Test mse: 0.1146
+New best decoder within a fold!
+Fold: 10	 Epoch: 11	 Avg loss: 0.1151	 Time: 0.9498
+Fold: 10	 Epoch: 12	 Avg loss: 0.1144	 Time: 0.9599
+Test mse: 0.1147
+Fold: 10	 Epoch: 13	 Avg loss: 0.1136	 Time: 0.9272
+Fold: 10	 Epoch: 14	 Avg loss: 0.1128	 Time: 0.9303
+Test mse: 0.1154
+Fold: 10	 Epoch: 15	 Avg loss: 0.1121	 Time: 0.9758
+Fold: 10	 Epoch: 16	 Avg loss: 0.1114	 Time: 0.9163
+Test mse: 0.1153
+Fold: 10	 Epoch: 17	 Avg loss: 0.1106	 Time: 0.9265
+Fold: 10	 Epoch: 18	 Avg loss: 0.1097	 Time: 0.9294
+Test mse: 0.1157
+Fold: 10	 Epoch: 19	 Avg loss: 0.1089	 Time: 0.9161
+Fold: 10	 Epoch: 20	 Avg loss: 0.1080	 Time: 0.9511
+Test mse: 0.1159
+Fold: 10	 Epoch: 21	 Avg loss: 0.1071	 Time: 0.9213
+Fold: 10	 Epoch: 22	 Avg loss: 0.1060	 Time: 0.9405
+Test mse: 0.1161
+Fold: 10	 Epoch: 23	 Avg loss: 0.1050	 Time: 0.9264
+Fold: 10	 Epoch: 24	 Avg loss: 0.1038	 Time: 0.9095
+Test mse: 0.1166
+Fold: 10	 Epoch: 25	 Avg loss: 0.1025	 Time: 0.9190
+Fold: 10	 Epoch: 26	 Avg loss: 0.1012	 Time: 0.9383
+Test mse: 0.1177
+Fold: 10	 Epoch: 27	 Avg loss: 0.0998	 Time: 0.9359
+Fold: 10	 Epoch: 28	 Avg loss: 0.0983	 Time: 0.9411
+Test mse: 0.1188
+Fold: 10	 Epoch: 29	 Avg loss: 0.0969	 Time: 0.9189
+Fold: 10	 Epoch: 30	 Avg loss: 0.0952	 Time: 0.9229
+Test mse: 0.1195
+Fold: 10	 Epoch: 31	 Avg loss: 0.0935	 Time: 0.9419
+Fold: 10	 Epoch: 32	 Avg loss: 0.0916	 Time: 0.9116
+Test mse: 0.1214
+Fold: 10	 Epoch: 33	 Avg loss: 0.0894	 Time: 0.9425
+Fold: 10	 Epoch: 34	 Avg loss: 0.0877	 Time: 0.9162
+Test mse: 0.1187
+Fold: 10	 Epoch: 35	 Avg loss: 0.0857	 Time: 0.9416
+Fold: 10	 Epoch: 36	 Avg loss: 0.0838	 Time: 0.9170
+Test mse: 0.1153
+Fold: 10	 Epoch: 37	 Avg loss: 0.0819	 Time: 0.9115
+Fold: 10	 Epoch: 38	 Avg loss: 0.0803	 Time: 0.9231
+Test mse: 0.1097
+New best decoder within a fold!
+Fold: 10	 Epoch: 39	 Avg loss: 0.0788	 Time: 0.9503
+Fold: 10	 Epoch: 40	 Avg loss: 0.0771	 Time: 0.9304
+Test mse: 0.1038
+New best decoder within a fold!
+Fold: 10	 Epoch: 41	 Avg loss: 0.0757	 Time: 0.9452
+Fold: 10	 Epoch: 42	 Avg loss: 0.0743	 Time: 0.9120
+Test mse: 0.0982
+New best decoder within a fold!
+Fold: 10	 Epoch: 43	 Avg loss: 0.0731	 Time: 0.9433
+Fold: 10	 Epoch: 44	 Avg loss: 0.0718	 Time: 0.9062
+Test mse: 0.0925
+New best decoder within a fold!
+Fold: 10	 Epoch: 45	 Avg loss: 0.0707	 Time: 0.9103
+Fold: 10	 Epoch: 46	 Avg loss: 0.0697	 Time: 0.9144
+Test mse: 0.0878
+New best decoder within a fold!
+Fold: 10	 Epoch: 47	 Avg loss: 0.0685	 Time: 0.9057
+Fold: 10	 Epoch: 48	 Avg loss: 0.0676	 Time: 0.9241
+Test mse: 0.0834
+New best decoder within a fold!
+Fold: 10	 Epoch: 49	 Avg loss: 0.0663	 Time: 0.9226
+Fold: 10	 Epoch: 50	 Avg loss: 0.0656	 Time: 0.9308
+Test mse: 0.0794
+New best decoder within a fold!
+Fold: 10	 Epoch: 51	 Avg loss: 0.0640	 Time: 0.9393
+Fold: 10	 Epoch: 52	 Avg loss: 0.0631	 Time: 0.9229
+Test mse: 0.0751
+New best decoder within a fold!
+Fold: 10	 Epoch: 53	 Avg loss: 0.0617	 Time: 0.9315
+Fold: 10	 Epoch: 54	 Avg loss: 0.0604	 Time: 0.9153
+Test mse: 0.0708
+New best decoder within a fold!
+Fold: 10	 Epoch: 55	 Avg loss: 0.0591	 Time: 0.9128
+Fold: 10	 Epoch: 56	 Avg loss: 0.0578	 Time: 0.9147
+Test mse: 0.0663
+New best decoder within a fold!
+Fold: 10	 Epoch: 57	 Avg loss: 0.0565	 Time: 0.9338
+Fold: 10	 Epoch: 58	 Avg loss: 0.0552	 Time: 0.9085
+Test mse: 0.0627
+New best decoder within a fold!
+Fold: 10	 Epoch: 59	 Avg loss: 0.0538	 Time: 0.9730
+Fold: 10	 Epoch: 60	 Avg loss: 0.0525	 Time: 0.9193
+Test mse: 0.0588
+New best decoder within a fold!
+Fold: 10	 Epoch: 61	 Avg loss: 0.0512	 Time: 0.9520
+Fold: 10	 Epoch: 62	 Avg loss: 0.0497	 Time: 0.9214
+Test mse: 0.0559
+New best decoder within a fold!
+Fold: 10	 Epoch: 63	 Avg loss: 0.0482	 Time: 0.9150
+Fold: 10	 Epoch: 64	 Avg loss: 0.0466	 Time: 0.9609
+Test mse: 0.0531
+New best decoder within a fold!
+Fold: 10	 Epoch: 65	 Avg loss: 0.0452	 Time: 0.9731
+Fold: 10	 Epoch: 66	 Avg loss: 0.0437	 Time: 0.9874
+Test mse: 0.0510
+New best decoder within a fold!
+Fold: 10	 Epoch: 67	 Avg loss: 0.0422	 Time: 0.9615
+Fold: 10	 Epoch: 68	 Avg loss: 0.0408	 Time: 0.9361
+Test mse: 0.0474
+New best decoder within a fold!
+Fold: 10	 Epoch: 69	 Avg loss: 0.0393	 Time: 0.9110
+Fold: 10	 Epoch: 70	 Avg loss: 0.0381	 Time: 0.9379
+Test mse: 0.0462
+New best decoder within a fold!
+Fold: 10	 Epoch: 71	 Avg loss: 0.0367	 Time: 0.9368
+Fold: 10	 Epoch: 72	 Avg loss: 0.0355	 Time: 0.9295
+Test mse: 0.0431
+New best decoder within a fold!
+Fold: 10	 Epoch: 73	 Avg loss: 0.0344	 Time: 0.9373
+Fold: 10	 Epoch: 74	 Avg loss: 0.0331	 Time: 0.9335
+Test mse: 0.0416
+New best decoder within a fold!
+Fold: 10	 Epoch: 75	 Avg loss: 0.0320	 Time: 0.9742
+Fold: 10	 Epoch: 76	 Avg loss: 0.0307	 Time: 0.9108
+Test mse: 0.0398
+New best decoder within a fold!
+Fold: 10	 Epoch: 77	 Avg loss: 0.0294	 Time: 0.9241
+Fold: 10	 Epoch: 78	 Avg loss: 0.0283	 Time: 0.9057
+Test mse: 0.0388
+New best decoder within a fold!
+Fold: 10	 Epoch: 79	 Avg loss: 0.0272	 Time: 0.9246
+Fold: 10	 Epoch: 80	 Avg loss: 0.0262	 Time: 0.9466
+Test mse: 0.0383
+New best decoder within a fold!
+Fold: 10	 Epoch: 81	 Avg loss: 0.0253	 Time: 0.9366
+Fold: 10	 Epoch: 82	 Avg loss: 0.0245	 Time: 0.9701
+Test mse: 0.0366
+New best decoder within a fold!
+Fold: 10	 Epoch: 83	 Avg loss: 0.0235	 Time: 0.9084
+Fold: 10	 Epoch: 84	 Avg loss: 0.0229	 Time: 0.9084
+Test mse: 0.0355
+New best decoder within a fold!
+Fold: 10	 Epoch: 85	 Avg loss: 0.0221	 Time: 0.9337
+Fold: 10	 Epoch: 86	 Avg loss: 0.0213	 Time: 0.9271
+Test mse: 0.0345
+New best decoder within a fold!
+Fold: 10	 Epoch: 87	 Avg loss: 0.0205	 Time: 0.9306
+Fold: 10	 Epoch: 88	 Avg loss: 0.0197	 Time: 0.9616
+Test mse: 0.0337
+New best decoder within a fold!
+Fold: 10	 Epoch: 89	 Avg loss: 0.0191	 Time: 0.9471
+Fold: 10	 Epoch: 90	 Avg loss: 0.0186	 Time: 0.9290
+Test mse: 0.0329
+New best decoder within a fold!
+Fold: 10	 Epoch: 91	 Avg loss: 0.0180	 Time: 0.9221
+Fold: 10	 Epoch: 92	 Avg loss: 0.0175	 Time: 0.9227
+Test mse: 0.0327
+New best decoder within a fold!
+Fold: 10	 Epoch: 93	 Avg loss: 0.0171	 Time: 0.9364
+Fold: 10	 Epoch: 94	 Avg loss: 0.0168	 Time: 0.9091
+Test mse: 0.0325
+New best decoder within a fold!
+Fold: 10	 Epoch: 95	 Avg loss: 0.0163	 Time: 0.9227
+Fold: 10	 Epoch: 96	 Avg loss: 0.0160	 Time: 0.9121
+Test mse: 0.0318
+New best decoder within a fold!
+Fold: 10	 Epoch: 97	 Avg loss: 0.0159	 Time: 0.9418
+Fold: 10	 Epoch: 98	 Avg loss: 0.0156	 Time: 0.9121
+Test mse: 0.0313
+New best decoder within a fold!
+Fold: 10	 Epoch: 99	 Avg loss: 0.0155	 Time: 0.9446
+Fold: 10	 Epoch: 100	 Avg loss: 0.0151	 Time: 0.9276
+Test mse: 0.0311
+New best decoder within a fold!
+Fold: 10	 Epoch: 101	 Avg loss: 0.0151	 Time: 0.9260
+Fold: 10	 Epoch: 102	 Avg loss: 0.0148	 Time: 0.9173
+Test mse: 0.0305
+New best decoder within a fold!
+Fold: 10	 Epoch: 103	 Avg loss: 0.0148	 Time: 0.9169
+Fold: 10	 Epoch: 104	 Avg loss: 0.0146	 Time: 0.8997
+Test mse: 0.0307
+Fold: 10	 Epoch: 105	 Avg loss: 0.0145	 Time: 0.9701
+Fold: 10	 Epoch: 106	 Avg loss: 0.0146	 Time: 0.9334
+Test mse: 0.0287
+New best decoder within a fold!
+Fold: 10	 Epoch: 107	 Avg loss: 0.0145	 Time: 0.9092
+Fold: 10	 Epoch: 108	 Avg loss: 0.0145	 Time: 0.9313
+Test mse: 0.0265
+New best decoder within a fold!
+Fold: 10	 Epoch: 109	 Avg loss: 0.0146	 Time: 0.9406
+Fold: 10	 Epoch: 110	 Avg loss: 0.0142	 Time: 0.9182
+Test mse: 0.0269
+Fold: 10	 Epoch: 111	 Avg loss: 0.0139	 Time: 0.9264
+Fold: 10	 Epoch: 112	 Avg loss: 0.0136	 Time: 0.9576
+Test mse: 0.0264
+New best decoder within a fold!
+Fold: 10	 Epoch: 113	 Avg loss: 0.0130	 Time: 0.9249
+Fold: 10	 Epoch: 114	 Avg loss: 0.0124	 Time: 0.9328
+Test mse: 0.0244
+New best decoder within a fold!
+Fold: 10	 Epoch: 115	 Avg loss: 0.0118	 Time: 0.9293
+Fold: 10	 Epoch: 116	 Avg loss: 0.0113	 Time: 0.9187
+Test mse: 0.0233
+New best decoder within a fold!
+Fold: 10	 Epoch: 117	 Avg loss: 0.0110	 Time: 0.9401
+Fold: 10	 Epoch: 118	 Avg loss: 0.0107	 Time: 0.9179
+Test mse: 0.0232
+New best decoder within a fold!
+Fold: 10	 Epoch: 119	 Avg loss: 0.0105	 Time: 0.9353
+Fold: 10	 Epoch: 120	 Avg loss: 0.0105	 Time: 0.9448
+Test mse: 0.0226
+New best decoder within a fold!
+Fold: 10	 Epoch: 121	 Avg loss: 0.0102	 Time: 0.9253
+Fold: 10	 Epoch: 122	 Avg loss: 0.0101	 Time: 0.9172
+Test mse: 0.0222
+New best decoder within a fold!
+Fold: 10	 Epoch: 123	 Avg loss: 0.0099	 Time: 0.9654
+Fold: 10	 Epoch: 124	 Avg loss: 0.0098	 Time: 0.9257
+Test mse: 0.0219
+New best decoder within a fold!
+Fold: 10	 Epoch: 125	 Avg loss: 0.0097	 Time: 0.9454
+Fold: 10	 Epoch: 126	 Avg loss: 0.0096	 Time: 0.9639
+Test mse: 0.0216
+New best decoder within a fold!
+Fold: 10	 Epoch: 127	 Avg loss: 0.0095	 Time: 0.9431
+Fold: 10	 Epoch: 128	 Avg loss: 0.0094	 Time: 0.9852
+Test mse: 0.0211
+New best decoder within a fold!
+Fold: 10	 Epoch: 129	 Avg loss: 0.0094	 Time: 0.9314
+Fold: 10	 Epoch: 130	 Avg loss: 0.0091	 Time: 0.9366
+Test mse: 0.0207
+New best decoder within a fold!
+Fold: 10	 Epoch: 131	 Avg loss: 0.0091	 Time: 0.9283
+Fold: 10	 Epoch: 132	 Avg loss: 0.0089	 Time: 0.9234
+Test mse: 0.0206
+New best decoder within a fold!
+Fold: 10	 Epoch: 133	 Avg loss: 0.0089	 Time: 0.9333
+Fold: 10	 Epoch: 134	 Avg loss: 0.0087	 Time: 0.9710
+Test mse: 0.0203
+New best decoder within a fold!
+Fold: 10	 Epoch: 135	 Avg loss: 0.0086	 Time: 0.9550
+Fold: 10	 Epoch: 136	 Avg loss: 0.0085	 Time: 0.9873
+Test mse: 0.0198
+New best decoder within a fold!
+Fold: 10	 Epoch: 137	 Avg loss: 0.0083	 Time: 0.9331
+Fold: 10	 Epoch: 138	 Avg loss: 0.0082	 Time: 0.9239
+Test mse: 0.0191
+New best decoder within a fold!
+Fold: 10	 Epoch: 139	 Avg loss: 0.0081	 Time: 0.9340
+Fold: 10	 Epoch: 140	 Avg loss: 0.0080	 Time: 0.9214
+Test mse: 0.0189
+New best decoder within a fold!
+Fold: 10	 Epoch: 141	 Avg loss: 0.0078	 Time: 0.9403
+Fold: 10	 Epoch: 142	 Avg loss: 0.0077	 Time: 0.9178
+Test mse: 0.0187
+New best decoder within a fold!
+Fold: 10	 Epoch: 143	 Avg loss: 0.0076	 Time: 0.9723
+Fold: 10	 Epoch: 144	 Avg loss: 0.0076	 Time: 0.9209
+Test mse: 0.0184
+New best decoder within a fold!
+Fold: 10	 Epoch: 145	 Avg loss: 0.0075	 Time: 0.9278
+Fold: 10	 Epoch: 146	 Avg loss: 0.0075	 Time: 0.9450
+Test mse: 0.0184
+New best decoder within a fold!
+Fold: 10	 Epoch: 147	 Avg loss: 0.0073	 Time: 0.9551
+Fold: 10	 Epoch: 148	 Avg loss: 0.0072	 Time: 0.9345
+Test mse: 0.0182
+New best decoder within a fold!
+Fold: 10	 Epoch: 149	 Avg loss: 0.0071	 Time: 0.9181
+Fold: 10	 Epoch: 150	 Avg loss: 0.0071	 Time: 0.9251
+Test mse: 0.0181
+New best decoder within a fold!
+Fold: 10	 Epoch: 151	 Avg loss: 0.0070	 Time: 0.9579
+Fold: 10	 Epoch: 152	 Avg loss: 0.0069	 Time: 0.9422
+Test mse: 0.0173
+New best decoder within a fold!
+Fold: 10	 Epoch: 153	 Avg loss: 0.0068	 Time: 0.9262
+Fold: 10	 Epoch: 154	 Avg loss: 0.0068	 Time: 0.9260
+Test mse: 0.0171
+New best decoder within a fold!
+Fold: 10	 Epoch: 155	 Avg loss: 0.0066	 Time: 0.9339
+Fold: 10	 Epoch: 156	 Avg loss: 0.0066	 Time: 0.9216
+Test mse: 0.0166
+New best decoder within a fold!
+Fold: 10	 Epoch: 157	 Avg loss: 0.0065	 Time: 0.9245
+Fold: 10	 Epoch: 158	 Avg loss: 0.0064	 Time: 0.9873
+Test mse: 0.0165
+New best decoder within a fold!
+Fold: 10	 Epoch: 159	 Avg loss: 0.0063	 Time: 0.9243
+Fold: 10	 Epoch: 160	 Avg loss: 0.0062	 Time: 0.9862
+Test mse: 0.0165
+New best decoder within a fold!
+Fold: 10	 Epoch: 161	 Avg loss: 0.0062	 Time: 0.9804
+Fold: 10	 Epoch: 162	 Avg loss: 0.0060	 Time: 0.9482
+Test mse: 0.0178
+Fold: 10	 Epoch: 163	 Avg loss: 0.0061	 Time: 0.9510
+Fold: 10	 Epoch: 164	 Avg loss: 0.0059	 Time: 0.9422
+Test mse: 0.0188
+Fold: 10	 Epoch: 165	 Avg loss: 0.0058	 Time: 0.9219
+Fold: 10	 Epoch: 166	 Avg loss: 0.0058	 Time: 0.9774
+Test mse: 0.0191
+Fold: 10	 Epoch: 167	 Avg loss: 0.0056	 Time: 0.9155
+Fold: 10	 Epoch: 168	 Avg loss: 0.0058	 Time: 0.9200
+Test mse: 0.0189
+Fold: 10	 Epoch: 169	 Avg loss: 0.0058	 Time: 0.9120
+Fold: 10	 Epoch: 170	 Avg loss: 0.0062	 Time: 0.9155
+Test mse: 0.0177
+Fold: 10	 Epoch: 171	 Avg loss: 0.0067	 Time: 0.9272
+Fold: 10	 Epoch: 172	 Avg loss: 0.0072	 Time: 0.9338
+Test mse: 0.0161
+New best decoder within a fold!
+Fold: 10	 Epoch: 173	 Avg loss: 0.0078	 Time: 0.9727
+Fold: 10	 Epoch: 174	 Avg loss: 0.0084	 Time: 0.9187
+Test mse: 0.0179
+Fold: 10	 Epoch: 175	 Avg loss: 0.0068	 Time: 0.9334
+Fold: 10	 Epoch: 176	 Avg loss: 0.0060	 Time: 0.9333
+Test mse: 0.0179
+Fold: 10	 Epoch: 177	 Avg loss: 0.0058	 Time: 0.9121
+Fold: 10	 Epoch: 178	 Avg loss: 0.0056	 Time: 0.9491
+Test mse: 0.0175
+Fold: 10	 Epoch: 179	 Avg loss: 0.0056	 Time: 0.9297
+Fold: 10	 Epoch: 180	 Avg loss: 0.0055	 Time: 0.9319
+Test mse: 0.0193
+Fold: 10	 Epoch: 181	 Avg loss: 0.0054	 Time: 0.9567
+Fold: 10	 Epoch: 182	 Avg loss: 0.0057	 Time: 0.9310
+Test mse: 0.0198
+Fold: 10	 Epoch: 183	 Avg loss: 0.0056	 Time: 0.9395
+Fold: 10	 Epoch: 184	 Avg loss: 0.0058	 Time: 0.9210
+Test mse: 0.0212
+Fold: 10	 Epoch: 185	 Avg loss: 0.0059	 Time: 0.9385
+Fold: 10	 Epoch: 186	 Avg loss: 0.0062	 Time: 0.9322
+Test mse: 0.0242
+Fold: 10	 Epoch: 187	 Avg loss: 0.0068	 Time: 0.9756
+Fold: 10	 Epoch: 188	 Avg loss: 0.0074	 Time: 0.9413
+Test mse: 0.0292
+Fold: 10	 Epoch: 189	 Avg loss: 0.0098	 Time: 0.9530
+Fold: 10	 Epoch: 190	 Avg loss: 0.0169	 Time: 0.9141
+Test mse: 0.0374
+Fold: 10	 Epoch: 191	 Avg loss: 0.0269	 Time: 0.9363
+Fold: 10	 Epoch: 192	 Avg loss: 0.0156	 Time: 0.9225
+Test mse: 0.0188
+Fold: 10	 Epoch: 193	 Avg loss: 0.0087	 Time: 0.9146
+Fold: 10	 Epoch: 194	 Avg loss: 0.0099	 Time: 0.9130
+Test mse: 0.0185
+Fold: 10	 Epoch: 195	 Avg loss: 0.0078	 Time: 0.9412
+Fold: 10	 Epoch: 196	 Avg loss: 0.0060	 Time: 0.9407
+Test mse: 0.0138
+New best decoder within a fold!
+Fold: 10	 Epoch: 197	 Avg loss: 0.0062	 Time: 0.9309
+Fold: 10	 Epoch: 198	 Avg loss: 0.0059	 Time: 0.9328
+Test mse: 0.0151
+Fold: 10	 Epoch: 199	 Avg loss: 0.0057	 Time: 0.9175
+Fold: 10	 Epoch: 200	 Avg loss: 0.0056	 Time: 0.9237
+Test mse: 0.0150
+New decoder selected on fold 10
+Training finished! Tht best mse on val is 0.0138, the average mse is 0.0233
+The mse on test data is 0.018296
+Decoder saved!

@@ -1,0 +1,809 @@
+point/IMDB-BINARY_pre_model_07_27_19_11_53.pt
+10 fold training...
+Fold: 1	 Epoch: 1	 Avg loss: 0.6929	 Avg accuracy: 0.4932	 Time: 1.8249
+Fold: 1	 Epoch: 2	 Avg loss: 0.6860	 Avg accuracy: 0.5870	 Time: 1.1941
+Test acc: 0.5625	 loss: 0.6895
+Fold: 1	 Epoch: 3	 Avg loss: 0.6664	 Avg accuracy: 0.6562	 Time: 1.2164
+Fold: 1	 Epoch: 4	 Avg loss: 0.6449	 Avg accuracy: 0.6685	 Time: 1.2081
+Test acc: 0.6250	 loss: 0.6749
+Fold: 1	 Epoch: 5	 Avg loss: 0.6280	 Avg accuracy: 0.7296	 Time: 1.1327
+Fold: 1	 Epoch: 6	 Avg loss: 0.6125	 Avg accuracy: 0.7296	 Time: 1.1678
+Test acc: 0.6562	 loss: 0.6515
+New best decoder within a fold!
+Fold: 1	 Epoch: 7	 Avg loss: 0.5981	 Avg accuracy: 0.7378	 Time: 1.1753
+Fold: 1	 Epoch: 8	 Avg loss: 0.5804	 Avg accuracy: 0.7527	 Time: 1.1687
+Test acc: 0.6875	 loss: 0.6242
+New best decoder within a fold!
+Fold: 1	 Epoch: 9	 Avg loss: 0.5691	 Avg accuracy: 0.7554	 Time: 1.1483
+Fold: 1	 Epoch: 10	 Avg loss: 0.5587	 Avg accuracy: 0.7609	 Time: 1.2166
+Test acc: 0.6875	 loss: 0.6052
+Fold: 1	 Epoch: 11	 Avg loss: 0.5511	 Avg accuracy: 0.7704	 Time: 1.1760
+Fold: 1	 Epoch: 12	 Avg loss: 0.5457	 Avg accuracy: 0.7745	 Time: 1.1527
+Test acc: 0.6979	 loss: 0.5980
+New best decoder within a fold!
+Fold: 1	 Epoch: 13	 Avg loss: 0.5437	 Avg accuracy: 0.7663	 Time: 1.1711
+Fold: 1	 Epoch: 14	 Avg loss: 0.5370	 Avg accuracy: 0.7799	 Time: 1.1490
+Test acc: 0.6979	 loss: 0.5932
+Fold: 1	 Epoch: 15	 Avg loss: 0.5345	 Avg accuracy: 0.7772	 Time: 1.1934
+Fold: 1	 Epoch: 16	 Avg loss: 0.5294	 Avg accuracy: 0.7853	 Time: 1.1814
+Test acc: 0.7083	 loss: 0.5861
+New best decoder within a fold!
+Fold: 1	 Epoch: 17	 Avg loss: 0.5267	 Avg accuracy: 0.8003	 Time: 1.1467
+Fold: 1	 Epoch: 18	 Avg loss: 0.5278	 Avg accuracy: 0.7921	 Time: 1.1529
+Test acc: 0.7083	 loss: 0.5798
+Fold: 1	 Epoch: 19	 Avg loss: 0.5211	 Avg accuracy: 0.7880	 Time: 1.1584
+Fold: 1	 Epoch: 20	 Avg loss: 0.5166	 Avg accuracy: 0.8057	 Time: 1.1316
+Test acc: 0.7188	 loss: 0.5792
+New best decoder within a fold!
+Fold: 1	 Epoch: 21	 Avg loss: 0.5126	 Avg accuracy: 0.8071	 Time: 1.2596
+Fold: 1	 Epoch: 22	 Avg loss: 0.5081	 Avg accuracy: 0.8057	 Time: 1.2170
+Test acc: 0.7188	 loss: 0.5743
+Fold: 1	 Epoch: 23	 Avg loss: 0.5062	 Avg accuracy: 0.8139	 Time: 1.1526
+Fold: 1	 Epoch: 24	 Avg loss: 0.4996	 Avg accuracy: 0.8234	 Time: 1.1665
+Test acc: 0.7083	 loss: 0.5790
+Fold: 1	 Epoch: 25	 Avg loss: 0.5025	 Avg accuracy: 0.8125	 Time: 1.1929
+Fold: 1	 Epoch: 26	 Avg loss: 0.4974	 Avg accuracy: 0.8288	 Time: 1.1594
+Test acc: 0.7083	 loss: 0.5714
+Fold: 1	 Epoch: 27	 Avg loss: 0.4941	 Avg accuracy: 0.8220	 Time: 1.1713
+Fold: 1	 Epoch: 28	 Avg loss: 0.4962	 Avg accuracy: 0.8207	 Time: 1.2624
+Test acc: 0.7396	 loss: 0.5682
+New best decoder within a fold!
+Fold: 1	 Epoch: 29	 Avg loss: 0.4950	 Avg accuracy: 0.8274	 Time: 1.1827
+Fold: 1	 Epoch: 30	 Avg loss: 0.4912	 Avg accuracy: 0.8370	 Time: 1.1974
+Test acc: 0.6979	 loss: 0.5693
+Fold: 1	 Epoch: 31	 Avg loss: 0.4897	 Avg accuracy: 0.8274	 Time: 1.2612
+Fold: 1	 Epoch: 32	 Avg loss: 0.4842	 Avg accuracy: 0.8356	 Time: 1.1981
+Test acc: 0.7083	 loss: 0.5710
+Fold: 1	 Epoch: 33	 Avg loss: 0.4826	 Avg accuracy: 0.8370	 Time: 1.1681
+Fold: 1	 Epoch: 34	 Avg loss: 0.4829	 Avg accuracy: 0.8383	 Time: 1.1939
+Test acc: 0.7083	 loss: 0.5716
+Fold: 1	 Epoch: 35	 Avg loss: 0.4837	 Avg accuracy: 0.8302	 Time: 1.2016
+Fold: 1	 Epoch: 36	 Avg loss: 0.4793	 Avg accuracy: 0.8451	 Time: 1.1981
+Test acc: 0.7083	 loss: 0.5674
+Fold: 1	 Epoch: 37	 Avg loss: 0.4761	 Avg accuracy: 0.8424	 Time: 1.2090
+Fold: 1	 Epoch: 38	 Avg loss: 0.4763	 Avg accuracy: 0.8410	 Time: 1.2090
+Test acc: 0.7292	 loss: 0.5676
+Fold: 1	 Epoch: 39	 Avg loss: 0.4730	 Avg accuracy: 0.8451	 Time: 1.2650
+Fold: 1	 Epoch: 40	 Avg loss: 0.4691	 Avg accuracy: 0.8560	 Time: 1.2627
+Test acc: 0.7083	 loss: 0.5657
+Fold: 1	 Epoch: 41	 Avg loss: 0.4723	 Avg accuracy: 0.8505	 Time: 1.2757
+Fold: 1	 Epoch: 42	 Avg loss: 0.4700	 Avg accuracy: 0.8410	 Time: 1.2463
+Test acc: 0.7083	 loss: 0.5655
+Fold: 1	 Epoch: 43	 Avg loss: 0.4636	 Avg accuracy: 0.8546	 Time: 1.2928
+Fold: 1	 Epoch: 44	 Avg loss: 0.4637	 Avg accuracy: 0.8628	 Time: 1.2132
+Test acc: 0.7083	 loss: 0.5685
+Fold: 1	 Epoch: 45	 Avg loss: 0.4616	 Avg accuracy: 0.8614	 Time: 1.1424
+Fold: 1	 Epoch: 46	 Avg loss: 0.4625	 Avg accuracy: 0.8533	 Time: 1.1692
+Test acc: 0.6979	 loss: 0.5752
+Fold: 1	 Epoch: 47	 Avg loss: 0.4647	 Avg accuracy: 0.8587	 Time: 1.1759
+Fold: 1	 Epoch: 48	 Avg loss: 0.4580	 Avg accuracy: 0.8614	 Time: 1.1985
+Test acc: 0.6875	 loss: 0.5693
+Fold: 1	 Epoch: 49	 Avg loss: 0.4609	 Avg accuracy: 0.8546	 Time: 1.1651
+Fold: 1	 Epoch: 50	 Avg loss: 0.4560	 Avg accuracy: 0.8614	 Time: 1.1657
+Test acc: 0.6875	 loss: 0.5712
+New decoder selected on fold 1
+Fold: 2	 Epoch: 1	 Avg loss: 0.6842	 Avg accuracy: 0.5951	 Time: 1.1722
+Fold: 2	 Epoch: 2	 Avg loss: 0.6683	 Avg accuracy: 0.6413	 Time: 1.1711
+Test acc: 0.7083	 loss: 0.6472
+Fold: 2	 Epoch: 3	 Avg loss: 0.6361	 Avg accuracy: 0.7147	 Time: 1.1692
+Fold: 2	 Epoch: 4	 Avg loss: 0.6096	 Avg accuracy: 0.7174	 Time: 1.1662
+Test acc: 0.6875	 loss: 0.6015
+Fold: 2	 Epoch: 5	 Avg loss: 0.5912	 Avg accuracy: 0.7228	 Time: 1.1863
+Fold: 2	 Epoch: 6	 Avg loss: 0.5794	 Avg accuracy: 0.7323	 Time: 1.2846
+Test acc: 0.6979	 loss: 0.5818
+New best decoder within a fold!
+Fold: 2	 Epoch: 7	 Avg loss: 0.5644	 Avg accuracy: 0.7432	 Time: 1.3123
+Fold: 2	 Epoch: 8	 Avg loss: 0.5595	 Avg accuracy: 0.7473	 Time: 1.2246
+Test acc: 0.7083	 loss: 0.5712
+New best decoder within a fold!
+Fold: 2	 Epoch: 9	 Avg loss: 0.5488	 Avg accuracy: 0.7541	 Time: 1.1702
+Fold: 2	 Epoch: 10	 Avg loss: 0.5451	 Avg accuracy: 0.7663	 Time: 1.1798
+Test acc: 0.7188	 loss: 0.5706
+New best decoder within a fold!
+Fold: 2	 Epoch: 11	 Avg loss: 0.5419	 Avg accuracy: 0.7704	 Time: 1.1665
+Fold: 2	 Epoch: 12	 Avg loss: 0.5349	 Avg accuracy: 0.7731	 Time: 1.1582
+Test acc: 0.7188	 loss: 0.5651
+Fold: 2	 Epoch: 13	 Avg loss: 0.5320	 Avg accuracy: 0.7840	 Time: 1.1831
+Fold: 2	 Epoch: 14	 Avg loss: 0.5286	 Avg accuracy: 0.7853	 Time: 1.1811
+Test acc: 0.7188	 loss: 0.5603
+Fold: 2	 Epoch: 15	 Avg loss: 0.5267	 Avg accuracy: 0.7853	 Time: 1.1350
+Fold: 2	 Epoch: 16	 Avg loss: 0.5244	 Avg accuracy: 0.7840	 Time: 1.1485
+Test acc: 0.7083	 loss: 0.5577
+Fold: 2	 Epoch: 17	 Avg loss: 0.5199	 Avg accuracy: 0.7921	 Time: 1.1738
+Fold: 2	 Epoch: 18	 Avg loss: 0.5151	 Avg accuracy: 0.7935	 Time: 1.1801
+Test acc: 0.7500	 loss: 0.5528
+New best decoder within a fold!
+Fold: 2	 Epoch: 19	 Avg loss: 0.5130	 Avg accuracy: 0.8179	 Time: 1.2489
+Fold: 2	 Epoch: 20	 Avg loss: 0.5119	 Avg accuracy: 0.8125	 Time: 1.2004
+Test acc: 0.7708	 loss: 0.5486
+New best decoder within a fold!
+Fold: 2	 Epoch: 21	 Avg loss: 0.5101	 Avg accuracy: 0.8071	 Time: 1.1903
+Fold: 2	 Epoch: 22	 Avg loss: 0.5054	 Avg accuracy: 0.8139	 Time: 1.1584
+Test acc: 0.7188	 loss: 0.5507
+Fold: 2	 Epoch: 23	 Avg loss: 0.5032	 Avg accuracy: 0.8166	 Time: 1.1690
+Fold: 2	 Epoch: 24	 Avg loss: 0.5010	 Avg accuracy: 0.8139	 Time: 1.1458
+Test acc: 0.7396	 loss: 0.5456
+Fold: 2	 Epoch: 25	 Avg loss: 0.4975	 Avg accuracy: 0.8234	 Time: 1.1838
+Fold: 2	 Epoch: 26	 Avg loss: 0.4979	 Avg accuracy: 0.8193	 Time: 1.1576
+Test acc: 0.7500	 loss: 0.5467
+Fold: 2	 Epoch: 27	 Avg loss: 0.4962	 Avg accuracy: 0.8152	 Time: 1.1921
+Fold: 2	 Epoch: 28	 Avg loss: 0.4941	 Avg accuracy: 0.8288	 Time: 1.1140
+Test acc: 0.7396	 loss: 0.5415
+Fold: 2	 Epoch: 29	 Avg loss: 0.4960	 Avg accuracy: 0.8247	 Time: 1.1482
+Fold: 2	 Epoch: 30	 Avg loss: 0.4853	 Avg accuracy: 0.8342	 Time: 1.1800
+Test acc: 0.7396	 loss: 0.5440
+Fold: 2	 Epoch: 31	 Avg loss: 0.4878	 Avg accuracy: 0.8315	 Time: 1.1363
+Fold: 2	 Epoch: 32	 Avg loss: 0.4855	 Avg accuracy: 0.8288	 Time: 1.1754
+Test acc: 0.7604	 loss: 0.5380
+Fold: 2	 Epoch: 33	 Avg loss: 0.4799	 Avg accuracy: 0.8451	 Time: 1.1746
+Fold: 2	 Epoch: 34	 Avg loss: 0.4831	 Avg accuracy: 0.8383	 Time: 1.1757
+Test acc: 0.7292	 loss: 0.5383
+Fold: 2	 Epoch: 35	 Avg loss: 0.4766	 Avg accuracy: 0.8424	 Time: 1.1826
+Fold: 2	 Epoch: 36	 Avg loss: 0.4742	 Avg accuracy: 0.8492	 Time: 1.1402
+Test acc: 0.7500	 loss: 0.5283
+Fold: 2	 Epoch: 37	 Avg loss: 0.4754	 Avg accuracy: 0.8410	 Time: 1.1677
+Fold: 2	 Epoch: 38	 Avg loss: 0.4732	 Avg accuracy: 0.8560	 Time: 1.1344
+Test acc: 0.7083	 loss: 0.5526
+Fold: 2	 Epoch: 39	 Avg loss: 0.4737	 Avg accuracy: 0.8397	 Time: 1.1794
+Fold: 2	 Epoch: 40	 Avg loss: 0.4705	 Avg accuracy: 0.8492	 Time: 1.1369
+Test acc: 0.7604	 loss: 0.5312
+Fold: 2	 Epoch: 41	 Avg loss: 0.4699	 Avg accuracy: 0.8438	 Time: 1.2121
+Fold: 2	 Epoch: 42	 Avg loss: 0.4670	 Avg accuracy: 0.8533	 Time: 1.1650
+Test acc: 0.7604	 loss: 0.5349
+Fold: 2	 Epoch: 43	 Avg loss: 0.4625	 Avg accuracy: 0.8546	 Time: 1.1853
+Fold: 2	 Epoch: 44	 Avg loss: 0.4627	 Avg accuracy: 0.8451	 Time: 1.1874
+Test acc: 0.7604	 loss: 0.5379
+Fold: 2	 Epoch: 45	 Avg loss: 0.4611	 Avg accuracy: 0.8587	 Time: 1.1769
+Fold: 2	 Epoch: 46	 Avg loss: 0.4583	 Avg accuracy: 0.8709	 Time: 1.1687
+Test acc: 0.7500	 loss: 0.5290
+Fold: 2	 Epoch: 47	 Avg loss: 0.4615	 Avg accuracy: 0.8533	 Time: 1.2758
+Fold: 2	 Epoch: 48	 Avg loss: 0.4577	 Avg accuracy: 0.8614	 Time: 1.3038
+Test acc: 0.7604	 loss: 0.5293
+Fold: 2	 Epoch: 49	 Avg loss: 0.4567	 Avg accuracy: 0.8587	 Time: 1.1912
+Fold: 2	 Epoch: 50	 Avg loss: 0.4589	 Avg accuracy: 0.8655	 Time: 1.1891
+Test acc: 0.7604	 loss: 0.5439
+New decoder selected on fold 2
+Fold: 3	 Epoch: 1	 Avg loss: 0.6917	 Avg accuracy: 0.5136	 Time: 1.1765
+Fold: 3	 Epoch: 2	 Avg loss: 0.6842	 Avg accuracy: 0.5802	 Time: 1.1720
+Test acc: 0.5729	 loss: 0.6854
+Fold: 3	 Epoch: 3	 Avg loss: 0.6676	 Avg accuracy: 0.6549	 Time: 1.1778
+Fold: 3	 Epoch: 4	 Avg loss: 0.6455	 Avg accuracy: 0.7052	 Time: 1.1685
+Test acc: 0.6146	 loss: 0.6637
+Fold: 3	 Epoch: 5	 Avg loss: 0.6269	 Avg accuracy: 0.7120	 Time: 1.1584
+Fold: 3	 Epoch: 6	 Avg loss: 0.6121	 Avg accuracy: 0.7160	 Time: 1.1350
+Test acc: 0.6667	 loss: 0.6420
+New best decoder within a fold!
+Fold: 3	 Epoch: 7	 Avg loss: 0.5963	 Avg accuracy: 0.7323	 Time: 1.2405
+Fold: 3	 Epoch: 8	 Avg loss: 0.5815	 Avg accuracy: 0.7405	 Time: 1.1529
+Test acc: 0.6979	 loss: 0.6186
+New best decoder within a fold!
+Fold: 3	 Epoch: 9	 Avg loss: 0.5699	 Avg accuracy: 0.7432	 Time: 1.1315
+Fold: 3	 Epoch: 10	 Avg loss: 0.5607	 Avg accuracy: 0.7486	 Time: 1.1586
+Test acc: 0.6979	 loss: 0.6091
+Fold: 3	 Epoch: 11	 Avg loss: 0.5552	 Avg accuracy: 0.7486	 Time: 1.1859
+Fold: 3	 Epoch: 12	 Avg loss: 0.5476	 Avg accuracy: 0.7568	 Time: 1.1888
+Test acc: 0.6979	 loss: 0.6009
+Fold: 3	 Epoch: 13	 Avg loss: 0.5438	 Avg accuracy: 0.7595	 Time: 1.1938
+Fold: 3	 Epoch: 14	 Avg loss: 0.5383	 Avg accuracy: 0.7609	 Time: 1.1811
+Test acc: 0.7292	 loss: 0.5989
+New best decoder within a fold!
+Fold: 3	 Epoch: 15	 Avg loss: 0.5336	 Avg accuracy: 0.7690	 Time: 1.1200
+Fold: 3	 Epoch: 16	 Avg loss: 0.5299	 Avg accuracy: 0.7745	 Time: 1.2015
+Test acc: 0.7083	 loss: 0.5973
+Fold: 3	 Epoch: 17	 Avg loss: 0.5262	 Avg accuracy: 0.7826	 Time: 1.1574
+Fold: 3	 Epoch: 18	 Avg loss: 0.5223	 Avg accuracy: 0.7921	 Time: 1.2278
+Test acc: 0.7292	 loss: 0.5964
+Fold: 3	 Epoch: 19	 Avg loss: 0.5246	 Avg accuracy: 0.7853	 Time: 1.2027
+Fold: 3	 Epoch: 20	 Avg loss: 0.5175	 Avg accuracy: 0.7935	 Time: 1.1969
+Test acc: 0.7292	 loss: 0.5914
+Fold: 3	 Epoch: 21	 Avg loss: 0.5120	 Avg accuracy: 0.7962	 Time: 1.1609
+Fold: 3	 Epoch: 22	 Avg loss: 0.5102	 Avg accuracy: 0.7908	 Time: 1.2145
+Test acc: 0.7188	 loss: 0.5943
+Fold: 3	 Epoch: 23	 Avg loss: 0.5071	 Avg accuracy: 0.8071	 Time: 1.1631
+Fold: 3	 Epoch: 24	 Avg loss: 0.5027	 Avg accuracy: 0.8098	 Time: 1.1634
+Test acc: 0.7083	 loss: 0.5929
+Fold: 3	 Epoch: 25	 Avg loss: 0.5022	 Avg accuracy: 0.8207	 Time: 1.1514
+Fold: 3	 Epoch: 26	 Avg loss: 0.4982	 Avg accuracy: 0.8220	 Time: 1.1910
+Test acc: 0.6875	 loss: 0.5955
+Fold: 3	 Epoch: 27	 Avg loss: 0.4989	 Avg accuracy: 0.8166	 Time: 1.1652
+Fold: 3	 Epoch: 28	 Avg loss: 0.4916	 Avg accuracy: 0.8315	 Time: 1.1324
+Test acc: 0.7083	 loss: 0.5905
+Fold: 3	 Epoch: 29	 Avg loss: 0.4913	 Avg accuracy: 0.8234	 Time: 1.1285
+Fold: 3	 Epoch: 30	 Avg loss: 0.4872	 Avg accuracy: 0.8356	 Time: 1.1196
+Test acc: 0.6979	 loss: 0.5938
+Fold: 3	 Epoch: 31	 Avg loss: 0.4877	 Avg accuracy: 0.8397	 Time: 1.1475
+Fold: 3	 Epoch: 32	 Avg loss: 0.4882	 Avg accuracy: 0.8302	 Time: 1.2005
+Test acc: 0.6771	 loss: 0.5996
+Fold: 3	 Epoch: 33	 Avg loss: 0.4853	 Avg accuracy: 0.8424	 Time: 1.1480
+Fold: 3	 Epoch: 34	 Avg loss: 0.4835	 Avg accuracy: 0.8274	 Time: 1.1217
+Test acc: 0.6875	 loss: 0.5944
+Fold: 3	 Epoch: 35	 Avg loss: 0.4765	 Avg accuracy: 0.8465	 Time: 1.1486
+Fold: 3	 Epoch: 36	 Avg loss: 0.4756	 Avg accuracy: 0.8465	 Time: 1.1539
+Test acc: 0.7083	 loss: 0.5931
+Fold: 3	 Epoch: 37	 Avg loss: 0.4798	 Avg accuracy: 0.8397	 Time: 1.1558
+Fold: 3	 Epoch: 38	 Avg loss: 0.4754	 Avg accuracy: 0.8438	 Time: 1.1926
+Test acc: 0.7083	 loss: 0.5924
+Fold: 3	 Epoch: 39	 Avg loss: 0.4723	 Avg accuracy: 0.8573	 Time: 1.1186
+Fold: 3	 Epoch: 40	 Avg loss: 0.4684	 Avg accuracy: 0.8614	 Time: 1.1515
+Test acc: 0.6875	 loss: 0.5919
+Fold: 3	 Epoch: 41	 Avg loss: 0.4683	 Avg accuracy: 0.8573	 Time: 1.2071
+Fold: 3	 Epoch: 42	 Avg loss: 0.4642	 Avg accuracy: 0.8628	 Time: 1.1685
+Test acc: 0.6771	 loss: 0.5980
+Fold: 3	 Epoch: 43	 Avg loss: 0.4658	 Avg accuracy: 0.8628	 Time: 1.1415
+Fold: 3	 Epoch: 44	 Avg loss: 0.4647	 Avg accuracy: 0.8546	 Time: 1.1249
+Test acc: 0.7083	 loss: 0.5972
+Fold: 3	 Epoch: 45	 Avg loss: 0.4649	 Avg accuracy: 0.8573	 Time: 1.1400
+Fold: 3	 Epoch: 46	 Avg loss: 0.4652	 Avg accuracy: 0.8519	 Time: 1.1289
+Test acc: 0.6875	 loss: 0.5991
+Fold: 3	 Epoch: 47	 Avg loss: 0.4558	 Avg accuracy: 0.8723	 Time: 1.1506
+Fold: 3	 Epoch: 48	 Avg loss: 0.4560	 Avg accuracy: 0.8723	 Time: 1.1304
+Test acc: 0.6875	 loss: 0.5978
+Fold: 3	 Epoch: 49	 Avg loss: 0.4571	 Avg accuracy: 0.8601	 Time: 1.1400
+Fold: 3	 Epoch: 50	 Avg loss: 0.4559	 Avg accuracy: 0.8682	 Time: 1.1399
+Test acc: 0.6875	 loss: 0.6043
+Fold: 4	 Epoch: 1	 Avg loss: 0.6890	 Avg accuracy: 0.5666	 Time: 1.1841
+Fold: 4	 Epoch: 2	 Avg loss: 0.6755	 Avg accuracy: 0.6250	 Time: 1.2119
+Test acc: 0.6875	 loss: 0.6658
+Fold: 4	 Epoch: 3	 Avg loss: 0.6573	 Avg accuracy: 0.7174	 Time: 1.2914
+Fold: 4	 Epoch: 4	 Avg loss: 0.6347	 Avg accuracy: 0.7174	 Time: 1.2796
+Test acc: 0.6771	 loss: 0.6289
+Fold: 4	 Epoch: 5	 Avg loss: 0.6135	 Avg accuracy: 0.7160	 Time: 1.2093
+Fold: 4	 Epoch: 6	 Avg loss: 0.5953	 Avg accuracy: 0.7160	 Time: 1.2741
+Test acc: 0.6771	 loss: 0.5892
+New best decoder within a fold!
+Fold: 4	 Epoch: 7	 Avg loss: 0.5819	 Avg accuracy: 0.7174	 Time: 1.3391
+Fold: 4	 Epoch: 8	 Avg loss: 0.5733	 Avg accuracy: 0.7418	 Time: 1.3006
+Test acc: 0.7292	 loss: 0.5705
+New best decoder within a fold!
+Fold: 4	 Epoch: 9	 Avg loss: 0.5638	 Avg accuracy: 0.7310	 Time: 1.3299
+Fold: 4	 Epoch: 10	 Avg loss: 0.5588	 Avg accuracy: 0.7514	 Time: 1.2619
+Test acc: 0.7396	 loss: 0.5540
+New best decoder within a fold!
+Fold: 4	 Epoch: 11	 Avg loss: 0.5526	 Avg accuracy: 0.7568	 Time: 1.2827
+Fold: 4	 Epoch: 12	 Avg loss: 0.5476	 Avg accuracy: 0.7595	 Time: 1.2742
+Test acc: 0.7500	 loss: 0.5534
+New best decoder within a fold!
+Fold: 4	 Epoch: 13	 Avg loss: 0.5460	 Avg accuracy: 0.7527	 Time: 1.2209
+Fold: 4	 Epoch: 14	 Avg loss: 0.5442	 Avg accuracy: 0.7622	 Time: 1.2202
+Test acc: 0.7500	 loss: 0.5492
+Fold: 4	 Epoch: 15	 Avg loss: 0.5385	 Avg accuracy: 0.7622	 Time: 1.2397
+Fold: 4	 Epoch: 16	 Avg loss: 0.5334	 Avg accuracy: 0.7731	 Time: 1.2766
+Test acc: 0.7604	 loss: 0.5412
+New best decoder within a fold!
+Fold: 4	 Epoch: 17	 Avg loss: 0.5298	 Avg accuracy: 0.7799	 Time: 1.3490
+Fold: 4	 Epoch: 18	 Avg loss: 0.5280	 Avg accuracy: 0.7826	 Time: 1.3568
+Test acc: 0.7396	 loss: 0.5406
+Fold: 4	 Epoch: 19	 Avg loss: 0.5255	 Avg accuracy: 0.7812	 Time: 1.3547
+Fold: 4	 Epoch: 20	 Avg loss: 0.5234	 Avg accuracy: 0.7812	 Time: 1.2600
+Test acc: 0.7500	 loss: 0.5330
+Fold: 4	 Epoch: 21	 Avg loss: 0.5193	 Avg accuracy: 0.7894	 Time: 1.1690
+Fold: 4	 Epoch: 22	 Avg loss: 0.5174	 Avg accuracy: 0.7962	 Time: 1.1909
+Test acc: 0.7604	 loss: 0.5303
+Fold: 4	 Epoch: 23	 Avg loss: 0.5118	 Avg accuracy: 0.7853	 Time: 1.1762
+Fold: 4	 Epoch: 24	 Avg loss: 0.5116	 Avg accuracy: 0.8043	 Time: 1.1866
+Test acc: 0.7708	 loss: 0.5276
+New best decoder within a fold!
+Fold: 4	 Epoch: 25	 Avg loss: 0.5076	 Avg accuracy: 0.8098	 Time: 1.1525
+Fold: 4	 Epoch: 26	 Avg loss: 0.5061	 Avg accuracy: 0.8016	 Time: 1.1381
+Test acc: 0.7917	 loss: 0.5198
+New best decoder within a fold!
+Fold: 4	 Epoch: 27	 Avg loss: 0.5076	 Avg accuracy: 0.8016	 Time: 1.1809
+Fold: 4	 Epoch: 28	 Avg loss: 0.5007	 Avg accuracy: 0.8166	 Time: 1.1549
+Test acc: 0.7812	 loss: 0.5155
+Fold: 4	 Epoch: 29	 Avg loss: 0.5009	 Avg accuracy: 0.8152	 Time: 1.1641
+Fold: 4	 Epoch: 30	 Avg loss: 0.4984	 Avg accuracy: 0.8193	 Time: 1.2044
+Test acc: 0.7708	 loss: 0.5204
+Fold: 4	 Epoch: 31	 Avg loss: 0.4933	 Avg accuracy: 0.8329	 Time: 1.2625
+Fold: 4	 Epoch: 32	 Avg loss: 0.4978	 Avg accuracy: 0.8220	 Time: 1.1564
+Test acc: 0.7812	 loss: 0.5166
+Fold: 4	 Epoch: 33	 Avg loss: 0.4893	 Avg accuracy: 0.8356	 Time: 1.1731
+Fold: 4	 Epoch: 34	 Avg loss: 0.4886	 Avg accuracy: 0.8247	 Time: 1.1336
+Test acc: 0.8021	 loss: 0.5134
+New best decoder within a fold!
+Fold: 4	 Epoch: 35	 Avg loss: 0.4922	 Avg accuracy: 0.8302	 Time: 1.1976
+Fold: 4	 Epoch: 36	 Avg loss: 0.4903	 Avg accuracy: 0.8315	 Time: 1.2151
+Test acc: 0.7812	 loss: 0.5169
+Fold: 4	 Epoch: 37	 Avg loss: 0.4841	 Avg accuracy: 0.8424	 Time: 1.2021
+Fold: 4	 Epoch: 38	 Avg loss: 0.4815	 Avg accuracy: 0.8383	 Time: 1.1605
+Test acc: 0.7708	 loss: 0.5166
+Fold: 4	 Epoch: 39	 Avg loss: 0.4826	 Avg accuracy: 0.8451	 Time: 1.1631
+Fold: 4	 Epoch: 40	 Avg loss: 0.4820	 Avg accuracy: 0.8451	 Time: 1.1372
+Test acc: 0.7708	 loss: 0.5134
+Fold: 4	 Epoch: 41	 Avg loss: 0.4782	 Avg accuracy: 0.8505	 Time: 1.1800
+Fold: 4	 Epoch: 42	 Avg loss: 0.4752	 Avg accuracy: 0.8478	 Time: 1.1731
+Test acc: 0.7812	 loss: 0.5098
+Fold: 4	 Epoch: 43	 Avg loss: 0.4758	 Avg accuracy: 0.8397	 Time: 1.1542
+Fold: 4	 Epoch: 44	 Avg loss: 0.4740	 Avg accuracy: 0.8424	 Time: 1.1624
+Test acc: 0.8125	 loss: 0.5121
+New best decoder within a fold!
+Fold: 4	 Epoch: 45	 Avg loss: 0.4746	 Avg accuracy: 0.8451	 Time: 1.1963
+Fold: 4	 Epoch: 46	 Avg loss: 0.4738	 Avg accuracy: 0.8438	 Time: 1.1902
+Test acc: 0.7708	 loss: 0.5145
+Fold: 4	 Epoch: 47	 Avg loss: 0.4755	 Avg accuracy: 0.8383	 Time: 1.1506
+Fold: 4	 Epoch: 48	 Avg loss: 0.4686	 Avg accuracy: 0.8505	 Time: 1.1519
+Test acc: 0.7604	 loss: 0.5247
+Fold: 4	 Epoch: 49	 Avg loss: 0.4723	 Avg accuracy: 0.8505	 Time: 1.2078
+Fold: 4	 Epoch: 50	 Avg loss: 0.4690	 Avg accuracy: 0.8492	 Time: 1.1406
+Test acc: 0.7708	 loss: 0.5055
+New decoder selected on fold 4
+Fold: 5	 Epoch: 1	 Avg loss: 0.6897	 Avg accuracy: 0.5190	 Time: 1.1736
+Fold: 5	 Epoch: 2	 Avg loss: 0.6769	 Avg accuracy: 0.5842	 Time: 1.2129
+Test acc: 0.6042	 loss: 0.6761
+Fold: 5	 Epoch: 3	 Avg loss: 0.6494	 Avg accuracy: 0.6997	 Time: 1.1856
+Fold: 5	 Epoch: 4	 Avg loss: 0.6250	 Avg accuracy: 0.7160	 Time: 1.1314
+Test acc: 0.6354	 loss: 0.6372
+Fold: 5	 Epoch: 5	 Avg loss: 0.6028	 Avg accuracy: 0.7201	 Time: 1.2076
+Fold: 5	 Epoch: 6	 Avg loss: 0.5868	 Avg accuracy: 0.7310	 Time: 1.1442
+Test acc: 0.6458	 loss: 0.6035
+New best decoder within a fold!
+Fold: 5	 Epoch: 7	 Avg loss: 0.5742	 Avg accuracy: 0.7283	 Time: 1.1373
+Fold: 5	 Epoch: 8	 Avg loss: 0.5664	 Avg accuracy: 0.7378	 Time: 1.1568
+Test acc: 0.6979	 loss: 0.5864
+New best decoder within a fold!
+Fold: 5	 Epoch: 9	 Avg loss: 0.5563	 Avg accuracy: 0.7514	 Time: 1.1266
+Fold: 5	 Epoch: 10	 Avg loss: 0.5519	 Avg accuracy: 0.7568	 Time: 1.1370
+Test acc: 0.6979	 loss: 0.5748
+Fold: 5	 Epoch: 11	 Avg loss: 0.5484	 Avg accuracy: 0.7595	 Time: 1.1934
+Fold: 5	 Epoch: 12	 Avg loss: 0.5421	 Avg accuracy: 0.7649	 Time: 1.1494
+Test acc: 0.7083	 loss: 0.5723
+New best decoder within a fold!
+Fold: 5	 Epoch: 13	 Avg loss: 0.5412	 Avg accuracy: 0.7731	 Time: 1.1405
+Fold: 5	 Epoch: 14	 Avg loss: 0.5348	 Avg accuracy: 0.7758	 Time: 1.1447
+Test acc: 0.6771	 loss: 0.5690
+Fold: 5	 Epoch: 15	 Avg loss: 0.5293	 Avg accuracy: 0.7785	 Time: 1.1805
+Fold: 5	 Epoch: 16	 Avg loss: 0.5283	 Avg accuracy: 0.7758	 Time: 1.2918
+Test acc: 0.6667	 loss: 0.5681
+Fold: 5	 Epoch: 17	 Avg loss: 0.5239	 Avg accuracy: 0.7785	 Time: 1.1864
+Fold: 5	 Epoch: 18	 Avg loss: 0.5210	 Avg accuracy: 0.7840	 Time: 1.2349
+Test acc: 0.7188	 loss: 0.5549
+New best decoder within a fold!
+Fold: 5	 Epoch: 19	 Avg loss: 0.5167	 Avg accuracy: 0.7908	 Time: 1.1684
+Fold: 5	 Epoch: 20	 Avg loss: 0.5095	 Avg accuracy: 0.8016	 Time: 1.1734
+Test acc: 0.7083	 loss: 0.5582
+Fold: 5	 Epoch: 21	 Avg loss: 0.5078	 Avg accuracy: 0.8003	 Time: 1.1452
+Fold: 5	 Epoch: 22	 Avg loss: 0.5056	 Avg accuracy: 0.8016	 Time: 1.1927
+Test acc: 0.7083	 loss: 0.5620
+Fold: 5	 Epoch: 23	 Avg loss: 0.5034	 Avg accuracy: 0.8030	 Time: 1.1662
+Fold: 5	 Epoch: 24	 Avg loss: 0.5045	 Avg accuracy: 0.8139	 Time: 1.1272
+Test acc: 0.7083	 loss: 0.5653
+Fold: 5	 Epoch: 25	 Avg loss: 0.4957	 Avg accuracy: 0.8220	 Time: 1.1439
+Fold: 5	 Epoch: 26	 Avg loss: 0.4926	 Avg accuracy: 0.8261	 Time: 1.1696
+Test acc: 0.7188	 loss: 0.5725
+Fold: 5	 Epoch: 27	 Avg loss: 0.4989	 Avg accuracy: 0.8139	 Time: 1.1671
+Fold: 5	 Epoch: 28	 Avg loss: 0.4913	 Avg accuracy: 0.8220	 Time: 1.1838
+Test acc: 0.7292	 loss: 0.5689
+New best decoder within a fold!
+Fold: 5	 Epoch: 29	 Avg loss: 0.4891	 Avg accuracy: 0.8315	 Time: 1.1823
+Fold: 5	 Epoch: 30	 Avg loss: 0.4860	 Avg accuracy: 0.8274	 Time: 1.1480
+Test acc: 0.7188	 loss: 0.5643
+Fold: 5	 Epoch: 31	 Avg loss: 0.4867	 Avg accuracy: 0.8234	 Time: 1.1590
+Fold: 5	 Epoch: 32	 Avg loss: 0.4885	 Avg accuracy: 0.8356	 Time: 1.1305
+Test acc: 0.6667	 loss: 0.5895
+Fold: 5	 Epoch: 33	 Avg loss: 0.4781	 Avg accuracy: 0.8383	 Time: 1.1476
+Fold: 5	 Epoch: 34	 Avg loss: 0.4778	 Avg accuracy: 0.8451	 Time: 1.1445
+Test acc: 0.7188	 loss: 0.5758
+Fold: 5	 Epoch: 35	 Avg loss: 0.4729	 Avg accuracy: 0.8451	 Time: 1.1633
+Fold: 5	 Epoch: 36	 Avg loss: 0.4724	 Avg accuracy: 0.8519	 Time: 1.1735
+Test acc: 0.7188	 loss: 0.5665
+Fold: 5	 Epoch: 37	 Avg loss: 0.4717	 Avg accuracy: 0.8370	 Time: 1.1521
+Fold: 5	 Epoch: 38	 Avg loss: 0.4737	 Avg accuracy: 0.8383	 Time: 1.1403
+Test acc: 0.6875	 loss: 0.5946
+Fold: 5	 Epoch: 39	 Avg loss: 0.4643	 Avg accuracy: 0.8492	 Time: 1.1538
+Fold: 5	 Epoch: 40	 Avg loss: 0.4676	 Avg accuracy: 0.8492	 Time: 1.1525
+Test acc: 0.6979	 loss: 0.5794
+Fold: 5	 Epoch: 41	 Avg loss: 0.4679	 Avg accuracy: 0.8505	 Time: 1.1673
+Fold: 5	 Epoch: 42	 Avg loss: 0.4639	 Avg accuracy: 0.8505	 Time: 1.1855
+Test acc: 0.7188	 loss: 0.5799
+Fold: 5	 Epoch: 43	 Avg loss: 0.4601	 Avg accuracy: 0.8560	 Time: 1.1650
+Fold: 5	 Epoch: 44	 Avg loss: 0.4613	 Avg accuracy: 0.8587	 Time: 1.1846
+Test acc: 0.6875	 loss: 0.5840
+Fold: 5	 Epoch: 45	 Avg loss: 0.4562	 Avg accuracy: 0.8641	 Time: 1.1428
+Fold: 5	 Epoch: 46	 Avg loss: 0.4566	 Avg accuracy: 0.8668	 Time: 1.1724
+Test acc: 0.6771	 loss: 0.5817
+Fold: 5	 Epoch: 47	 Avg loss: 0.4581	 Avg accuracy: 0.8587	 Time: 1.1573
+Fold: 5	 Epoch: 48	 Avg loss: 0.4548	 Avg accuracy: 0.8573	 Time: 1.1521
+Test acc: 0.7083	 loss: 0.5774
+Fold: 5	 Epoch: 49	 Avg loss: 0.4521	 Avg accuracy: 0.8614	 Time: 1.1881
+Fold: 5	 Epoch: 50	 Avg loss: 0.4563	 Avg accuracy: 0.8628	 Time: 1.1354
+Test acc: 0.6771	 loss: 0.5925
+Fold: 6	 Epoch: 1	 Avg loss: 0.6962	 Avg accuracy: 0.4973	 Time: 1.2068
+Fold: 6	 Epoch: 2	 Avg loss: 0.6855	 Avg accuracy: 0.5027	 Time: 1.1356
+Test acc: 0.6146	 loss: 0.6436
+Fold: 6	 Epoch: 3	 Avg loss: 0.6750	 Avg accuracy: 0.4973	 Time: 1.0999
+Fold: 6	 Epoch: 4	 Avg loss: 0.6629	 Avg accuracy: 0.5014	 Time: 1.1978
+Test acc: 0.6146	 loss: 0.6049
+Fold: 6	 Epoch: 5	 Avg loss: 0.6514	 Avg accuracy: 0.5068	 Time: 1.1260
+Fold: 6	 Epoch: 6	 Avg loss: 0.6384	 Avg accuracy: 0.5774	 Time: 1.2184
+Test acc: 0.7188	 loss: 0.5820
+New best decoder within a fold!
+Fold: 6	 Epoch: 7	 Avg loss: 0.6213	 Avg accuracy: 0.6522	 Time: 1.1623
+Fold: 6	 Epoch: 8	 Avg loss: 0.6029	 Avg accuracy: 0.7283	 Time: 1.1540
+Test acc: 0.7396	 loss: 0.5657
+New best decoder within a fold!
+Fold: 6	 Epoch: 9	 Avg loss: 0.5850	 Avg accuracy: 0.7527	 Time: 1.1076
+Fold: 6	 Epoch: 10	 Avg loss: 0.5683	 Avg accuracy: 0.7677	 Time: 1.1359
+Test acc: 0.6979	 loss: 0.5664
+Fold: 6	 Epoch: 11	 Avg loss: 0.5550	 Avg accuracy: 0.7731	 Time: 1.1676
+Fold: 6	 Epoch: 12	 Avg loss: 0.5475	 Avg accuracy: 0.7677	 Time: 1.1365
+Test acc: 0.6771	 loss: 0.5729
+Fold: 6	 Epoch: 13	 Avg loss: 0.5432	 Avg accuracy: 0.7677	 Time: 1.1170
+Fold: 6	 Epoch: 14	 Avg loss: 0.5343	 Avg accuracy: 0.7867	 Time: 1.1708
+Test acc: 0.6771	 loss: 0.5781
+Fold: 6	 Epoch: 15	 Avg loss: 0.5350	 Avg accuracy: 0.7840	 Time: 1.2309
+Fold: 6	 Epoch: 16	 Avg loss: 0.5268	 Avg accuracy: 0.7840	 Time: 1.1628
+Test acc: 0.6875	 loss: 0.5793
+Fold: 6	 Epoch: 17	 Avg loss: 0.5231	 Avg accuracy: 0.7908	 Time: 1.1864
+Fold: 6	 Epoch: 18	 Avg loss: 0.5199	 Avg accuracy: 0.7948	 Time: 1.1543
+Test acc: 0.6771	 loss: 0.5849
+Fold: 6	 Epoch: 19	 Avg loss: 0.5164	 Avg accuracy: 0.8003	 Time: 1.2927
+Fold: 6	 Epoch: 20	 Avg loss: 0.5100	 Avg accuracy: 0.8084	 Time: 1.1641
+Test acc: 0.6979	 loss: 0.5874
+Fold: 6	 Epoch: 21	 Avg loss: 0.5112	 Avg accuracy: 0.7989	 Time: 1.1461
+Fold: 6	 Epoch: 22	 Avg loss: 0.5055	 Avg accuracy: 0.8057	 Time: 1.1304
+Test acc: 0.6667	 loss: 0.5944
+Fold: 6	 Epoch: 23	 Avg loss: 0.5066	 Avg accuracy: 0.8207	 Time: 1.1633
+Fold: 6	 Epoch: 24	 Avg loss: 0.5020	 Avg accuracy: 0.8193	 Time: 1.1291
+Test acc: 0.6667	 loss: 0.5891
+Fold: 6	 Epoch: 25	 Avg loss: 0.4978	 Avg accuracy: 0.8207	 Time: 1.1325
+Fold: 6	 Epoch: 26	 Avg loss: 0.4952	 Avg accuracy: 0.8356	 Time: 1.1551
+Test acc: 0.6458	 loss: 0.5917
+Fold: 6	 Epoch: 27	 Avg loss: 0.4908	 Avg accuracy: 0.8315	 Time: 1.1524
+Fold: 6	 Epoch: 28	 Avg loss: 0.4890	 Avg accuracy: 0.8329	 Time: 1.1315
+Test acc: 0.6354	 loss: 0.5928
+Fold: 6	 Epoch: 29	 Avg loss: 0.4921	 Avg accuracy: 0.8247	 Time: 1.1976
+Fold: 6	 Epoch: 30	 Avg loss: 0.4890	 Avg accuracy: 0.8220	 Time: 1.1571
+Test acc: 0.6458	 loss: 0.5965
+Fold: 6	 Epoch: 31	 Avg loss: 0.4914	 Avg accuracy: 0.8261	 Time: 1.1302
+Fold: 6	 Epoch: 32	 Avg loss: 0.4865	 Avg accuracy: 0.8274	 Time: 1.1236
+Test acc: 0.6667	 loss: 0.5893
+Fold: 6	 Epoch: 33	 Avg loss: 0.4830	 Avg accuracy: 0.8329	 Time: 1.2561
+Fold: 6	 Epoch: 34	 Avg loss: 0.4769	 Avg accuracy: 0.8438	 Time: 1.1990
+Test acc: 0.6458	 loss: 0.5930
+Fold: 6	 Epoch: 35	 Avg loss: 0.4796	 Avg accuracy: 0.8451	 Time: 1.1869
+Fold: 6	 Epoch: 36	 Avg loss: 0.4742	 Avg accuracy: 0.8505	 Time: 1.2302
+Test acc: 0.6875	 loss: 0.5862
+Fold: 6	 Epoch: 37	 Avg loss: 0.4774	 Avg accuracy: 0.8438	 Time: 1.1987
+Fold: 6	 Epoch: 38	 Avg loss: 0.4753	 Avg accuracy: 0.8519	 Time: 1.1447
+Test acc: 0.6354	 loss: 0.5983
+Fold: 6	 Epoch: 39	 Avg loss: 0.4721	 Avg accuracy: 0.8492	 Time: 1.2040
+Fold: 6	 Epoch: 40	 Avg loss: 0.4752	 Avg accuracy: 0.8410	 Time: 1.2091
+Test acc: 0.6562	 loss: 0.5959
+Fold: 6	 Epoch: 41	 Avg loss: 0.4718	 Avg accuracy: 0.8478	 Time: 1.2612
+Fold: 6	 Epoch: 42	 Avg loss: 0.4695	 Avg accuracy: 0.8533	 Time: 1.2032
+Test acc: 0.6458	 loss: 0.5895
+Fold: 6	 Epoch: 43	 Avg loss: 0.4652	 Avg accuracy: 0.8573	 Time: 1.2219
+Fold: 6	 Epoch: 44	 Avg loss: 0.4646	 Avg accuracy: 0.8492	 Time: 1.2545
+Test acc: 0.6354	 loss: 0.6017
+Fold: 6	 Epoch: 45	 Avg loss: 0.4663	 Avg accuracy: 0.8478	 Time: 1.3033
+Fold: 6	 Epoch: 46	 Avg loss: 0.4637	 Avg accuracy: 0.8587	 Time: 1.2012
+Test acc: 0.6458	 loss: 0.5897
+Fold: 6	 Epoch: 47	 Avg loss: 0.4671	 Avg accuracy: 0.8505	 Time: 1.2760
+Fold: 6	 Epoch: 48	 Avg loss: 0.4607	 Avg accuracy: 0.8573	 Time: 1.2239
+Test acc: 0.6458	 loss: 0.6065
+Fold: 6	 Epoch: 49	 Avg loss: 0.4640	 Avg accuracy: 0.8533	 Time: 1.2245
+Fold: 6	 Epoch: 50	 Avg loss: 0.4637	 Avg accuracy: 0.8383	 Time: 1.2807
+Test acc: 0.6979	 loss: 0.5959
+Fold: 7	 Epoch: 1	 Avg loss: 0.6864	 Avg accuracy: 0.5340	 Time: 1.2284
+Fold: 7	 Epoch: 2	 Avg loss: 0.6771	 Avg accuracy: 0.5394	 Time: 1.2474
+Test acc: 0.5521	 loss: 0.6791
+Fold: 7	 Epoch: 3	 Avg loss: 0.6635	 Avg accuracy: 0.6332	 Time: 1.2914
+Fold: 7	 Epoch: 4	 Avg loss: 0.6511	 Avg accuracy: 0.6712	 Time: 1.2024
+Test acc: 0.6354	 loss: 0.6632
+Fold: 7	 Epoch: 5	 Avg loss: 0.6387	 Avg accuracy: 0.7079	 Time: 1.2507
+Fold: 7	 Epoch: 6	 Avg loss: 0.6266	 Avg accuracy: 0.7255	 Time: 1.2991
+Test acc: 0.6979	 loss: 0.6423
+New best decoder within a fold!
+Fold: 7	 Epoch: 7	 Avg loss: 0.6150	 Avg accuracy: 0.7337	 Time: 1.2464
+Fold: 7	 Epoch: 8	 Avg loss: 0.6018	 Avg accuracy: 0.7323	 Time: 1.2325
+Test acc: 0.7083	 loss: 0.6167
+New best decoder within a fold!
+Fold: 7	 Epoch: 9	 Avg loss: 0.5901	 Avg accuracy: 0.7391	 Time: 1.3174
+Fold: 7	 Epoch: 10	 Avg loss: 0.5770	 Avg accuracy: 0.7595	 Time: 1.2446
+Test acc: 0.7083	 loss: 0.5866
+Fold: 7	 Epoch: 11	 Avg loss: 0.5661	 Avg accuracy: 0.7595	 Time: 1.1902
+Fold: 7	 Epoch: 12	 Avg loss: 0.5594	 Avg accuracy: 0.7582	 Time: 1.1756
+Test acc: 0.7188	 loss: 0.5701
+New best decoder within a fold!
+Fold: 7	 Epoch: 13	 Avg loss: 0.5527	 Avg accuracy: 0.7636	 Time: 1.5849
+Fold: 7	 Epoch: 14	 Avg loss: 0.5508	 Avg accuracy: 0.7459	 Time: 1.2560
+Test acc: 0.7188	 loss: 0.5586
+Fold: 7	 Epoch: 15	 Avg loss: 0.5425	 Avg accuracy: 0.7717	 Time: 1.2953
+Fold: 7	 Epoch: 16	 Avg loss: 0.5377	 Avg accuracy: 0.7785	 Time: 1.2288
+Test acc: 0.7292	 loss: 0.5405
+New best decoder within a fold!
+Fold: 7	 Epoch: 17	 Avg loss: 0.5359	 Avg accuracy: 0.7731	 Time: 1.2224
+Fold: 7	 Epoch: 18	 Avg loss: 0.5309	 Avg accuracy: 0.7826	 Time: 1.3331
+Test acc: 0.7396	 loss: 0.5367
+New best decoder within a fold!
+Fold: 7	 Epoch: 19	 Avg loss: 0.5263	 Avg accuracy: 0.7853	 Time: 1.1918
+Fold: 7	 Epoch: 20	 Avg loss: 0.5207	 Avg accuracy: 0.7962	 Time: 1.2557
+Test acc: 0.7500	 loss: 0.5373
+New best decoder within a fold!
+Fold: 7	 Epoch: 21	 Avg loss: 0.5178	 Avg accuracy: 0.7948	 Time: 1.2382
+Fold: 7	 Epoch: 22	 Avg loss: 0.5143	 Avg accuracy: 0.8003	 Time: 1.2631
+Test acc: 0.7500	 loss: 0.5438
+Fold: 7	 Epoch: 23	 Avg loss: 0.5139	 Avg accuracy: 0.8003	 Time: 1.2541
+Fold: 7	 Epoch: 24	 Avg loss: 0.5068	 Avg accuracy: 0.8003	 Time: 1.2465
+Test acc: 0.7604	 loss: 0.5289
+New best decoder within a fold!
+Fold: 7	 Epoch: 25	 Avg loss: 0.5072	 Avg accuracy: 0.8139	 Time: 1.2716
+Fold: 7	 Epoch: 26	 Avg loss: 0.5034	 Avg accuracy: 0.8152	 Time: 1.3959
+Test acc: 0.7083	 loss: 0.5354
+Fold: 7	 Epoch: 27	 Avg loss: 0.4998	 Avg accuracy: 0.8152	 Time: 1.3074
+Fold: 7	 Epoch: 28	 Avg loss: 0.4976	 Avg accuracy: 0.8179	 Time: 1.2142
+Test acc: 0.7396	 loss: 0.5306
+Fold: 7	 Epoch: 29	 Avg loss: 0.4949	 Avg accuracy: 0.8288	 Time: 1.2845
+Fold: 7	 Epoch: 30	 Avg loss: 0.4908	 Avg accuracy: 0.8247	 Time: 1.2633
+Test acc: 0.7500	 loss: 0.5315
+Fold: 7	 Epoch: 31	 Avg loss: 0.4924	 Avg accuracy: 0.8207	 Time: 1.2778
+Fold: 7	 Epoch: 32	 Avg loss: 0.4878	 Avg accuracy: 0.8329	 Time: 1.2107
+Test acc: 0.7292	 loss: 0.5361
+Fold: 7	 Epoch: 33	 Avg loss: 0.4879	 Avg accuracy: 0.8234	 Time: 1.2515
+Fold: 7	 Epoch: 34	 Avg loss: 0.4836	 Avg accuracy: 0.8356	 Time: 1.2640
+Test acc: 0.7500	 loss: 0.5363
+Fold: 7	 Epoch: 35	 Avg loss: 0.4795	 Avg accuracy: 0.8397	 Time: 1.2616
+Fold: 7	 Epoch: 36	 Avg loss: 0.4803	 Avg accuracy: 0.8356	 Time: 1.2810
+Test acc: 0.7292	 loss: 0.5383
+Fold: 7	 Epoch: 37	 Avg loss: 0.4813	 Avg accuracy: 0.8370	 Time: 1.3179
+Fold: 7	 Epoch: 38	 Avg loss: 0.4790	 Avg accuracy: 0.8356	 Time: 1.2546
+Test acc: 0.7604	 loss: 0.5281
+Fold: 7	 Epoch: 39	 Avg loss: 0.4799	 Avg accuracy: 0.8288	 Time: 1.2862
+Fold: 7	 Epoch: 40	 Avg loss: 0.4802	 Avg accuracy: 0.8329	 Time: 1.2634
+Test acc: 0.7292	 loss: 0.5347
+Fold: 7	 Epoch: 41	 Avg loss: 0.4734	 Avg accuracy: 0.8410	 Time: 1.2848
+Fold: 7	 Epoch: 42	 Avg loss: 0.4741	 Avg accuracy: 0.8424	 Time: 1.3017
+Test acc: 0.7396	 loss: 0.5321
+Fold: 7	 Epoch: 43	 Avg loss: 0.4727	 Avg accuracy: 0.8492	 Time: 1.2861
+Fold: 7	 Epoch: 44	 Avg loss: 0.4726	 Avg accuracy: 0.8410	 Time: 1.2319
+Test acc: 0.7604	 loss: 0.5283
+Fold: 7	 Epoch: 45	 Avg loss: 0.4677	 Avg accuracy: 0.8573	 Time: 1.1749
+Fold: 7	 Epoch: 46	 Avg loss: 0.4664	 Avg accuracy: 0.8533	 Time: 1.2201
+Test acc: 0.7500	 loss: 0.5315
+Fold: 7	 Epoch: 47	 Avg loss: 0.4623	 Avg accuracy: 0.8614	 Time: 1.1453
+Fold: 7	 Epoch: 48	 Avg loss: 0.4659	 Avg accuracy: 0.8505	 Time: 1.1599
+Test acc: 0.7396	 loss: 0.5313
+Fold: 7	 Epoch: 49	 Avg loss: 0.4615	 Avg accuracy: 0.8628	 Time: 1.1851
+Fold: 7	 Epoch: 50	 Avg loss: 0.4642	 Avg accuracy: 0.8519	 Time: 1.1832
+Test acc: 0.7500	 loss: 0.5315
+Fold: 8	 Epoch: 1	 Avg loss: 0.6928	 Avg accuracy: 0.5000	 Time: 1.1361
+Fold: 8	 Epoch: 2	 Avg loss: 0.6790	 Avg accuracy: 0.5462	 Time: 1.1727
+Test acc: 0.6875	 loss: 0.6499
+Fold: 8	 Epoch: 3	 Avg loss: 0.6556	 Avg accuracy: 0.7133	 Time: 1.1406
+Fold: 8	 Epoch: 4	 Avg loss: 0.6272	 Avg accuracy: 0.7133	 Time: 1.1447
+Test acc: 0.7604	 loss: 0.6041
+Fold: 8	 Epoch: 5	 Avg loss: 0.6029	 Avg accuracy: 0.7242	 Time: 1.1980
+Fold: 8	 Epoch: 6	 Avg loss: 0.5874	 Avg accuracy: 0.7310	 Time: 1.1725
+Test acc: 0.7708	 loss: 0.5683
+New best decoder within a fold!
+Fold: 8	 Epoch: 7	 Avg loss: 0.5753	 Avg accuracy: 0.7432	 Time: 1.1437
+Fold: 8	 Epoch: 8	 Avg loss: 0.5638	 Avg accuracy: 0.7527	 Time: 1.1524
+Test acc: 0.7604	 loss: 0.5577
+Fold: 8	 Epoch: 9	 Avg loss: 0.5575	 Avg accuracy: 0.7582	 Time: 1.2737
+Fold: 8	 Epoch: 10	 Avg loss: 0.5529	 Avg accuracy: 0.7432	 Time: 1.2270
+Test acc: 0.7812	 loss: 0.5531
+New best decoder within a fold!
+Fold: 8	 Epoch: 11	 Avg loss: 0.5445	 Avg accuracy: 0.7622	 Time: 1.2059
+Fold: 8	 Epoch: 12	 Avg loss: 0.5436	 Avg accuracy: 0.7595	 Time: 1.1834
+Test acc: 0.7708	 loss: 0.5459
+Fold: 8	 Epoch: 13	 Avg loss: 0.5389	 Avg accuracy: 0.7677	 Time: 1.1968
+Fold: 8	 Epoch: 14	 Avg loss: 0.5355	 Avg accuracy: 0.7677	 Time: 1.2254
+Test acc: 0.7604	 loss: 0.5441
+Fold: 8	 Epoch: 15	 Avg loss: 0.5326	 Avg accuracy: 0.7704	 Time: 1.1982
+Fold: 8	 Epoch: 16	 Avg loss: 0.5260	 Avg accuracy: 0.7867	 Time: 1.2299
+Test acc: 0.7708	 loss: 0.5394
+Fold: 8	 Epoch: 17	 Avg loss: 0.5270	 Avg accuracy: 0.7731	 Time: 1.2588
+Fold: 8	 Epoch: 18	 Avg loss: 0.5220	 Avg accuracy: 0.7908	 Time: 1.2543
+Test acc: 0.7708	 loss: 0.5462
+Fold: 8	 Epoch: 19	 Avg loss: 0.5181	 Avg accuracy: 0.7948	 Time: 1.2547
+Fold: 8	 Epoch: 20	 Avg loss: 0.5156	 Avg accuracy: 0.7989	 Time: 1.2628
+Test acc: 0.7604	 loss: 0.5425
+Fold: 8	 Epoch: 21	 Avg loss: 0.5121	 Avg accuracy: 0.8030	 Time: 1.2277
+Fold: 8	 Epoch: 22	 Avg loss: 0.5082	 Avg accuracy: 0.8125	 Time: 1.1686
+Test acc: 0.7708	 loss: 0.5399
+Fold: 8	 Epoch: 23	 Avg loss: 0.5144	 Avg accuracy: 0.7908	 Time: 1.2822
+Fold: 8	 Epoch: 24	 Avg loss: 0.5068	 Avg accuracy: 0.8057	 Time: 1.2065
+Test acc: 0.7604	 loss: 0.5418
+Fold: 8	 Epoch: 25	 Avg loss: 0.5047	 Avg accuracy: 0.8057	 Time: 1.2953
+Fold: 8	 Epoch: 26	 Avg loss: 0.5037	 Avg accuracy: 0.8084	 Time: 1.2296
+Test acc: 0.7604	 loss: 0.5402
+Fold: 8	 Epoch: 27	 Avg loss: 0.4991	 Avg accuracy: 0.8166	 Time: 1.2575
+Fold: 8	 Epoch: 28	 Avg loss: 0.4978	 Avg accuracy: 0.8220	 Time: 1.1709
+Test acc: 0.7708	 loss: 0.5378
+Fold: 8	 Epoch: 29	 Avg loss: 0.4948	 Avg accuracy: 0.8207	 Time: 1.1707
+Fold: 8	 Epoch: 30	 Avg loss: 0.4899	 Avg accuracy: 0.8329	 Time: 1.1806
+Test acc: 0.7708	 loss: 0.5347
+Fold: 8	 Epoch: 31	 Avg loss: 0.4961	 Avg accuracy: 0.8043	 Time: 1.2373
+Fold: 8	 Epoch: 32	 Avg loss: 0.4939	 Avg accuracy: 0.8152	 Time: 1.1738
+Test acc: 0.7708	 loss: 0.5452
+Fold: 8	 Epoch: 33	 Avg loss: 0.4873	 Avg accuracy: 0.8152	 Time: 1.1948
+Fold: 8	 Epoch: 34	 Avg loss: 0.4815	 Avg accuracy: 0.8383	 Time: 1.1380
+Test acc: 0.7708	 loss: 0.5447
+Fold: 8	 Epoch: 35	 Avg loss: 0.4817	 Avg accuracy: 0.8383	 Time: 1.2037
+Fold: 8	 Epoch: 36	 Avg loss: 0.4828	 Avg accuracy: 0.8397	 Time: 1.1717
+Test acc: 0.7708	 loss: 0.5327
+Fold: 8	 Epoch: 37	 Avg loss: 0.4795	 Avg accuracy: 0.8370	 Time: 1.1877
+Fold: 8	 Epoch: 38	 Avg loss: 0.4783	 Avg accuracy: 0.8302	 Time: 1.1830
+Test acc: 0.7708	 loss: 0.5378
+Fold: 8	 Epoch: 39	 Avg loss: 0.4790	 Avg accuracy: 0.8329	 Time: 1.1785
+Fold: 8	 Epoch: 40	 Avg loss: 0.4768	 Avg accuracy: 0.8451	 Time: 1.2354
+Test acc: 0.7500	 loss: 0.5457
+Fold: 8	 Epoch: 41	 Avg loss: 0.4780	 Avg accuracy: 0.8302	 Time: 1.2278
+Fold: 8	 Epoch: 42	 Avg loss: 0.4756	 Avg accuracy: 0.8329	 Time: 1.1715
+Test acc: 0.7812	 loss: 0.5325
+Fold: 8	 Epoch: 43	 Avg loss: 0.4712	 Avg accuracy: 0.8451	 Time: 1.1837
+Fold: 8	 Epoch: 44	 Avg loss: 0.4684	 Avg accuracy: 0.8492	 Time: 1.1928
+Test acc: 0.7812	 loss: 0.5336
+Fold: 8	 Epoch: 45	 Avg loss: 0.4711	 Avg accuracy: 0.8370	 Time: 1.1816
+Fold: 8	 Epoch: 46	 Avg loss: 0.4663	 Avg accuracy: 0.8492	 Time: 1.1591
+Test acc: 0.7604	 loss: 0.5481
+Fold: 8	 Epoch: 47	 Avg loss: 0.4739	 Avg accuracy: 0.8356	 Time: 1.1820
+Fold: 8	 Epoch: 48	 Avg loss: 0.4704	 Avg accuracy: 0.8492	 Time: 1.2420
+Test acc: 0.7917	 loss: 0.5319
+New best decoder within a fold!
+Fold: 8	 Epoch: 49	 Avg loss: 0.4667	 Avg accuracy: 0.8519	 Time: 1.2580
+Fold: 8	 Epoch: 50	 Avg loss: 0.4583	 Avg accuracy: 0.8614	 Time: 1.2585
+Test acc: 0.7708	 loss: 0.5421
+Fold: 9	 Epoch: 1	 Avg loss: 0.6898	 Avg accuracy: 0.5190	 Time: 1.1987
+Fold: 9	 Epoch: 2	 Avg loss: 0.6731	 Avg accuracy: 0.5870	 Time: 1.1787
+Test acc: 0.6875	 loss: 0.6635
+Fold: 9	 Epoch: 3	 Avg loss: 0.6512	 Avg accuracy: 0.6807	 Time: 1.1942
+Fold: 9	 Epoch: 4	 Avg loss: 0.6281	 Avg accuracy: 0.7065	 Time: 1.1820
+Test acc: 0.6667	 loss: 0.6310
+Fold: 9	 Epoch: 5	 Avg loss: 0.6014	 Avg accuracy: 0.7255	 Time: 1.1672
+Fold: 9	 Epoch: 6	 Avg loss: 0.5844	 Avg accuracy: 0.7296	 Time: 1.1294
+Test acc: 0.6458	 loss: 0.6088
+New best decoder within a fold!
+Fold: 9	 Epoch: 7	 Avg loss: 0.5728	 Avg accuracy: 0.7378	 Time: 1.2269
+Fold: 9	 Epoch: 8	 Avg loss: 0.5607	 Avg accuracy: 0.7554	 Time: 1.2206
+Test acc: 0.6979	 loss: 0.5965
+New best decoder within a fold!
+Fold: 9	 Epoch: 9	 Avg loss: 0.5497	 Avg accuracy: 0.7582	 Time: 1.1578
+Fold: 9	 Epoch: 10	 Avg loss: 0.5474	 Avg accuracy: 0.7622	 Time: 1.2130
+Test acc: 0.7083	 loss: 0.5899
+New best decoder within a fold!
+Fold: 9	 Epoch: 11	 Avg loss: 0.5424	 Avg accuracy: 0.7649	 Time: 1.1838
+Fold: 9	 Epoch: 12	 Avg loss: 0.5402	 Avg accuracy: 0.7636	 Time: 1.1728
+Test acc: 0.7083	 loss: 0.5814
+Fold: 9	 Epoch: 13	 Avg loss: 0.5358	 Avg accuracy: 0.7636	 Time: 1.1698
+Fold: 9	 Epoch: 14	 Avg loss: 0.5325	 Avg accuracy: 0.7731	 Time: 1.1890
+Test acc: 0.7083	 loss: 0.5726
+Fold: 9	 Epoch: 15	 Avg loss: 0.5287	 Avg accuracy: 0.7772	 Time: 1.1979
+Fold: 9	 Epoch: 16	 Avg loss: 0.5244	 Avg accuracy: 0.7826	 Time: 1.1738
+Test acc: 0.7188	 loss: 0.5738
+New best decoder within a fold!
+Fold: 9	 Epoch: 17	 Avg loss: 0.5229	 Avg accuracy: 0.7812	 Time: 1.1658
+Fold: 9	 Epoch: 18	 Avg loss: 0.5202	 Avg accuracy: 0.7853	 Time: 1.1523
+Test acc: 0.6875	 loss: 0.5837
+Fold: 9	 Epoch: 19	 Avg loss: 0.5177	 Avg accuracy: 0.7867	 Time: 1.1549
+Fold: 9	 Epoch: 20	 Avg loss: 0.5198	 Avg accuracy: 0.7826	 Time: 1.1960
+Test acc: 0.6979	 loss: 0.5776
+Fold: 9	 Epoch: 21	 Avg loss: 0.5148	 Avg accuracy: 0.7894	 Time: 1.1663
+Fold: 9	 Epoch: 22	 Avg loss: 0.5122	 Avg accuracy: 0.7921	 Time: 1.2612
+Test acc: 0.6979	 loss: 0.5710
+Fold: 9	 Epoch: 23	 Avg loss: 0.5096	 Avg accuracy: 0.8016	 Time: 1.2210
+Fold: 9	 Epoch: 24	 Avg loss: 0.5104	 Avg accuracy: 0.8003	 Time: 1.1904
+Test acc: 0.6979	 loss: 0.5730
+Fold: 9	 Epoch: 25	 Avg loss: 0.5083	 Avg accuracy: 0.8016	 Time: 1.1485
+Fold: 9	 Epoch: 26	 Avg loss: 0.5018	 Avg accuracy: 0.8139	 Time: 1.1739
+Test acc: 0.7292	 loss: 0.5616
+New best decoder within a fold!
+Fold: 9	 Epoch: 27	 Avg loss: 0.4999	 Avg accuracy: 0.8111	 Time: 1.2440
+Fold: 9	 Epoch: 28	 Avg loss: 0.4982	 Avg accuracy: 0.8179	 Time: 1.1511
+Test acc: 0.7500	 loss: 0.5514
+New best decoder within a fold!
+Fold: 9	 Epoch: 29	 Avg loss: 0.4976	 Avg accuracy: 0.8179	 Time: 1.1467
+Fold: 9	 Epoch: 30	 Avg loss: 0.4931	 Avg accuracy: 0.8234	 Time: 1.2180
+Test acc: 0.7188	 loss: 0.5577
+Fold: 9	 Epoch: 31	 Avg loss: 0.4942	 Avg accuracy: 0.8111	 Time: 1.1617
+Fold: 9	 Epoch: 32	 Avg loss: 0.4897	 Avg accuracy: 0.8220	 Time: 1.1821
+Test acc: 0.7396	 loss: 0.5523
+Fold: 9	 Epoch: 33	 Avg loss: 0.4872	 Avg accuracy: 0.8315	 Time: 1.1955
+Fold: 9	 Epoch: 34	 Avg loss: 0.4889	 Avg accuracy: 0.8261	 Time: 1.2028
+Test acc: 0.7396	 loss: 0.5348
+Fold: 9	 Epoch: 35	 Avg loss: 0.4880	 Avg accuracy: 0.8356	 Time: 1.1593
+Fold: 9	 Epoch: 36	 Avg loss: 0.4825	 Avg accuracy: 0.8342	 Time: 1.1595
+Test acc: 0.7396	 loss: 0.5452
+Fold: 9	 Epoch: 37	 Avg loss: 0.4875	 Avg accuracy: 0.8315	 Time: 1.1854
+Fold: 9	 Epoch: 38	 Avg loss: 0.4808	 Avg accuracy: 0.8329	 Time: 1.1456
+Test acc: 0.7604	 loss: 0.5413
+New best decoder within a fold!
+Fold: 9	 Epoch: 39	 Avg loss: 0.4804	 Avg accuracy: 0.8315	 Time: 1.1284
+Fold: 9	 Epoch: 40	 Avg loss: 0.4759	 Avg accuracy: 0.8478	 Time: 1.2281
+Test acc: 0.7500	 loss: 0.5466
+Fold: 9	 Epoch: 41	 Avg loss: 0.4752	 Avg accuracy: 0.8410	 Time: 1.1805
+Fold: 9	 Epoch: 42	 Avg loss: 0.4767	 Avg accuracy: 0.8329	 Time: 1.1835
+Test acc: 0.6771	 loss: 0.5527
+Fold: 9	 Epoch: 43	 Avg loss: 0.4713	 Avg accuracy: 0.8356	 Time: 1.1728
+Fold: 9	 Epoch: 44	 Avg loss: 0.4743	 Avg accuracy: 0.8451	 Time: 1.1620
+Test acc: 0.6771	 loss: 0.5507
+Fold: 9	 Epoch: 45	 Avg loss: 0.4712	 Avg accuracy: 0.8397	 Time: 1.2291
+Fold: 9	 Epoch: 46	 Avg loss: 0.4718	 Avg accuracy: 0.8438	 Time: 1.1838
+Test acc: 0.7396	 loss: 0.5432
+Fold: 9	 Epoch: 47	 Avg loss: 0.4686	 Avg accuracy: 0.8505	 Time: 1.2499
+Fold: 9	 Epoch: 48	 Avg loss: 0.4658	 Avg accuracy: 0.8438	 Time: 1.1421
+Test acc: 0.7188	 loss: 0.5581
+Fold: 9	 Epoch: 49	 Avg loss: 0.4667	 Avg accuracy: 0.8519	 Time: 1.1654
+Fold: 9	 Epoch: 50	 Avg loss: 0.4629	 Avg accuracy: 0.8465	 Time: 1.1404
+Test acc: 0.7396	 loss: 0.5568
+Fold: 10	 Epoch: 1	 Avg loss: 0.6882	 Avg accuracy: 0.5598	 Time: 1.1363
+Fold: 10	 Epoch: 2	 Avg loss: 0.6816	 Avg accuracy: 0.5883	 Time: 1.2174
+Test acc: 0.6146	 loss: 0.6760
+Fold: 10	 Epoch: 3	 Avg loss: 0.6642	 Avg accuracy: 0.6658	 Time: 1.2133
+Fold: 10	 Epoch: 4	 Avg loss: 0.6435	 Avg accuracy: 0.7038	 Time: 1.1983
+Test acc: 0.7188	 loss: 0.6457
+Fold: 10	 Epoch: 5	 Avg loss: 0.6237	 Avg accuracy: 0.7174	 Time: 1.1502
+Fold: 10	 Epoch: 6	 Avg loss: 0.6043	 Avg accuracy: 0.7120	 Time: 1.2661
+Test acc: 0.6979	 loss: 0.6145
+New best decoder within a fold!
+Fold: 10	 Epoch: 7	 Avg loss: 0.5886	 Avg accuracy: 0.7337	 Time: 1.2266
+Fold: 10	 Epoch: 8	 Avg loss: 0.5736	 Avg accuracy: 0.7473	 Time: 1.2042
+Test acc: 0.7083	 loss: 0.5914
+New best decoder within a fold!
+Fold: 10	 Epoch: 9	 Avg loss: 0.5639	 Avg accuracy: 0.7541	 Time: 1.1582
+Fold: 10	 Epoch: 10	 Avg loss: 0.5580	 Avg accuracy: 0.7514	 Time: 1.1664
+Test acc: 0.7292	 loss: 0.5793
+New best decoder within a fold!
+Fold: 10	 Epoch: 11	 Avg loss: 0.5535	 Avg accuracy: 0.7527	 Time: 1.1593
+Fold: 10	 Epoch: 12	 Avg loss: 0.5450	 Avg accuracy: 0.7649	 Time: 1.1589
+Test acc: 0.7500	 loss: 0.5731
+New best decoder within a fold!
+Fold: 10	 Epoch: 13	 Avg loss: 0.5395	 Avg accuracy: 0.7568	 Time: 1.1695
+Fold: 10	 Epoch: 14	 Avg loss: 0.5351	 Avg accuracy: 0.7541	 Time: 1.1922
+Test acc: 0.7292	 loss: 0.5717
+Fold: 10	 Epoch: 15	 Avg loss: 0.5287	 Avg accuracy: 0.7731	 Time: 1.1537
+Fold: 10	 Epoch: 16	 Avg loss: 0.5258	 Avg accuracy: 0.7840	 Time: 1.1512
+Test acc: 0.7500	 loss: 0.5710
+Fold: 10	 Epoch: 17	 Avg loss: 0.5213	 Avg accuracy: 0.7908	 Time: 1.1784
+Fold: 10	 Epoch: 18	 Avg loss: 0.5211	 Avg accuracy: 0.7772	 Time: 1.1582
+Test acc: 0.7396	 loss: 0.5677
+Fold: 10	 Epoch: 19	 Avg loss: 0.5197	 Avg accuracy: 0.7867	 Time: 1.1370
+Fold: 10	 Epoch: 20	 Avg loss: 0.5136	 Avg accuracy: 0.7976	 Time: 1.2076
+Test acc: 0.7188	 loss: 0.5679
+Fold: 10	 Epoch: 21	 Avg loss: 0.5083	 Avg accuracy: 0.7935	 Time: 1.1711
+Fold: 10	 Epoch: 22	 Avg loss: 0.5099	 Avg accuracy: 0.7894	 Time: 1.1425
+Test acc: 0.7188	 loss: 0.5751
+Fold: 10	 Epoch: 23	 Avg loss: 0.5057	 Avg accuracy: 0.8016	 Time: 1.1402
+Fold: 10	 Epoch: 24	 Avg loss: 0.5030	 Avg accuracy: 0.8057	 Time: 1.1524
+Test acc: 0.7396	 loss: 0.5741
+Fold: 10	 Epoch: 25	 Avg loss: 0.5012	 Avg accuracy: 0.8220	 Time: 1.1617
+Fold: 10	 Epoch: 26	 Avg loss: 0.4968	 Avg accuracy: 0.8111	 Time: 1.1539
+Test acc: 0.6875	 loss: 0.5774
+Fold: 10	 Epoch: 27	 Avg loss: 0.4959	 Avg accuracy: 0.8139	 Time: 1.1407
+Fold: 10	 Epoch: 28	 Avg loss: 0.4944	 Avg accuracy: 0.8315	 Time: 1.1526
+Test acc: 0.6979	 loss: 0.5831
+Fold: 10	 Epoch: 29	 Avg loss: 0.4900	 Avg accuracy: 0.8234	 Time: 1.1315
+Fold: 10	 Epoch: 30	 Avg loss: 0.4860	 Avg accuracy: 0.8370	 Time: 1.1516
+Test acc: 0.6979	 loss: 0.5828
+Fold: 10	 Epoch: 31	 Avg loss: 0.4847	 Avg accuracy: 0.8383	 Time: 1.1794
+Fold: 10	 Epoch: 32	 Avg loss: 0.4837	 Avg accuracy: 0.8397	 Time: 1.1584
+Test acc: 0.6979	 loss: 0.5872
+Fold: 10	 Epoch: 33	 Avg loss: 0.4810	 Avg accuracy: 0.8356	 Time: 1.2238
+Fold: 10	 Epoch: 34	 Avg loss: 0.4743	 Avg accuracy: 0.8438	 Time: 1.1798
+Test acc: 0.6979	 loss: 0.5925
+Fold: 10	 Epoch: 35	 Avg loss: 0.4753	 Avg accuracy: 0.8397	 Time: 1.2261
+Fold: 10	 Epoch: 36	 Avg loss: 0.4748	 Avg accuracy: 0.8519	 Time: 1.1443
+Test acc: 0.6875	 loss: 0.5884
+Fold: 10	 Epoch: 37	 Avg loss: 0.4727	 Avg accuracy: 0.8492	 Time: 1.1546
+Fold: 10	 Epoch: 38	 Avg loss: 0.4710	 Avg accuracy: 0.8505	 Time: 1.1853
+Test acc: 0.7292	 loss: 0.5929
+Fold: 10	 Epoch: 39	 Avg loss: 0.4713	 Avg accuracy: 0.8424	 Time: 1.1581
+Fold: 10	 Epoch: 40	 Avg loss: 0.4685	 Avg accuracy: 0.8533	 Time: 1.1893
+Test acc: 0.6979	 loss: 0.5896
+Fold: 10	 Epoch: 41	 Avg loss: 0.4657	 Avg accuracy: 0.8492	 Time: 1.1480
+Fold: 10	 Epoch: 42	 Avg loss: 0.4650	 Avg accuracy: 0.8478	 Time: 1.1818
+Test acc: 0.6562	 loss: 0.5956
+Fold: 10	 Epoch: 43	 Avg loss: 0.4657	 Avg accuracy: 0.8451	 Time: 1.1482
+Fold: 10	 Epoch: 44	 Avg loss: 0.4581	 Avg accuracy: 0.8628	 Time: 1.1589
+Test acc: 0.6979	 loss: 0.6042
+Fold: 10	 Epoch: 45	 Avg loss: 0.4610	 Avg accuracy: 0.8533	 Time: 1.1653
+Fold: 10	 Epoch: 46	 Avg loss: 0.4624	 Avg accuracy: 0.8451	 Time: 1.2423
+Test acc: 0.6979	 loss: 0.6009
+Fold: 10	 Epoch: 47	 Avg loss: 0.4579	 Avg accuracy: 0.8601	 Time: 1.1406
+Fold: 10	 Epoch: 48	 Avg loss: 0.4575	 Avg accuracy: 0.8533	 Time: 1.1497
+Test acc: 0.7083	 loss: 0.6027
+Fold: 10	 Epoch: 49	 Avg loss: 0.4637	 Avg accuracy: 0.8505	 Time: 1.1846
+Fold: 10	 Epoch: 50	 Avg loss: 0.4634	 Avg accuracy: 0.8505	 Time: 1.1809
+Test acc: 0.6771	 loss: 0.6003
+Training finished! Tht best accuracy on val is 0.8125, the average acc is 0.7583
+The accuracy on test data is 0.736607
+Decoder saved!

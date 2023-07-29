@@ -13,9 +13,9 @@ class GCNLayer(nn.Module):
         self.GCN_second = DenseGCNConv(args.embedding_size, args.embedding_size)
         self.GCN_third = DenseGCNConv(args.embedding_size, args.embedding_size)
 
-        torch.nn.init.xavier_uniform_(self.GCN_first.lin.weight)
-        torch.nn.init.xavier_uniform_(self.GCN_second.lin.weight)
-        torch.nn.init.xavier_uniform_(self.GCN_third.lin.weight)
+        # torch.nn.init.xavier_uniform_(self.GCN_first.lin.weight)
+        # torch.nn.init.xavier_uniform_(self.GCN_second.lin.weight)
+        # torch.nn.init.xavier_uniform_(self.GCN_third.lin.weight)
 
     def forward(self, x, adj, mask, dist=None):
         first_gcn_result = F.relu(self.GCN_first(x, adj, mask))

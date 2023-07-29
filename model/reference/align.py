@@ -28,6 +28,7 @@ class MaxAsign(Agg):
     def aggre(self, n):
         n = self.linear(n)
         n_new = torch.max(n, dim=1)[0]
+        print(n_new.shape)
         return n_new
 
 
